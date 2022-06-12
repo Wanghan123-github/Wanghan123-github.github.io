@@ -668,19 +668,6 @@
     
     
     <entry>
-      <title>简历</title>
-      <link href="/2020/04/19/%E9%9D%A2%E8%AF%95%E9%A2%98/%E7%AE%80%E5%8E%86/"/>
-      <url>/2020/04/19/%E9%9D%A2%E8%AF%95%E9%A2%98/%E7%AE%80%E5%8E%86/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h3 id="简历"><a href="#简历" class="headerlink" title="简历"></a>简历</h3><h4 id="王涵"><a href="#王涵" class="headerlink" title="王涵"></a>王涵</h4><p>23岁 |  男  |  本科  |  3年经验<br>16601512166   |   <a href="mailto:&#x32;&#52;&#x38;&#x34;&#x37;&#x36;&#48;&#49;&#x36;&#x30;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x32;&#52;&#x38;&#x34;&#x37;&#x36;&#48;&#49;&#x36;&#x30;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p><h4 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h4><p>  有3年的python相关开发经验,能独立开发项目,能熟练运用MVC设计模式, DJango框架,来提高应用性<br>能和代码的质量,掌握Redis, MySQL数据库与Linux系统的常见机制与原理,主力开发语言为Python,具备<br>较强的逻辑思维,团队意识强,有较好的沟通能力,工作态度积极, 自学能力很强,能快速的接受新的技术并<br>使用在项目的开发中</p><h4 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h4><p>web开发: python<br>前端开发: javascript. vue. js<br>Web框架: Django, Flask<br>前端框架: Jquery. js, Vue. js<br>数据库: MySQL, Mongodb, Redis<br>爬虫相关: scrapy, Selenium</p><h4 id="求职意向"><a href="#求职意向" class="headerlink" title="求职意向"></a>求职意向</h4><p>Python 中级开发工程师  薪资：面议</p><h4 id="教育经历"><a href="#教育经历" class="headerlink" title="教育经历"></a>教育经历</h4><p>中国石油大学<br>计算机科学与技术  | 本科</p><h4 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h4><p>深圳易峰科技开发有限公司（2016-11—-至今）</p><h4 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h4><p>项目名称:快验借贷系统(p2p)</p><p>1.技术栈: Django+ Element-UI +Vue. jstWebsocket+Mys l-RodistCelery</p><p>2.项目介绍:快融借货是个人通过平台向其他个人提供小额借贷的金融模式。以金融和科技能力见长,借助互联<br>网+金融的风口,以科技手段服务用户、满足用户需求为初心,为大众提供便捷、高效的金融服务</p><p>3.核心模块:前台网站镇块、账户中心模块、后台运营管理模块</p><h4 id="项目负责："><a href="#项目负责：" class="headerlink" title="项目负责："></a>项目负责：</h4><p>1.负责django后台开发,整体采MVC分层设计,提高项目的可扩展性、稳定性</p><p>2.遵循restfulAPI接口设计规范,实现JWT接口安全开发,支持单点登录会话跟踪</p><p>3.负责基于Django-drf第三方框架,实现API接口开发,设计APIview等类视图</p><p>4.使用Element-UI对页面进行简洁布局,使用户视觉体验增强</p><p>5.客服聊天采用websocket,实现全工双向通信机制,提高用户体验度</p><p>6.消息管理采用第三方短信服务, Celery实现高效异步消息推送</p><p>7.采用Redis+Nginx集群实现负载均衡,确保高并发性能</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>进程</title>
       <link href="/2020/04/19/python/%E6%A8%A1%E5%9D%97/%E8%BF%9B%E7%A8%8B/%E8%BF%9B%E7%A8%8B/"/>
       <url>/2020/04/19/python/%E6%A8%A1%E5%9D%97/%E8%BF%9B%E7%A8%8B/%E8%BF%9B%E7%A8%8B/</url>
