@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>搭建Harbor私有仓库.md</title>
+      <title>搭建Harbor私有仓库</title>
       <link href="/2022/10/31/Docker/kubernetes%E6%90%AD%E5%BB%BA/%E6%90%AD%E5%BB%BAHarbor%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/"/>
       <url>/2022/10/31/Docker/kubernetes%E6%90%AD%E5%BB%BA/%E6%90%AD%E5%BB%BAHarbor%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/</url>
       
@@ -23,7 +23,7 @@
     
     
     <entry>
-      <title>super MRO解析顺序.md</title>
+      <title>super MRO解析顺序</title>
       <link href="/2022/10/30/Python/%E6%A8%A1%E5%9D%97/super/super%20MRO%E8%A7%A3%E6%9E%90%E9%A1%BA%E5%BA%8F/"/>
       <url>/2022/10/30/Python/%E6%A8%A1%E5%9D%97/super/super%20MRO%E8%A7%A3%E6%9E%90%E9%A1%BA%E5%BA%8F/</url>
       
@@ -42,7 +42,7 @@
     
     
     <entry>
-      <title>Pytest POM模型.md</title>
+      <title>Pytest POM模型</title>
       <link href="/2022/10/27/Python/%E6%A8%A1%E5%9D%97/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/Pytest%20POM%E6%A8%A1%E5%9E%8B/"/>
       <url>/2022/10/27/Python/%E6%A8%A1%E5%9D%97/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/Pytest%20POM%E6%A8%A1%E5%9E%8B/</url>
       
@@ -61,7 +61,7 @@
     
     
     <entry>
-      <title>Pytest基础.md</title>
+      <title>Pytest基础</title>
       <link href="/2022/10/27/Python/%E6%A8%A1%E5%9D%97/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/Pytest%E5%9F%BA%E7%A1%80/"/>
       <url>/2022/10/27/Python/%E6%A8%A1%E5%9D%97/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/Pytest%E5%9F%BA%E7%A1%80/</url>
       
@@ -80,7 +80,7 @@
     
     
     <entry>
-      <title>super.md</title>
+      <title>super</title>
       <link href="/2022/10/27/Python/%E6%A8%A1%E5%9D%97/super/super/"/>
       <url>/2022/10/27/Python/%E6%A8%A1%E5%9D%97/super/super/</url>
       
@@ -99,7 +99,7 @@
     
     
     <entry>
-      <title>selenium pytest自动化测试.md</title>
+      <title>selenium pytest自动化测试</title>
       <link href="/2022/10/26/Python/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/selenium%20pytest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
       <url>/2022/10/26/Python/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/selenium%20pytest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</url>
       
@@ -118,7 +118,7 @@
     
     
     <entry>
-      <title>Pytest allure生成测试报告.md</title>
+      <title>Pytest allure生成测试报告</title>
       <link href="/2022/10/26/Python/%E6%A8%A1%E5%9D%97/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/Pytest%20allure%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/"/>
       <url>/2022/10/26/Python/%E6%A8%A1%E5%9D%97/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6/Pytest%20allure%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/</url>
       
@@ -137,7 +137,7 @@
     
     
     <entry>
-      <title>json模块常用方法.md</title>
+      <title>json模块常用方法</title>
       <link href="/2022/10/25/Python/%E6%A8%A1%E5%9D%97/json/json%E6%A8%A1%E5%9D%97%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
       <url>/2022/10/25/Python/%E6%A8%A1%E5%9D%97/json/json%E6%A8%A1%E5%9D%97%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
       
@@ -156,7 +156,7 @@
     
     
     <entry>
-      <title>借助HTMLTestRunner自动生成测试报告.md</title>
+      <title>借助HTMLTestRunner自动生成测试报告</title>
       <link href="/2022/10/25/Python/%E6%A8%A1%E5%9D%97/unittest/%E5%80%9F%E5%8A%A9HTMLTestRunner%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/"/>
       <url>/2022/10/25/Python/%E6%A8%A1%E5%9D%97/unittest/%E5%80%9F%E5%8A%A9HTMLTestRunner%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/</url>
       
@@ -175,7 +175,7 @@
     
     
     <entry>
-      <title>Vim.md</title>
+      <title>Vim</title>
       <link href="/2022/10/24/%E5%BF%AB%E6%8D%B7%E9%94%AE/Vim/"/>
       <url>/2022/10/24/%E5%BF%AB%E6%8D%B7%E9%94%AE/Vim/</url>
       
@@ -194,7 +194,7 @@
     
     
     <entry>
-      <title>自动化测试需要的条件.md</title>
+      <title>自动化测试需要的条件</title>
       <link href="/2022/10/24/Python/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E9%9C%80%E8%A6%81%E7%9A%84%E6%9D%A1%E4%BB%B6/"/>
       <url>/2022/10/24/Python/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E9%9C%80%E8%A6%81%E7%9A%84%E6%9D%A1%E4%BB%B6/</url>
       
@@ -213,7 +213,7 @@
     
     
     <entry>
-      <title>selenium unittest自动化测试原型（封装）.md</title>
+      <title>selenium unittest自动化测试原型（封装）</title>
       <link href="/2022/10/24/Python/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/selenium%20unittest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%8E%9F%E5%9E%8B%EF%BC%88%E5%B0%81%E8%A3%85%EF%BC%89/"/>
       <url>/2022/10/24/Python/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/selenium%20unittest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%8E%9F%E5%9E%8B%EF%BC%88%E5%B0%81%E8%A3%85%EF%BC%89/</url>
       
@@ -232,7 +232,7 @@
     
     
     <entry>
-      <title>OS模块--查找、创建、删除文件.md</title>
+      <title>OS模块--查找、创建、删除文件</title>
       <link href="/2022/10/24/Python/%E6%A8%A1%E5%9D%97/os/OS%E6%A8%A1%E5%9D%97--%E6%9F%A5%E6%89%BE%E3%80%81%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/"/>
       <url>/2022/10/24/Python/%E6%A8%A1%E5%9D%97/os/OS%E6%A8%A1%E5%9D%97--%E6%9F%A5%E6%89%BE%E3%80%81%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</url>
       
@@ -251,7 +251,7 @@
     
     
     <entry>
-      <title>selenium基础.md</title>
+      <title>selenium基础</title>
       <link href="/2022/10/24/Python/%E6%A8%A1%E5%9D%97/selenium/selenium%E5%9F%BA%E7%A1%80/"/>
       <url>/2022/10/24/Python/%E6%A8%A1%E5%9D%97/selenium/selenium%E5%9F%BA%E7%A1%80/</url>
       
@@ -270,7 +270,7 @@
     
     
     <entry>
-      <title>unitest基础.md</title>
+      <title>unitest基础</title>
       <link href="/2022/10/21/Python/%E6%A8%A1%E5%9D%97/unittest/unitest%E5%9F%BA%E7%A1%80/"/>
       <url>/2022/10/21/Python/%E6%A8%A1%E5%9D%97/unittest/unitest%E5%9F%BA%E7%A1%80/</url>
       
@@ -289,7 +289,7 @@
     
     
     <entry>
-      <title>DataFrame--tolist函数（df变list）.md</title>
+      <title>DataFrame--tolist函数（df变list）</title>
       <link href="/2022/10/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/DataFrame--tolist%E5%87%BD%E6%95%B0%EF%BC%88df%E5%8F%98list%EF%BC%89/"/>
       <url>/2022/10/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/DataFrame--tolist%E5%87%BD%E6%95%B0%EF%BC%88df%E5%8F%98list%EF%BC%89/</url>
       
@@ -308,7 +308,7 @@
     
     
     <entry>
-      <title>Pandas--DataFrame.md</title>
+      <title>Pandas--DataFrame</title>
       <link href="/2022/10/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--DataFrame/"/>
       <url>/2022/10/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--DataFrame/</url>
       
@@ -327,7 +327,7 @@
     
     
     <entry>
-      <title>Pandas--Series.md</title>
+      <title>Pandas--Series</title>
       <link href="/2022/10/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--Series/"/>
       <url>/2022/10/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--Series/</url>
       
@@ -346,11 +346,11 @@
     
     
     <entry>
-      <title>git常用命令.md</title>
+      <title>git常用命令</title>
       <link href="/2022/10/20/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
       <url>/2022/10/20/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h4 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h4><p>ssh-keygen -t rsa -C “<a href="mailto:&#120;&#x78;&#x78;&#x78;&#x78;&#x40;&#x78;&#x78;&#120;&#120;&#x78;&#x2e;&#99;&#111;&#x6d;">&#120;&#x78;&#x78;&#x78;&#x78;&#x40;&#x78;&#x78;&#120;&#120;&#x78;&#x2e;&#99;&#111;&#x6d;</a>”（连续三次回车）</p><h4 id="验证是否配置成功"><a href="#验证是否配置成功" class="headerlink" title="验证是否配置成功"></a>验证是否配置成功</h4><p>ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a></p><blockquote><p>Hi haiwang! You’ve successfully authenticated, but GitHub does not provide shell access.</p></blockquote><h4 id="如果验证过程现实22端口连接失败，可以使用一下命令"><a href="#如果验证过程现实22端口连接失败，可以使用一下命令" class="headerlink" title="如果验证过程现实22端口连接失败，可以使用一下命令"></a>如果验证过程现实22端口连接失败，可以使用一下命令</h4><blockquote><p>ssh -T -p 443 <a href="mailto:&#x67;&#105;&#x74;&#64;&#x73;&#115;&#104;&#x2e;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x73;&#115;&#104;&#x2e;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;</a></p></blockquote><h4 id="查看远程分支和本地分支"><a href="#查看远程分支和本地分支" class="headerlink" title="查看远程分支和本地分支"></a>查看远程分支和本地分支</h4><p>git branch -a<br><a href="https://imgtu.com/i/L3uNcj"><img src="https://s1.ax1x.com/2022/04/15/L3uNcj.png" alt="L3uNcj.png"></a></p><h4 id="查看远程分支"><a href="#查看远程分支" class="headerlink" title="查看远程分支"></a>查看远程分支</h4><p>git branch -r<br><a href="https://imgtu.com/i/L3uwBq"><img src="https://s1.ax1x.com/2022/04/15/L3uwBq.png" alt="L3uwBq.png"></a></p><h4 id="同步远程分支"><a href="#同步远程分支" class="headerlink" title="同步远程分支"></a>同步远程分支</h4><p>git fetch<br>同步远程指定分支：git fetch origin 指定分支</p><pre><code>注意：（也就是本地可能只有master分支，但是同步之后就可以将远程的所有分支都拉取到本地了）</code></pre><h4 id="拉取指定的远程分支并在本地创建对应的分支"><a href="#拉取指定的远程分支并在本地创建对应的分支" class="headerlink" title="拉取指定的远程分支并在本地创建对应的分支"></a>拉取指定的远程分支并在本地创建对应的分支</h4><p>git checkout -b 本地分支 origin&#x2F;远程分支名<br>分支更新后继续同步：git pull origin 指定分支名</p><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><p>git checkout -b 分支名</p><h4 id="提交分支到线上"><a href="#提交分支到线上" class="headerlink" title="提交分支到线上"></a>提交分支到线上</h4><p>git add .<br>git commit -m “”<br>git push origin 新的分支名</p><h4 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h4><p>git merge master(合并master的分支到当前所在分支)</p><h4 id="撤销合并"><a href="#撤销合并" class="headerlink" title="撤销合并"></a>撤销合并</h4><p>如果你觉得你合并后的状态是一团乱麻，想把当前的修改都放弃，你可以用下面的命令回到合并之前的状态：<br>git reset –hard HEAD</p><h4 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h4><pre><code>注意：操作此命令时，不能在此分支下，否则报错</code></pre><p>git branch -d 本地分支</p><h4 id="强制删除本地分支"><a href="#强制删除本地分支" class="headerlink" title="强制删除本地分支"></a>强制删除本地分支</h4><p>git branch -D 本地分支</p><h4 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h4><p>git push origin -d 远程分支</p><h4 id="git-add指定文件"><a href="#git-add指定文件" class="headerlink" title="git add指定文件"></a>git add指定文件</h4><p>git add 文件名</p><h4 id="将git-add-和-git-commit-合并提交"><a href="#将git-add-和-git-commit-合并提交" class="headerlink" title="将git add. 和 git commit 合并提交"></a>将git add. 和 git commit 合并提交</h4><p>git commit -am “介绍”</p><h4 id="同一文件反复修改时，反复提交"><a href="#同一文件反复修改时，反复提交" class="headerlink" title="同一文件反复修改时，反复提交"></a>同一文件反复修改时，反复提交</h4><p>git commit –amend -m “介绍”</p><p>举例：</p><pre><code># a.py 内容:print(&quot;hello world&quot;)# 此时git add + git commit# 之后又修改了a.py，print(&quot;Hello World&quot;)# 此时可以使用 git commit --amend -m &quot;介绍&quot; 覆盖修改的文件</code></pre><h4 id="将当前修改放入缓存区（建议使用下面的）"><a href="#将当前修改放入缓存区（建议使用下面的）" class="headerlink" title="将当前修改放入缓存区（建议使用下面的）"></a>将当前修改放入缓存区（建议使用下面的）</h4><p>git stash</p><h4 id="将修改放入缓存区并赋予版本"><a href="#将修改放入缓存区并赋予版本" class="headerlink" title="将修改放入缓存区并赋予版本"></a>将修改放入缓存区并赋予版本</h4><p>git stash save ‘1111’</p><h4 id="查看缓存区记录"><a href="#查看缓存区记录" class="headerlink" title="查看缓存区记录"></a>查看缓存区记录</h4><p>git stash list</p><pre><code># 显示内容stash@&#123;0&#125;: On wanghan: stash test</code></pre><h4 id="应用缓存（也就是将缓存区的内容恢复到工作区）"><a href="#应用缓存（也就是将缓存区的内容恢复到工作区）" class="headerlink" title="应用缓存（也就是将缓存区的内容恢复到工作区）"></a>应用缓存（也就是将缓存区的内容恢复到工作区）</h4><p>git stash apply</p><pre><code>注意；默认删除最近的stash@&#123;0&#125;记录这个应用方法不会删除缓存区的 stash@&#123;0&#125; 缓存记录</code></pre><p>git stash apply stash@{0}</p><pre><code>应用指定版本的缓存</code></pre><h4 id="应用缓存（方法二）"><a href="#应用缓存（方法二）" class="headerlink" title="应用缓存（方法二）"></a>应用缓存（方法二）</h4><p>git stash pop</p><pre><code>注意：删除的是缓存区的第一个，并且会删除缓存区的此条缓存记录</code></pre><p>但如果使用 git stash pop 后有冲突时，如何撤销?</p><p>可以使用 git reset –hard ，即可撤销 git stash pop 操作，将当前分支状态恢复。</p><h4 id="删除缓存区（删除指定版本的缓存）"><a href="#删除缓存区（删除指定版本的缓存）" class="headerlink" title="删除缓存区（删除指定版本的缓存）"></a>删除缓存区（删除指定版本的缓存）</h4><p>git stash drop stash@{0}</p><p>如果误用drop，删错缓存，可以根据使用完drop命令后，返回的ID，<br><a href="https://imgtu.com/i/OoPQLd"><img src="https://s1.ax1x.com/2022/05/18/OoPQLd.png" alt="OoPQLd.png"></a><br>“19a…”就是ID，然后：git stash apply ID 即可恢复</p><h4 id="删除缓存区（方法二）"><a href="#删除缓存区（方法二）" class="headerlink" title="删除缓存区（方法二）"></a>删除缓存区（方法二）</h4><p>git stash clear</p><h4 id="如果误删缓存，恢复办法！！！"><a href="#如果误删缓存，恢复办法！！！" class="headerlink" title="如果误删缓存，恢复办法！！！"></a>如果误删缓存，恢复办法！！！</h4><ol><li>git show 编号</li></ol><!----><pre><code>注意：这个编号就是你drop之后返回的一长串编号</code></pre><h4 id=""><a href="#" class="headerlink" title=""></a></h4><ol><li>git merge 编号<br>（将删除的缓存合并到本地 也就是恢复到本地来）</li></ol>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h4 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h4><p>ssh-keygen -t rsa -C “<a href="mailto:&#x78;&#x78;&#x78;&#x78;&#120;&#x40;&#120;&#x78;&#120;&#x78;&#x78;&#46;&#99;&#x6f;&#109;">&#x78;&#x78;&#x78;&#x78;&#120;&#x40;&#120;&#x78;&#120;&#x78;&#x78;&#46;&#99;&#x6f;&#109;</a>”（连续三次回车）</p><h4 id="验证是否配置成功"><a href="#验证是否配置成功" class="headerlink" title="验证是否配置成功"></a>验证是否配置成功</h4><p>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#x69;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a></p><blockquote><p>Hi haiwang! You’ve successfully authenticated, but GitHub does not provide shell access.</p></blockquote><h4 id="如果验证过程现实22端口连接失败，可以使用一下命令"><a href="#如果验证过程现实22端口连接失败，可以使用一下命令" class="headerlink" title="如果验证过程现实22端口连接失败，可以使用一下命令"></a>如果验证过程现实22端口连接失败，可以使用一下命令</h4><blockquote><p>ssh -T -p 443 <a href="mailto:&#103;&#105;&#x74;&#x40;&#x73;&#115;&#104;&#x2e;&#103;&#x69;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;">&#103;&#105;&#x74;&#x40;&#x73;&#115;&#104;&#x2e;&#103;&#x69;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;</a></p></blockquote><h4 id="查看远程分支和本地分支"><a href="#查看远程分支和本地分支" class="headerlink" title="查看远程分支和本地分支"></a>查看远程分支和本地分支</h4><p>git branch -a<br><a href="https://imgtu.com/i/L3uNcj"><img src="https://s1.ax1x.com/2022/04/15/L3uNcj.png" alt="L3uNcj.png"></a></p><h4 id="查看远程分支"><a href="#查看远程分支" class="headerlink" title="查看远程分支"></a>查看远程分支</h4><p>git branch -r<br><a href="https://imgtu.com/i/L3uwBq"><img src="https://s1.ax1x.com/2022/04/15/L3uwBq.png" alt="L3uwBq.png"></a></p><h4 id="同步远程分支"><a href="#同步远程分支" class="headerlink" title="同步远程分支"></a>同步远程分支</h4><p>git fetch<br>同步远程指定分支：git fetch origin 指定分支</p><pre><code>注意：（也就是本地可能只有master分支，但是同步之后就可以将远程的所有分支都拉取到本地了）</code></pre><h4 id="拉取指定的远程分支并在本地创建对应的分支"><a href="#拉取指定的远程分支并在本地创建对应的分支" class="headerlink" title="拉取指定的远程分支并在本地创建对应的分支"></a>拉取指定的远程分支并在本地创建对应的分支</h4><p>git checkout -b 本地分支 origin&#x2F;远程分支名<br>分支更新后继续同步：git pull origin 指定分支名</p><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><p>git checkout -b 分支名</p><h4 id="提交分支到线上"><a href="#提交分支到线上" class="headerlink" title="提交分支到线上"></a>提交分支到线上</h4><p>git add .<br>git commit -m “”<br>git push origin 新的分支名</p><h4 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h4><p>git merge master(合并master的分支到当前所在分支)</p><h4 id="撤销合并"><a href="#撤销合并" class="headerlink" title="撤销合并"></a>撤销合并</h4><p>如果你觉得你合并后的状态是一团乱麻，想把当前的修改都放弃，你可以用下面的命令回到合并之前的状态：<br>git reset –hard HEAD</p><h4 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h4><pre><code>注意：操作此命令时，不能在此分支下，否则报错</code></pre><p>git branch -d 本地分支</p><h4 id="强制删除本地分支"><a href="#强制删除本地分支" class="headerlink" title="强制删除本地分支"></a>强制删除本地分支</h4><p>git branch -D 本地分支</p><h4 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h4><p>git push origin -d 远程分支</p><h4 id="git-add指定文件"><a href="#git-add指定文件" class="headerlink" title="git add指定文件"></a>git add指定文件</h4><p>git add 文件名</p><h4 id="将git-add-和-git-commit-合并提交"><a href="#将git-add-和-git-commit-合并提交" class="headerlink" title="将git add. 和 git commit 合并提交"></a>将git add. 和 git commit 合并提交</h4><p>git commit -am “介绍”</p><h4 id="同一文件反复修改时，反复提交"><a href="#同一文件反复修改时，反复提交" class="headerlink" title="同一文件反复修改时，反复提交"></a>同一文件反复修改时，反复提交</h4><p>git commit –amend -m “介绍”</p><p>举例：</p><pre><code># a.py 内容:print(&quot;hello world&quot;)# 此时git add + git commit# 之后又修改了a.py，print(&quot;Hello World&quot;)# 此时可以使用 git commit --amend -m &quot;介绍&quot; 覆盖修改的文件</code></pre><h4 id="将当前修改放入缓存区（建议使用下面的）"><a href="#将当前修改放入缓存区（建议使用下面的）" class="headerlink" title="将当前修改放入缓存区（建议使用下面的）"></a>将当前修改放入缓存区（建议使用下面的）</h4><p>git stash</p><h4 id="将修改放入缓存区并赋予版本"><a href="#将修改放入缓存区并赋予版本" class="headerlink" title="将修改放入缓存区并赋予版本"></a>将修改放入缓存区并赋予版本</h4><p>git stash save ‘1111’</p><h4 id="查看缓存区记录"><a href="#查看缓存区记录" class="headerlink" title="查看缓存区记录"></a>查看缓存区记录</h4><p>git stash list</p><pre><code># 显示内容stash@&#123;0&#125;: On wanghan: stash test</code></pre><h4 id="应用缓存（也就是将缓存区的内容恢复到工作区）"><a href="#应用缓存（也就是将缓存区的内容恢复到工作区）" class="headerlink" title="应用缓存（也就是将缓存区的内容恢复到工作区）"></a>应用缓存（也就是将缓存区的内容恢复到工作区）</h4><p>git stash apply</p><pre><code>注意；默认删除最近的stash@&#123;0&#125;记录这个应用方法不会删除缓存区的 stash@&#123;0&#125; 缓存记录</code></pre><p>git stash apply stash@{0}</p><pre><code>应用指定版本的缓存</code></pre><h4 id="应用缓存（方法二）"><a href="#应用缓存（方法二）" class="headerlink" title="应用缓存（方法二）"></a>应用缓存（方法二）</h4><p>git stash pop</p><pre><code>注意：删除的是缓存区的第一个，并且会删除缓存区的此条缓存记录</code></pre><p>但如果使用 git stash pop 后有冲突时，如何撤销?</p><p>可以使用 git reset –hard ，即可撤销 git stash pop 操作，将当前分支状态恢复。</p><h4 id="删除缓存区（删除指定版本的缓存）"><a href="#删除缓存区（删除指定版本的缓存）" class="headerlink" title="删除缓存区（删除指定版本的缓存）"></a>删除缓存区（删除指定版本的缓存）</h4><p>git stash drop stash@{0}</p><p>如果误用drop，删错缓存，可以根据使用完drop命令后，返回的ID，<br><a href="https://imgtu.com/i/OoPQLd"><img src="https://s1.ax1x.com/2022/05/18/OoPQLd.png" alt="OoPQLd.png"></a><br>“19a…”就是ID，然后：git stash apply ID 即可恢复</p><h4 id="删除缓存区（方法二）"><a href="#删除缓存区（方法二）" class="headerlink" title="删除缓存区（方法二）"></a>删除缓存区（方法二）</h4><p>git stash clear</p><h4 id="如果误删缓存，恢复办法！！！"><a href="#如果误删缓存，恢复办法！！！" class="headerlink" title="如果误删缓存，恢复办法！！！"></a>如果误删缓存，恢复办法！！！</h4><ol><li>git show 编号</li></ol><!----><pre><code>注意：这个编号就是你drop之后返回的一长串编号</code></pre><h4 id=""><a href="#" class="headerlink" title=""></a></h4><ol><li>git merge 编号<br>（将删除的缓存合并到本地 也就是恢复到本地来）</li></ol>]]></content>
       
       
       
@@ -365,7 +365,7 @@
     
     
     <entry>
-      <title>下载Google驱动文件.md</title>
+      <title>下载Google驱动文件</title>
       <link href="/2022/10/17/Python/%E6%A8%A1%E5%9D%97/selenium/%E4%B8%8B%E8%BD%BDGoogle%E9%A9%B1%E5%8A%A8%E6%96%87%E4%BB%B6/"/>
       <url>/2022/10/17/Python/%E6%A8%A1%E5%9D%97/selenium/%E4%B8%8B%E8%BD%BDGoogle%E9%A9%B1%E5%8A%A8%E6%96%87%E4%BB%B6/</url>
       
@@ -384,7 +384,7 @@
     
     
     <entry>
-      <title>示例.md</title>
+      <title>示例</title>
       <link href="/2022/10/14/Python/%E6%A8%A1%E5%9D%97/unittest/%E7%A4%BA%E4%BE%8B/"/>
       <url>/2022/10/14/Python/%E6%A8%A1%E5%9D%97/unittest/%E7%A4%BA%E4%BE%8B/</url>
       
@@ -403,7 +403,7 @@
     
     
     <entry>
-      <title>异地云服务器（公网）搭建k8s集群.md</title>
+      <title>异地云服务器（公网）搭建k8s集群</title>
       <link href="/2022/10/13/Docker/kubernetes%E6%90%AD%E5%BB%BA/%E5%BC%82%E5%9C%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E5%85%AC%E7%BD%91%EF%BC%89%E6%90%AD%E5%BB%BAk8s%E9%9B%86%E7%BE%A4/"/>
       <url>/2022/10/13/Docker/kubernetes%E6%90%AD%E5%BB%BA/%E5%BC%82%E5%9C%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E5%85%AC%E7%BD%91%EF%BC%89%E6%90%AD%E5%BB%BAk8s%E9%9B%86%E7%BE%A4/</url>
       
@@ -422,7 +422,7 @@
     
     
     <entry>
-      <title>Pycharm操作Dockerfile.md</title>
+      <title>Pycharm操作Dockerfile</title>
       <link href="/2022/10/12/Docker/Pycharm%E6%93%8D%E4%BD%9CDockerfile/"/>
       <url>/2022/10/12/Docker/Pycharm%E6%93%8D%E4%BD%9CDockerfile/</url>
       
@@ -441,7 +441,7 @@
     
     
     <entry>
-      <title>使用Pycharm同步服务器的代码到本地.md</title>
+      <title>使用Pycharm同步服务器的代码到本地</title>
       <link href="/2022/10/12/Python/%E4%BD%BF%E7%94%A8Pycharm%E5%90%8C%E6%AD%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BB%A3%E7%A0%81%E5%88%B0%E6%9C%AC%E5%9C%B0/"/>
       <url>/2022/10/12/Python/%E4%BD%BF%E7%94%A8Pycharm%E5%90%8C%E6%AD%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BB%A3%E7%A0%81%E5%88%B0%E6%9C%AC%E5%9C%B0/</url>
       
@@ -460,7 +460,7 @@
     
     
     <entry>
-      <title>Kuboard搭建、部署文档.md</title>
+      <title>Kuboard搭建、部署文档</title>
       <link href="/2022/10/12/Docker/kubernetes%E6%90%AD%E5%BB%BA/Kuboard%E6%90%AD%E5%BB%BA%E3%80%81%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/"/>
       <url>/2022/10/12/Docker/kubernetes%E6%90%AD%E5%BB%BA/Kuboard%E6%90%AD%E5%BB%BA%E3%80%81%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/</url>
       
@@ -479,7 +479,7 @@
     
     
     <entry>
-      <title>k8s搭建Dashboard.md</title>
+      <title>k8s搭建Dashboard</title>
       <link href="/2022/10/12/Docker/kubernetes%E6%90%AD%E5%BB%BA/k8s%E6%90%AD%E5%BB%BADashboard/"/>
       <url>/2022/10/12/Docker/kubernetes%E6%90%AD%E5%BB%BA/k8s%E6%90%AD%E5%BB%BADashboard/</url>
       
@@ -498,7 +498,7 @@
     
     
     <entry>
-      <title>下载Edge驱动文件.md</title>
+      <title>下载Edge驱动文件</title>
       <link href="/2022/10/10/Python/%E6%A8%A1%E5%9D%97/selenium/%E4%B8%8B%E8%BD%BDEdge%E9%A9%B1%E5%8A%A8%E6%96%87%E4%BB%B6/"/>
       <url>/2022/10/10/Python/%E6%A8%A1%E5%9D%97/selenium/%E4%B8%8B%E8%BD%BDEdge%E9%A9%B1%E5%8A%A8%E6%96%87%E4%BB%B6/</url>
       
@@ -517,7 +517,7 @@
     
     
     <entry>
-      <title>为什么会有 GIL？如何释放 GIL 实现并行？.md</title>
+      <title>为什么会有 GIL？如何释放 GIL 实现并行？</title>
       <link href="/2022/09/27/Python/%E6%A8%A1%E5%9D%97/GIL/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E6%9C%89%20GIL%EF%BC%9F%E5%A6%82%E4%BD%95%E9%87%8A%E6%94%BE%20GIL%20%E5%AE%9E%E7%8E%B0%E5%B9%B6%E8%A1%8C%EF%BC%9F/"/>
       <url>/2022/09/27/Python/%E6%A8%A1%E5%9D%97/GIL/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E6%9C%89%20GIL%EF%BC%9F%E5%A6%82%E4%BD%95%E9%87%8A%E6%94%BE%20GIL%20%E5%AE%9E%E7%8E%B0%E5%B9%B6%E8%A1%8C%EF%BC%9F/</url>
       
@@ -536,7 +536,7 @@
     
     
     <entry>
-      <title>正则表达式.md</title>
+      <title>正则表达式</title>
       <link href="/2022/09/27/Python/%E6%A8%A1%E5%9D%97/re/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
       <url>/2022/09/27/Python/%E6%A8%A1%E5%9D%97/re/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
       
@@ -555,7 +555,7 @@
     
     
     <entry>
-      <title>Pycharm.md</title>
+      <title>Pycharm</title>
       <link href="/2022/09/23/%E5%BF%AB%E6%8D%B7%E9%94%AE/Pycharm/"/>
       <url>/2022/09/23/%E5%BF%AB%E6%8D%B7%E9%94%AE/Pycharm/</url>
       
@@ -574,7 +574,7 @@
     
     
     <entry>
-      <title>AES加密、解密.md</title>
+      <title>AES加密、解密</title>
       <link href="/2022/09/14/Python/%E6%A8%A1%E5%9D%97/AES/AES%E5%8A%A0%E5%AF%86%E3%80%81%E8%A7%A3%E5%AF%86/"/>
       <url>/2022/09/14/Python/%E6%A8%A1%E5%9D%97/AES/AES%E5%8A%A0%E5%AF%86%E3%80%81%E8%A7%A3%E5%AF%86/</url>
       
@@ -593,7 +593,7 @@
     
     
     <entry>
-      <title>线程池.md</title>
+      <title>线程池</title>
       <link href="/2022/09/02/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0/"/>
       <url>/2022/09/02/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0/</url>
       
@@ -612,7 +612,7 @@
     
     
     <entry>
-      <title>单例模式.md</title>
+      <title>单例模式</title>
       <link href="/2022/08/15/Python/%E6%A8%A1%E5%9D%97/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
       <url>/2022/08/15/Python/%E6%A8%A1%E5%9D%97/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
       
@@ -631,7 +631,7 @@
     
     
     <entry>
-      <title>lambda表达式.md</title>
+      <title>lambda表达式</title>
       <link href="/2022/08/11/Python/%E6%A8%A1%E5%9D%97/%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
       <url>/2022/08/11/Python/%E6%A8%A1%E5%9D%97/%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
       
@@ -650,7 +650,7 @@
     
     
     <entry>
-      <title>Ubuntu挂载共享文件.md</title>
+      <title>Ubuntu挂载共享文件</title>
       <link href="/2022/08/11/Ubuntu/Ubuntu%E6%8C%82%E8%BD%BD%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/"/>
       <url>/2022/08/11/Ubuntu/Ubuntu%E6%8C%82%E8%BD%BD%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/</url>
       
@@ -669,7 +669,7 @@
     
     
     <entry>
-      <title>ubuntu挂起唤醒后断网.md</title>
+      <title>ubuntu挂起唤醒后断网</title>
       <link href="/2022/08/11/Ubuntu/ubuntu%E6%8C%82%E8%B5%B7%E5%94%A4%E9%86%92%E5%90%8E%E6%96%AD%E7%BD%91/"/>
       <url>/2022/08/11/Ubuntu/ubuntu%E6%8C%82%E8%B5%B7%E5%94%A4%E9%86%92%E5%90%8E%E6%96%AD%E7%BD%91/</url>
       
@@ -688,7 +688,7 @@
     
     
     <entry>
-      <title>多进程.md</title>
+      <title>多进程</title>
       <link href="/2022/08/09/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E8%BF%9B%E7%A8%8B/%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
       <url>/2022/08/09/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E8%BF%9B%E7%A8%8B/%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
       
@@ -707,7 +707,7 @@
     
     
     <entry>
-      <title>进程池.md</title>
+      <title>进程池</title>
       <link href="/2022/08/09/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E8%BF%9B%E7%A8%8B/%E8%BF%9B%E7%A8%8B%E6%B1%A0/"/>
       <url>/2022/08/09/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E8%BF%9B%E7%A8%8B/%E8%BF%9B%E7%A8%8B%E6%B1%A0/</url>
       
@@ -726,7 +726,7 @@
     
     
     <entry>
-      <title>进制转换.md</title>
+      <title>进制转换</title>
       <link href="/2022/07/28/Python/%E6%A8%A1%E5%9D%97/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
       <url>/2022/07/28/Python/%E6%A8%A1%E5%9D%97/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</url>
       
@@ -745,7 +745,7 @@
     
     
     <entry>
-      <title>练习--将十六进制转为十进制后统计数据.md</title>
+      <title>练习--将十六进制转为十进制后统计数据</title>
       <link href="/2022/07/27/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E7%BB%83%E4%B9%A0--%E5%B0%86%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%B8%BA%E5%8D%81%E8%BF%9B%E5%88%B6%E5%90%8E%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE/"/>
       <url>/2022/07/27/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E7%BB%83%E4%B9%A0--%E5%B0%86%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%B8%BA%E5%8D%81%E8%BF%9B%E5%88%B6%E5%90%8E%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE/</url>
       
@@ -764,7 +764,7 @@
     
     
     <entry>
-      <title>Dockerfile制作python3.7镜像.md</title>
+      <title>Dockerfile制作python3.7镜像</title>
       <link href="/2022/07/25/Docker/Dockerfile%E5%88%B6%E4%BD%9Cpython3.7%E9%95%9C%E5%83%8F/"/>
       <url>/2022/07/25/Docker/Dockerfile%E5%88%B6%E4%BD%9Cpython3.7%E9%95%9C%E5%83%8F/</url>
       
@@ -783,7 +783,7 @@
     
     
     <entry>
-      <title>Docker命令.md</title>
+      <title>Docker命令</title>
       <link href="/2022/07/25/Docker/Docker%E5%91%BD%E4%BB%A4/"/>
       <url>/2022/07/25/Docker/Docker%E5%91%BD%E4%BB%A4/</url>
       
@@ -802,7 +802,7 @@
     
     
     <entry>
-      <title>异地云服务器搭建k8s集群报错总结.md</title>
+      <title>异地云服务器搭建k8s集群报错总结</title>
       <link href="/2022/07/19/Docker/kubernetes%E6%90%AD%E5%BB%BA/%E5%BC%82%E5%9C%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAk8s%E9%9B%86%E7%BE%A4%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/"/>
       <url>/2022/07/19/Docker/kubernetes%E6%90%AD%E5%BB%BA/%E5%BC%82%E5%9C%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAk8s%E9%9B%86%E7%BE%A4%E6%8A%A5%E9%94%99%E6%80%BB%E7%BB%93/</url>
       
@@ -821,7 +821,7 @@
     
     
     <entry>
-      <title>SSH连接.md</title>
+      <title>SSH连接</title>
       <link href="/2022/07/14/Linux/SSH%E8%BF%9E%E6%8E%A5/"/>
       <url>/2022/07/14/Linux/SSH%E8%BF%9E%E6%8E%A5/</url>
       
@@ -840,7 +840,7 @@
     
     
     <entry>
-      <title>sql--inner join、left join、right join.md</title>
+      <title>sql--inner join、left join、right join</title>
       <link href="/2022/07/13/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--inner%20join%E3%80%81left%20join%E3%80%81right%20join/"/>
       <url>/2022/07/13/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--inner%20join%E3%80%81left%20join%E3%80%81right%20join/</url>
       
@@ -859,7 +859,7 @@
     
     
     <entry>
-      <title>mysql索引（二）索引的数据结构B+TREE.md</title>
+      <title>mysql索引（二）索引的数据结构B+TREE</title>
       <link href="/2022/07/12/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%BA%8C%EF%BC%89%E7%B4%A2%E5%BC%95%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84B+TREE/"/>
       <url>/2022/07/12/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%BA%8C%EF%BC%89%E7%B4%A2%E5%BC%95%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84B+TREE/</url>
       
@@ -878,7 +878,7 @@
     
     
     <entry>
-      <title>sql--修改.md</title>
+      <title>sql--修改</title>
       <link href="/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E4%BF%AE%E6%94%B9/"/>
       <url>/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E4%BF%AE%E6%94%B9/</url>
       
@@ -897,7 +897,7 @@
     
     
     <entry>
-      <title>sql--删除.md</title>
+      <title>sql--删除</title>
       <link href="/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E5%88%A0%E9%99%A4/"/>
       <url>/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E5%88%A0%E9%99%A4/</url>
       
@@ -916,7 +916,7 @@
     
     
     <entry>
-      <title>sql--去重.md</title>
+      <title>sql--去重</title>
       <link href="/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E5%8E%BB%E9%87%8D/"/>
       <url>/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E5%8E%BB%E9%87%8D/</url>
       
@@ -935,7 +935,7 @@
     
     
     <entry>
-      <title>sql--增加.md</title>
+      <title>sql--增加</title>
       <link href="/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E5%A2%9E%E5%8A%A0/"/>
       <url>/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E5%A2%9E%E5%8A%A0/</url>
       
@@ -954,7 +954,7 @@
     
     
     <entry>
-      <title>sql--查找.md</title>
+      <title>sql--查找</title>
       <link href="/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E6%9F%A5%E6%89%BE/"/>
       <url>/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/sql--%E6%9F%A5%E6%89%BE/</url>
       
@@ -973,7 +973,7 @@
     
     
     <entry>
-      <title>insert into和insert ignore into.md</title>
+      <title>insert into和insert ignore into</title>
       <link href="/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/%E6%8F%92%E5%85%A5/insert%20into%E5%92%8Cinsert%20ignore%20into/"/>
       <url>/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/%E6%8F%92%E5%85%A5/insert%20into%E5%92%8Cinsert%20ignore%20into/</url>
       
@@ -992,7 +992,7 @@
     
     
     <entry>
-      <title>eval函数：字符串形式的列表，转换为列表.md</title>
+      <title>eval函数：字符串形式的列表，转换为列表</title>
       <link href="/2022/07/12/Python/%E6%A8%A1%E5%9D%97/eval/eval%E5%87%BD%E6%95%B0%EF%BC%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BD%A2%E5%BC%8F%E7%9A%84%E5%88%97%E8%A1%A8%EF%BC%8C%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%88%97%E8%A1%A8/"/>
       <url>/2022/07/12/Python/%E6%A8%A1%E5%9D%97/eval/eval%E5%87%BD%E6%95%B0%EF%BC%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BD%A2%E5%BC%8F%E7%9A%84%E5%88%97%E8%A1%A8%EF%BC%8C%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%88%97%E8%A1%A8/</url>
       
@@ -1011,7 +1011,7 @@
     
     
     <entry>
-      <title>Pandas--read_sql与read_sql_table、read_sql_query 的区别.md</title>
+      <title>Pandas--read_sql与read_sql_table、read_sql_query 的区别</title>
       <link href="/2022/07/12/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--read_sql%E4%B8%8Eread_sql_table%E3%80%81read_sql_query%20%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
       <url>/2022/07/12/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--read_sql%E4%B8%8Eread_sql_table%E3%80%81read_sql_query%20%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
       
@@ -1030,7 +1030,7 @@
     
     
     <entry>
-      <title>replace into用法.md</title>
+      <title>replace into用法</title>
       <link href="/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/%E6%8F%92%E5%85%A5/replace%20into%E7%94%A8%E6%B3%95/"/>
       <url>/2022/07/12/MySQL/SQL%E8%AF%AD%E5%8F%A5/%E6%8F%92%E5%85%A5/replace%20into%E7%94%A8%E6%B3%95/</url>
       
@@ -1049,7 +1049,7 @@
     
     
     <entry>
-      <title>如何操作数据库.md</title>
+      <title>如何操作数据库</title>
       <link href="/2022/07/11/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/%E5%A6%82%E4%BD%95%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
       <url>/2022/07/11/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/%E5%A6%82%E4%BD%95%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
       
@@ -1068,7 +1068,7 @@
     
     
     <entry>
-      <title>Pandas--unique函数.md</title>
+      <title>Pandas--unique函数</title>
       <link href="/2022/07/11/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--unique%E5%87%BD%E6%95%B0/"/>
       <url>/2022/07/11/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--unique%E5%87%BD%E6%95%B0/</url>
       
@@ -1087,7 +1087,7 @@
     
     
     <entry>
-      <title>Pandas--随机抽样.md</title>
+      <title>Pandas--随机抽样</title>
       <link href="/2022/07/10/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E9%9A%8F%E6%9C%BA%E6%8A%BD%E6%A0%B7/"/>
       <url>/2022/07/10/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E9%9A%8F%E6%9C%BA%E6%8A%BD%E6%A0%B7/</url>
       
@@ -1106,7 +1106,7 @@
     
     
     <entry>
-      <title>Pandas--loc，iloc，at，iat.md</title>
+      <title>Pandas--loc，iloc，at，iat</title>
       <link href="/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--loc%EF%BC%8Ciloc%EF%BC%8Cat%EF%BC%8Ciat/"/>
       <url>/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--loc%EF%BC%8Ciloc%EF%BC%8Cat%EF%BC%8Ciat/</url>
       
@@ -1125,7 +1125,7 @@
     
     
     <entry>
-      <title>Pandas--iteritems、iterrows、itertuples.md</title>
+      <title>Pandas--iteritems、iterrows、itertuples</title>
       <link href="/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--iteritems%E3%80%81iterrows%E3%80%81itertuples/"/>
       <url>/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--iteritems%E3%80%81iterrows%E3%80%81itertuples/</url>
       
@@ -1144,7 +1144,7 @@
     
     
     <entry>
-      <title>Pandas--数据合并.md</title>
+      <title>Pandas--数据合并</title>
       <link href="/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%95%B0%E6%8D%AE%E5%90%88%E5%B9%B6/"/>
       <url>/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%95%B0%E6%8D%AE%E5%90%88%E5%B9%B6/</url>
       
@@ -1163,7 +1163,7 @@
     
     
     <entry>
-      <title>Pandas--数据筛选.md</title>
+      <title>Pandas--数据筛选</title>
       <link href="/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%95%B0%E6%8D%AE%E7%AD%9B%E9%80%89/"/>
       <url>/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%95%B0%E6%8D%AE%E7%AD%9B%E9%80%89/</url>
       
@@ -1182,7 +1182,7 @@
     
     
     <entry>
-      <title>Pandas--清洗数据.md</title>
+      <title>Pandas--清洗数据</title>
       <link href="/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%B8%85%E6%B4%97%E6%95%B0%E6%8D%AE/"/>
       <url>/2022/07/08/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%B8%85%E6%B4%97%E6%95%B0%E6%8D%AE/</url>
       
@@ -1201,7 +1201,7 @@
     
     
     <entry>
-      <title>zip函数.md</title>
+      <title>zip函数</title>
       <link href="/2022/07/07/Python/%E6%A8%A1%E5%9D%97/zip/zip%E5%87%BD%E6%95%B0/"/>
       <url>/2022/07/07/Python/%E6%A8%A1%E5%9D%97/zip/zip%E5%87%BD%E6%95%B0/</url>
       
@@ -1220,7 +1220,7 @@
     
     
     <entry>
-      <title>✨和🌟🌟运算符.md</title>
+      <title>✨和🌟🌟运算符</title>
       <link href="/2022/07/06/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E2%9C%A8%E5%92%8C%F0%9F%8C%9F%F0%9F%8C%9F%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
       <url>/2022/07/06/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E2%9C%A8%E5%92%8C%F0%9F%8C%9F%F0%9F%8C%9F%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
       
@@ -1239,7 +1239,7 @@
     
     
     <entry>
-      <title>Pandas--高级接口dt（datetime）.md</title>
+      <title>Pandas--高级接口dt（datetime）</title>
       <link href="/2022/07/05/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E9%AB%98%E7%BA%A7%E6%8E%A5%E5%8F%A3dt%EF%BC%88datetime%EF%BC%89/"/>
       <url>/2022/07/05/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E9%AB%98%E7%BA%A7%E6%8E%A5%E5%8F%A3dt%EF%BC%88datetime%EF%BC%89/</url>
       
@@ -1258,7 +1258,7 @@
     
     
     <entry>
-      <title>如何使用偏函数向方法传递多个参数（包含线程池map函数）.md</title>
+      <title>如何使用偏函数向方法传递多个参数（包含线程池map函数）</title>
       <link href="/2022/06/28/Python/%E6%A8%A1%E5%9D%97/%E5%81%8F%E5%87%BD%E6%95%B0partial/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%81%8F%E5%87%BD%E6%95%B0%E5%90%91%E6%96%B9%E6%B3%95%E4%BC%A0%E9%80%92%E5%A4%9A%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%88%E5%8C%85%E5%90%AB%E7%BA%BF%E7%A8%8B%E6%B1%A0map%E5%87%BD%E6%95%B0%EF%BC%89/"/>
       <url>/2022/06/28/Python/%E6%A8%A1%E5%9D%97/%E5%81%8F%E5%87%BD%E6%95%B0partial/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%81%8F%E5%87%BD%E6%95%B0%E5%90%91%E6%96%B9%E6%B3%95%E4%BC%A0%E9%80%92%E5%A4%9A%E4%B8%AA%E5%8F%82%E6%95%B0%EF%BC%88%E5%8C%85%E5%90%AB%E7%BA%BF%E7%A8%8B%E6%B1%A0map%E5%87%BD%E6%95%B0%EF%BC%89/</url>
       
@@ -1277,7 +1277,7 @@
     
     
     <entry>
-      <title>队列+多线程+进度条.md</title>
+      <title>队列+多线程+进度条</title>
       <link href="/2022/06/28/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E9%98%9F%E5%88%97+%E5%A4%9A%E7%BA%BF%E7%A8%8B+%E8%BF%9B%E5%BA%A6%E6%9D%A1/"/>
       <url>/2022/06/28/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E9%98%9F%E5%88%97+%E5%A4%9A%E7%BA%BF%E7%A8%8B+%E8%BF%9B%E5%BA%A6%E6%9D%A1/</url>
       
@@ -1296,7 +1296,7 @@
     
     
     <entry>
-      <title>多线程.md</title>
+      <title>多线程</title>
       <link href="/2022/06/28/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
       <url>/2022/06/28/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
       
@@ -1315,7 +1315,7 @@
     
     
     <entry>
-      <title>如何向json文件添加注释.md</title>
+      <title>如何向json文件添加注释</title>
       <link href="/2022/06/25/Python/%E6%A8%A1%E5%9D%97/json/%E5%A6%82%E4%BD%95%E5%90%91json%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E6%B3%A8%E9%87%8A/"/>
       <url>/2022/06/25/Python/%E6%A8%A1%E5%9D%97/json/%E5%A6%82%E4%BD%95%E5%90%91json%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E6%B3%A8%E9%87%8A/</url>
       
@@ -1334,7 +1334,7 @@
     
     
     <entry>
-      <title>线程锁.md</title>
+      <title>线程锁</title>
       <link href="/2022/06/25/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E9%94%81/"/>
       <url>/2022/06/25/Python/%E6%A8%A1%E5%9D%97/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E9%94%81/</url>
       
@@ -1353,11 +1353,11 @@
     
     
     <entry>
-      <title>git上传----同一个git项目手动上传至gitee和GitHub保存.md</title>
+      <title>git上传----同一个git项目手动上传至gitee和GitHub保存</title>
       <link href="/2022/06/23/git/git%E4%B8%8A%E4%BC%A0----%E5%90%8C%E4%B8%80%E4%B8%AAgit%E9%A1%B9%E7%9B%AE%E6%89%8B%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3gitee%E5%92%8CGitHub%E4%BF%9D%E5%AD%98/"/>
       <url>/2022/06/23/git/git%E4%B8%8A%E4%BC%A0----%E5%90%8C%E4%B8%80%E4%B8%AAgit%E9%A1%B9%E7%9B%AE%E6%89%8B%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3gitee%E5%92%8CGitHub%E4%BF%9D%E5%AD%98/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><blockquote><p>我原来是在github上传的，但是由于GitHub网速太慢经常访问不了，所以我决定尝试在gitee上存放，方便访问不了的时候也有地方存储代码，这样手动同时保存在GitHub和gitee</p></blockquote><ol><li><p>因为我的本地有上次提交的代码，所以我就直接删除了github的origin远程仓库标识</p><p> git remote rm origin</p></li><li><p>查看本地的远程仓库标识</p><p> git remote</p></li><li><p>添加多个远程仓库</p><p> git remote add github <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;</a>:zhangsan&#x2F;project_test.git<br> git remote add gitee <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>:zhangsan&#x2F;project_test.git</p></li><li><p>查看本地的远程仓库</p><p> git remote -v</p></li><li><p>往后修改的文件就可以</p><p> git add “”<br> git commit -m “”<br> git push github master<br> git push gitee master</p></li></ol>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><blockquote><p>我原来是在github上传的，但是由于GitHub网速太慢经常访问不了，所以我决定尝试在gitee上存放，方便访问不了的时候也有地方存储代码，这样手动同时保存在GitHub和gitee</p></blockquote><ol><li><p>因为我的本地有上次提交的代码，所以我就直接删除了github的origin远程仓库标识</p><p> git remote rm origin</p></li><li><p>查看本地的远程仓库标识</p><p> git remote</p></li><li><p>添加多个远程仓库</p><p> git remote add github <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:zhangsan&#x2F;project_test.git<br> git remote add gitee <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#x65;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#x65;&#46;&#x63;&#111;&#x6d;</a>:zhangsan&#x2F;project_test.git</p></li><li><p>查看本地的远程仓库</p><p> git remote -v</p></li><li><p>往后修改的文件就可以</p><p> git add “”<br> git commit -m “”<br> git push github master<br> git push gitee master</p></li></ol>]]></content>
       
       
       
@@ -1372,7 +1372,7 @@
     
     
     <entry>
-      <title>git克隆----git拉取远程仓库的指定的目录或文件.md</title>
+      <title>git克隆----git拉取远程仓库的指定的目录或文件</title>
       <link href="/2022/06/23/git/git%E5%85%8B%E9%9A%86----git%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E6%8C%87%E5%AE%9A%E7%9A%84%E7%9B%AE%E5%BD%95%E6%88%96%E6%96%87%E4%BB%B6/"/>
       <url>/2022/06/23/git/git%E5%85%8B%E9%9A%86----git%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E6%8C%87%E5%AE%9A%E7%9A%84%E7%9B%AE%E5%BD%95%E6%88%96%E6%96%87%E4%BB%B6/</url>
       
@@ -1391,7 +1391,7 @@
     
     
     <entry>
-      <title>git冲突----git clone成功，但报错error：invalid path.md</title>
+      <title>git冲突----git clone成功，但报错error：invalid path</title>
       <link href="/2022/06/23/git/git%E5%86%B2%E7%AA%81----git%20clone%E6%88%90%E5%8A%9F%EF%BC%8C%E4%BD%86%E6%8A%A5%E9%94%99error%EF%BC%9Ainvalid%20path/"/>
       <url>/2022/06/23/git/git%E5%86%B2%E7%AA%81----git%20clone%E6%88%90%E5%8A%9F%EF%BC%8C%E4%BD%86%E6%8A%A5%E9%94%99error%EF%BC%9Ainvalid%20path/</url>
       
@@ -1410,7 +1410,7 @@
     
     
     <entry>
-      <title>git冲突----在合并之前提交过.md</title>
+      <title>git冲突----在合并之前提交过</title>
       <link href="/2022/06/23/git/git%E5%86%B2%E7%AA%81----%E5%9C%A8%E5%90%88%E5%B9%B6%E4%B9%8B%E5%89%8D%E6%8F%90%E4%BA%A4%E8%BF%87/"/>
       <url>/2022/06/23/git/git%E5%86%B2%E7%AA%81----%E5%9C%A8%E5%90%88%E5%B9%B6%E4%B9%8B%E5%89%8D%E6%8F%90%E4%BA%A4%E8%BF%87/</url>
       
@@ -1429,7 +1429,7 @@
     
     
     <entry>
-      <title>git分支----github将默认main分支改为master.md</title>
+      <title>git分支----github将默认main分支改为master</title>
       <link href="/2022/06/23/git/git%E5%88%86%E6%94%AF----github%E5%B0%86%E9%BB%98%E8%AE%A4main%E5%88%86%E6%94%AF%E6%94%B9%E4%B8%BAmaster/"/>
       <url>/2022/06/23/git/git%E5%88%86%E6%94%AF----github%E5%B0%86%E9%BB%98%E8%AE%A4main%E5%88%86%E6%94%AF%E6%94%B9%E4%B8%BAmaster/</url>
       
@@ -1448,7 +1448,7 @@
     
     
     <entry>
-      <title>git回退----git回退版本.md</title>
+      <title>git回退----git回退版本</title>
       <link href="/2022/06/23/git/git%E5%9B%9E%E9%80%80----git%E5%9B%9E%E9%80%80%E7%89%88%E6%9C%AC/"/>
       <url>/2022/06/23/git/git%E5%9B%9E%E9%80%80----git%E5%9B%9E%E9%80%80%E7%89%88%E6%9C%AC/</url>
       
@@ -1467,7 +1467,7 @@
     
     
     <entry>
-      <title>git忽略----.gitignore忽略文件或文件夹.md</title>
+      <title>git忽略----.gitignore忽略文件或文件夹</title>
       <link href="/2022/06/23/git/git%E5%BF%BD%E7%95%A5----.gitignore%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%88%96%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
       <url>/2022/06/23/git/git%E5%BF%BD%E7%95%A5----.gitignore%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E6%88%96%E6%96%87%E4%BB%B6%E5%A4%B9/</url>
       
@@ -1486,7 +1486,7 @@
     
     
     <entry>
-      <title>git忽略----忽律本地已存在文件的修改.md</title>
+      <title>git忽略----忽律本地已存在文件的修改</title>
       <link href="/2022/06/23/git/git%E5%BF%BD%E7%95%A5----%E5%BF%BD%E5%BE%8B%E6%9C%AC%E5%9C%B0%E5%B7%B2%E5%AD%98%E5%9C%A8%E6%96%87%E4%BB%B6%E7%9A%84%E4%BF%AE%E6%94%B9/"/>
       <url>/2022/06/23/git/git%E5%BF%BD%E7%95%A5----%E5%BF%BD%E5%BE%8B%E6%9C%AC%E5%9C%B0%E5%B7%B2%E5%AD%98%E5%9C%A8%E6%96%87%E4%BB%B6%E7%9A%84%E4%BF%AE%E6%94%B9/</url>
       
@@ -1505,11 +1505,11 @@
     
     
     <entry>
-      <title>git配置----git配置多个邮箱的ssh密钥.md</title>
+      <title>git配置----git配置多个邮箱的ssh密钥</title>
       <link href="/2022/06/23/git/git%E9%85%8D%E7%BD%AE----git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E9%82%AE%E7%AE%B1%E7%9A%84ssh%E5%AF%86%E9%92%A5/"/>
       <url>/2022/06/23/git/git%E9%85%8D%E7%BD%AE----git%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E9%82%AE%E7%AE%B1%E7%9A%84ssh%E5%AF%86%E9%92%A5/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h4 id="如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥"><a href="#如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥" class="headerlink" title="如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥"></a>如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥</h4><p>在.ssh文件夹下创建文件config，根据自己的需求配置对应的网站和密钥<br>内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># github server</span><br><span class="line">Host github.com</span><br><span class="line">RSAAuthentication yes</span><br><span class="line">IdentityFile ~/.ssh/github1</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"># gitlab server</span><br><span class="line">Host gitlab.com</span><br><span class="line">RSAAuthentication yes</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure><h4 id="验证是否配置成功"><a href="#验证是否配置成功" class="headerlink" title="验证是否配置成功"></a>验证是否配置成功</h4><p>ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#109;</a> </p><blockquote><p>Hi haiwang! You’ve successfully authenticated, but GitHub does not provide shell access.</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h4 id="如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥"><a href="#如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥" class="headerlink" title="如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥"></a>如果有多个邮箱需要使用ssh密钥，让每一个邮箱也都有对应的ssh秘钥</h4><p>在.ssh文件夹下创建文件config，根据自己的需求配置对应的网站和密钥<br>内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># github server</span><br><span class="line">Host github.com</span><br><span class="line">RSAAuthentication yes</span><br><span class="line">IdentityFile ~/.ssh/github1</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"># gitlab server</span><br><span class="line">Host gitlab.com</span><br><span class="line">RSAAuthentication yes</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure><h4 id="验证是否配置成功"><a href="#验证是否配置成功" class="headerlink" title="验证是否配置成功"></a>验证是否配置成功</h4><p>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;</a> </p><blockquote><p>Hi haiwang! You’ve successfully authenticated, but GitHub does not provide shell access.</p></blockquote>]]></content>
       
       
       
@@ -1524,7 +1524,7 @@
     
     
     <entry>
-      <title>类属性、实例属性、类方法、静态方法、实例方法、区别.md</title>
+      <title>类属性、实例属性、类方法、静态方法、实例方法、区别</title>
       <link href="/2022/06/19/Python/%E6%A8%A1%E5%9D%97/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E3%80%81%E7%B1%BB%E6%96%B9%E6%B3%95/%E7%B1%BB%E5%B1%9E%E6%80%A7%E3%80%81%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7%E3%80%81%E7%B1%BB%E6%96%B9%E6%B3%95%E3%80%81%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E3%80%81%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95%E3%80%81%E5%8C%BA%E5%88%AB/"/>
       <url>/2022/06/19/Python/%E6%A8%A1%E5%9D%97/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E3%80%81%E7%B1%BB%E6%96%B9%E6%B3%95/%E7%B1%BB%E5%B1%9E%E6%80%A7%E3%80%81%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7%E3%80%81%E7%B1%BB%E6%96%B9%E6%B3%95%E3%80%81%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E3%80%81%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95%E3%80%81%E5%8C%BA%E5%88%AB/</url>
       
@@ -1543,7 +1543,7 @@
     
     
     <entry>
-      <title>坑--在python脚本执行后，docker容器立即退出.md</title>
+      <title>坑--在python脚本执行后，docker容器立即退出</title>
       <link href="/2022/06/17/Docker/%E5%9D%91--%E5%9C%A8python%E8%84%9A%E6%9C%AC%E6%89%A7%E8%A1%8C%E5%90%8E%EF%BC%8Cdocker%E5%AE%B9%E5%99%A8%E7%AB%8B%E5%8D%B3%E9%80%80%E5%87%BA/"/>
       <url>/2022/06/17/Docker/%E5%9D%91--%E5%9C%A8python%E8%84%9A%E6%9C%AC%E6%89%A7%E8%A1%8C%E5%90%8E%EF%BC%8Cdocker%E5%AE%B9%E5%99%A8%E7%AB%8B%E5%8D%B3%E9%80%80%E5%87%BA/</url>
       
@@ -1562,7 +1562,7 @@
     
     
     <entry>
-      <title># -- coding utf-8 --.md</title>
+      <title># -- coding utf-8 --</title>
       <link href="/2022/06/17/Python/%E6%A8%A1%E5%9D%97/scheduler%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/#%20--%20coding%20utf-8%20--/"/>
       <url>/2022/06/17/Python/%E6%A8%A1%E5%9D%97/scheduler%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/#%20--%20coding%20utf-8%20--/</url>
       
@@ -1581,7 +1581,7 @@
     
     
     <entry>
-      <title>Pandas--时间序列--Timestamp.md</title>
+      <title>Pandas--时间序列--Timestamp</title>
       <link href="/2022/06/15/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97--Timestamp/"/>
       <url>/2022/06/15/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97--Timestamp/</url>
       
@@ -1600,7 +1600,7 @@
     
     
     <entry>
-      <title>Pandas--数据类型之间的转换.md</title>
+      <title>Pandas--数据类型之间的转换</title>
       <link href="/2022/06/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/"/>
       <url>/2022/06/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/</url>
       
@@ -1619,7 +1619,7 @@
     
     
     <entry>
-      <title>Pandas--时间序列.md</title>
+      <title>Pandas--时间序列</title>
       <link href="/2022/06/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/"/>
       <url>/2022/06/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/</url>
       
@@ -1638,7 +1638,7 @@
     
     
     <entry>
-      <title>datetime.date类型  加减  Timestamp类型时报错.md</title>
+      <title>datetime.date类型  加减  Timestamp类型时报错</title>
       <link href="/2022/06/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/datetime.date%E7%B1%BB%E5%9E%8B%20%20%E5%8A%A0%E5%87%8F%20%20Timestamp%E7%B1%BB%E5%9E%8B%E6%97%B6%E6%8A%A5%E9%94%99/"/>
       <url>/2022/06/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/datetime.date%E7%B1%BB%E5%9E%8B%20%20%E5%8A%A0%E5%87%8F%20%20Timestamp%E7%B1%BB%E5%9E%8B%E6%97%B6%E6%8A%A5%E9%94%99/</url>
       
@@ -1657,7 +1657,7 @@
     
     
     <entry>
-      <title>datetime模块.md</title>
+      <title>datetime模块</title>
       <link href="/2022/06/13/Python/%E6%A8%A1%E5%9D%97/datetime/datetime%E6%A8%A1%E5%9D%97/"/>
       <url>/2022/06/13/Python/%E6%A8%A1%E5%9D%97/datetime/datetime%E6%A8%A1%E5%9D%97/</url>
       
@@ -1676,7 +1676,7 @@
     
     
     <entry>
-      <title>dict--返回字典最大、最小值的键.md</title>
+      <title>dict--返回字典最大、最小值的键</title>
       <link href="/2022/06/09/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/dict--%E8%BF%94%E5%9B%9E%E5%AD%97%E5%85%B8%E6%9C%80%E5%A4%A7%E3%80%81%E6%9C%80%E5%B0%8F%E5%80%BC%E7%9A%84%E9%94%AE/"/>
       <url>/2022/06/09/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/dict--%E8%BF%94%E5%9B%9E%E5%AD%97%E5%85%B8%E6%9C%80%E5%A4%A7%E3%80%81%E6%9C%80%E5%B0%8F%E5%80%BC%E7%9A%84%E9%94%AE/</url>
       
@@ -1695,7 +1695,7 @@
     
     
     <entry>
-      <title>Numpy--tolist函数.md</title>
+      <title>Numpy--tolist函数</title>
       <link href="/2022/06/07/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--tolist%E5%87%BD%E6%95%B0/"/>
       <url>/2022/06/07/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--tolist%E5%87%BD%E6%95%B0/</url>
       
@@ -1714,7 +1714,7 @@
     
     
     <entry>
-      <title>Column（）常用属性.md</title>
+      <title>Column（）常用属性</title>
       <link href="/2022/06/06/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/Column%EF%BC%88%EF%BC%89%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7/"/>
       <url>/2022/06/06/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/Column%EF%BC%88%EF%BC%89%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7/</url>
       
@@ -1733,7 +1733,7 @@
     
     
     <entry>
-      <title>返回插入数据的ID.md</title>
+      <title>返回插入数据的ID</title>
       <link href="/2022/06/05/MySQL/SQL%E8%AF%AD%E5%8F%A5/%E6%8F%92%E5%85%A5/%E8%BF%94%E5%9B%9E%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E7%9A%84ID/"/>
       <url>/2022/06/05/MySQL/SQL%E8%AF%AD%E5%8F%A5/%E6%8F%92%E5%85%A5/%E8%BF%94%E5%9B%9E%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E7%9A%84ID/</url>
       
@@ -1752,7 +1752,7 @@
     
     
     <entry>
-      <title>创建：主键、索引、唯一约束、联合唯一约束、联合主键约束.md</title>
+      <title>创建：主键、索引、唯一约束、联合唯一约束、联合主键约束</title>
       <link href="/2022/06/05/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/%E5%88%9B%E5%BB%BA%EF%BC%9A%E4%B8%BB%E9%94%AE%E3%80%81%E7%B4%A2%E5%BC%95%E3%80%81%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F%E3%80%81%E8%81%94%E5%90%88%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F%E3%80%81%E8%81%94%E5%90%88%E4%B8%BB%E9%94%AE%E7%BA%A6%E6%9D%9F/"/>
       <url>/2022/06/05/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/%E5%88%9B%E5%BB%BA%EF%BC%9A%E4%B8%BB%E9%94%AE%E3%80%81%E7%B4%A2%E5%BC%95%E3%80%81%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F%E3%80%81%E8%81%94%E5%90%88%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F%E3%80%81%E8%81%94%E5%90%88%E4%B8%BB%E9%94%AE%E7%BA%A6%E6%9D%9F/</url>
       
@@ -1771,7 +1771,7 @@
     
     
     <entry>
-      <title>字段常用数据类型.md</title>
+      <title>字段常用数据类型</title>
       <link href="/2022/06/05/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/%E5%AD%97%E6%AE%B5%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
       <url>/2022/06/05/Python/%E6%A8%A1%E5%9D%97/SQLALchemy/%E5%AD%97%E6%AE%B5%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
       
@@ -1790,7 +1790,7 @@
     
     
     <entry>
-      <title>判断当前日期在本月或本季度是第几周.md</title>
+      <title>判断当前日期在本月或本季度是第几周</title>
       <link href="/2022/05/20/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E5%88%A4%E6%96%AD%E5%BD%93%E5%89%8D%E6%97%A5%E6%9C%9F%E5%9C%A8%E6%9C%AC%E6%9C%88%E6%88%96%E6%9C%AC%E5%AD%A3%E5%BA%A6%E6%98%AF%E7%AC%AC%E5%87%A0%E5%91%A8/"/>
       <url>/2022/05/20/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E5%88%A4%E6%96%AD%E5%BD%93%E5%89%8D%E6%97%A5%E6%9C%9F%E5%9C%A8%E6%9C%AC%E6%9C%88%E6%88%96%E6%9C%AC%E5%AD%A3%E5%BA%A6%E6%98%AF%E7%AC%AC%E5%87%A0%E5%91%A8/</url>
       
@@ -1809,7 +1809,7 @@
     
     
     <entry>
-      <title>conda命令.md</title>
+      <title>conda命令</title>
       <link href="/2022/05/08/conda/conda%E5%91%BD%E4%BB%A4/"/>
       <url>/2022/05/08/conda/conda%E5%91%BD%E4%BB%A4/</url>
       
@@ -1828,7 +1828,7 @@
     
     
     <entry>
-      <title>坑--Bday()日期向前、后偏移一个工作日.md</title>
+      <title>坑--Bday()日期向前、后偏移一个工作日</title>
       <link href="/2022/05/07/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E5%9D%91--Bday()%E6%97%A5%E6%9C%9F%E5%90%91%E5%89%8D%E3%80%81%E5%90%8E%E5%81%8F%E7%A7%BB%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5/"/>
       <url>/2022/05/07/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E5%9D%91--Bday()%E6%97%A5%E6%9C%9F%E5%90%91%E5%89%8D%E3%80%81%E5%90%8E%E5%81%8F%E7%A7%BB%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5/</url>
       
@@ -1847,7 +1847,7 @@
     
     
     <entry>
-      <title>dict--对字典进行排序并返回原字典格式.md</title>
+      <title>dict--对字典进行排序并返回原字典格式</title>
       <link href="/2022/05/06/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/dict--%E5%AF%B9%E5%AD%97%E5%85%B8%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%E5%B9%B6%E8%BF%94%E5%9B%9E%E5%8E%9F%E5%AD%97%E5%85%B8%E6%A0%BC%E5%BC%8F/"/>
       <url>/2022/05/06/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/dict--%E5%AF%B9%E5%AD%97%E5%85%B8%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%E5%B9%B6%E8%BF%94%E5%9B%9E%E5%8E%9F%E5%AD%97%E5%85%B8%E6%A0%BC%E5%BC%8F/</url>
       
@@ -1866,7 +1866,7 @@
     
     
     <entry>
-      <title>list--倒序循环列表.md</title>
+      <title>list--倒序循环列表</title>
       <link href="/2022/05/02/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/list--%E5%80%92%E5%BA%8F%E5%BE%AA%E7%8E%AF%E5%88%97%E8%A1%A8/"/>
       <url>/2022/05/02/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/list--%E5%80%92%E5%BA%8F%E5%BE%AA%E7%8E%AF%E5%88%97%E8%A1%A8/</url>
       
@@ -1885,7 +1885,7 @@
     
     
     <entry>
-      <title>list、dict--列表与字典的多层嵌套案例.md</title>
+      <title>list、dict--列表与字典的多层嵌套案例</title>
       <link href="/2022/05/02/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/list%E3%80%81dict--%E5%88%97%E8%A1%A8%E4%B8%8E%E5%AD%97%E5%85%B8%E7%9A%84%E5%A4%9A%E5%B1%82%E5%B5%8C%E5%A5%97%E6%A1%88%E4%BE%8B/"/>
       <url>/2022/05/02/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/list%E3%80%81dict--%E5%88%97%E8%A1%A8%E4%B8%8E%E5%AD%97%E5%85%B8%E7%9A%84%E5%A4%9A%E5%B1%82%E5%B5%8C%E5%A5%97%E6%A1%88%E4%BE%8B/</url>
       
@@ -1904,7 +1904,7 @@
     
     
     <entry>
-      <title>判断当前日期是周几的几种方法.md</title>
+      <title>判断当前日期是周几的几种方法</title>
       <link href="/2022/05/02/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E5%88%A4%E6%96%AD%E5%BD%93%E5%89%8D%E6%97%A5%E6%9C%9F%E6%98%AF%E5%91%A8%E5%87%A0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/"/>
       <url>/2022/05/02/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/%E5%88%A4%E6%96%AD%E5%BD%93%E5%89%8D%E6%97%A5%E6%9C%9F%E6%98%AF%E5%91%A8%E5%87%A0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
       
@@ -1923,7 +1923,7 @@
     
     
     <entry>
-      <title>configparser.md</title>
+      <title>configparser</title>
       <link href="/2022/04/19/Python/%E6%A8%A1%E5%9D%97/configparser/configparser/"/>
       <url>/2022/04/19/Python/%E6%A8%A1%E5%9D%97/configparser/configparser/</url>
       
@@ -1942,7 +1942,7 @@
     
     
     <entry>
-      <title>Numpy--创建、切片、属性、操作符、运算符、索引、布尔屏蔽、缺省参数.md</title>
+      <title>Numpy--创建、切片、属性、操作符、运算符、索引、布尔屏蔽、缺省参数</title>
       <link href="/2022/04/19/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%87%E7%89%87%E3%80%81%E5%B1%9E%E6%80%A7%E3%80%81%E6%93%8D%E4%BD%9C%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E7%B4%A2%E5%BC%95%E3%80%81%E5%B8%83%E5%B0%94%E5%B1%8F%E8%94%BD%E3%80%81%E7%BC%BA%E7%9C%81%E5%8F%82%E6%95%B0/"/>
       <url>/2022/04/19/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%87%E7%89%87%E3%80%81%E5%B1%9E%E6%80%A7%E3%80%81%E6%93%8D%E4%BD%9C%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E7%B4%A2%E5%BC%95%E3%80%81%E5%B8%83%E5%B0%94%E5%B1%8F%E8%94%BD%E3%80%81%E7%BC%BA%E7%9C%81%E5%8F%82%E6%95%B0/</url>
       
@@ -1961,7 +1961,7 @@
     
     
     <entry>
-      <title>python--[：-1]和[：：-1].md</title>
+      <title>python--[：-1]和[：：-1]</title>
       <link href="/2022/04/18/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/python--%5B%EF%BC%9A-1%5D%E5%92%8C%5B%EF%BC%9A%EF%BC%9A-1%5D/"/>
       <url>/2022/04/18/Python/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/python--%5B%EF%BC%9A-1%5D%E5%92%8C%5B%EF%BC%9A%EF%BC%9A-1%5D/</url>
       
@@ -1980,7 +1980,7 @@
     
     
     <entry>
-      <title>compile-uncompyle6--py文件与pyc互转.md</title>
+      <title>compile-uncompyle6--py文件与pyc互转</title>
       <link href="/2022/04/18/Python/%E6%A8%A1%E5%9D%97/compile%E3%80%81uncompyle6/compile-uncompyle6--py%E6%96%87%E4%BB%B6%E4%B8%8Epyc%E4%BA%92%E8%BD%AC/"/>
       <url>/2022/04/18/Python/%E6%A8%A1%E5%9D%97/compile%E3%80%81uncompyle6/compile-uncompyle6--py%E6%96%87%E4%BB%B6%E4%B8%8Epyc%E4%BA%92%E8%BD%AC/</url>
       
@@ -1999,7 +1999,7 @@
     
     
     <entry>
-      <title>Pathlib最新操作路径模块.md</title>
+      <title>Pathlib最新操作路径模块</title>
       <link href="/2022/04/18/Python/%E6%A8%A1%E5%9D%97/pathlib/Pathlib%E6%9C%80%E6%96%B0%E6%93%8D%E4%BD%9C%E8%B7%AF%E5%BE%84%E6%A8%A1%E5%9D%97/"/>
       <url>/2022/04/18/Python/%E6%A8%A1%E5%9D%97/pathlib/Pathlib%E6%9C%80%E6%96%B0%E6%93%8D%E4%BD%9C%E8%B7%AF%E5%BE%84%E6%A8%A1%E5%9D%97/</url>
       
@@ -2018,7 +2018,7 @@
     
     
     <entry>
-      <title>virtualenv--虚拟环境搭建.md</title>
+      <title>virtualenv--虚拟环境搭建</title>
       <link href="/2022/04/18/Python/%E6%A8%A1%E5%9D%97/virtualenv/virtualenv--%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
       <url>/2022/04/18/Python/%E6%A8%A1%E5%9D%97/virtualenv/virtualenv--%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
       
@@ -2037,7 +2037,7 @@
     
     
     <entry>
-      <title>Pandas--fillna（）填充缺失值NA、NaN.md</title>
+      <title>Pandas--fillna（）填充缺失值NA、NaN</title>
       <link href="/2022/04/18/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--fillna%EF%BC%88%EF%BC%89%E5%A1%AB%E5%85%85%E7%BC%BA%E5%A4%B1%E5%80%BCNA%E3%80%81NaN/"/>
       <url>/2022/04/18/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/pandas/Pandas--fillna%EF%BC%88%EF%BC%89%E5%A1%AB%E5%85%85%E7%BC%BA%E5%A4%B1%E5%80%BCNA%E3%80%81NaN/</url>
       
@@ -2056,7 +2056,7 @@
     
     
     <entry>
-      <title>Matplotlib--contourf色斑图（等高线图）、contour等值线图.md</title>
+      <title>Matplotlib--contourf色斑图（等高线图）、contour等值线图</title>
       <link href="/2022/04/11/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--contourf%E8%89%B2%E6%96%91%E5%9B%BE%EF%BC%88%E7%AD%89%E9%AB%98%E7%BA%BF%E5%9B%BE%EF%BC%89%E3%80%81contour%E7%AD%89%E5%80%BC%E7%BA%BF%E5%9B%BE/"/>
       <url>/2022/04/11/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--contourf%E8%89%B2%E6%96%91%E5%9B%BE%EF%BC%88%E7%AD%89%E9%AB%98%E7%BA%BF%E5%9B%BE%EF%BC%89%E3%80%81contour%E7%AD%89%E5%80%BC%E7%BA%BF%E5%9B%BE/</url>
       
@@ -2075,7 +2075,7 @@
     
     
     <entry>
-      <title>Numpy--argwhere返回数组中非0数值的索引.md</title>
+      <title>Numpy--argwhere返回数组中非0数值的索引</title>
       <link href="/2022/03/23/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--argwhere%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD%E9%9D%9E0%E6%95%B0%E5%80%BC%E7%9A%84%E7%B4%A2%E5%BC%95/"/>
       <url>/2022/03/23/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--argwhere%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD%E9%9D%9E0%E6%95%B0%E5%80%BC%E7%9A%84%E7%B4%A2%E5%BC%95/</url>
       
@@ -2094,7 +2094,7 @@
     
     
     <entry>
-      <title>Numpy--diag对角矩阵 flipud上下反转矩阵.md</title>
+      <title>Numpy--diag对角矩阵 flipud上下反转矩阵</title>
       <link href="/2022/03/23/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--diag%E5%AF%B9%E8%A7%92%E7%9F%A9%E9%98%B5%20flipud%E4%B8%8A%E4%B8%8B%E5%8F%8D%E8%BD%AC%E7%9F%A9%E9%98%B5/"/>
       <url>/2022/03/23/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--diag%E5%AF%B9%E8%A7%92%E7%9F%A9%E9%98%B5%20flipud%E4%B8%8A%E4%B8%8B%E5%8F%8D%E8%BD%AC%E7%9F%A9%E9%98%B5/</url>
       
@@ -2113,7 +2113,7 @@
     
     
     <entry>
-      <title>坑--Docker创建容器时报错：iptables：No chain target match by that name.md</title>
+      <title>坑--Docker创建容器时报错：iptables：No chain target match by that name</title>
       <link href="/2022/03/17/Docker/%E5%9D%91--Docker%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8%E6%97%B6%E6%8A%A5%E9%94%99%EF%BC%9Aiptables%EF%BC%9ANo%20chain%20target%20match%20by%20that%20name/"/>
       <url>/2022/03/17/Docker/%E5%9D%91--Docker%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8%E6%97%B6%E6%8A%A5%E9%94%99%EF%BC%9Aiptables%EF%BC%9ANo%20chain%20target%20match%20by%20that%20name/</url>
       
@@ -2132,7 +2132,7 @@
     
     
     <entry>
-      <title>坑--解决pymysql.err.InterfaceError：（0, “”）报错的办法.md</title>
+      <title>坑--解决pymysql.err.InterfaceError：（0, “”）报错的办法</title>
       <link href="/2022/03/16/MySQL/%E5%9D%91--%E8%A7%A3%E5%86%B3pymysql.err.InterfaceError%EF%BC%9A%EF%BC%880,%20%E2%80%9C%E2%80%9D%EF%BC%89%E6%8A%A5%E9%94%99%E7%9A%84%E5%8A%9E%E6%B3%95/"/>
       <url>/2022/03/16/MySQL/%E5%9D%91--%E8%A7%A3%E5%86%B3pymysql.err.InterfaceError%EF%BC%9A%EF%BC%880,%20%E2%80%9C%E2%80%9D%EF%BC%89%E6%8A%A5%E9%94%99%E7%9A%84%E5%8A%9E%E6%B3%95/</url>
       
@@ -2151,7 +2151,7 @@
     
     
     <entry>
-      <title>坑--Docker容器内部POSIX系统中文乱码.md</title>
+      <title>坑--Docker容器内部POSIX系统中文乱码</title>
       <link href="/2022/03/14/Docker/%E5%9D%91--Docker%E5%AE%B9%E5%99%A8%E5%86%85%E9%83%A8POSIX%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/"/>
       <url>/2022/03/14/Docker/%E5%9D%91--Docker%E5%AE%B9%E5%99%A8%E5%86%85%E9%83%A8POSIX%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</url>
       
@@ -2170,7 +2170,7 @@
     
     
     <entry>
-      <title>Matplotlib--绘图中文乱码问题.md</title>
+      <title>Matplotlib--绘图中文乱码问题</title>
       <link href="/2022/03/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
       <url>/2022/03/14/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--%E7%BB%98%E5%9B%BE%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
       
@@ -2189,7 +2189,7 @@
     
     
     <entry>
-      <title>python读取txt文件、with.md</title>
+      <title>python读取txt文件、with</title>
       <link href="/2022/03/11/Python/%E6%A8%A1%E5%9D%97/read%E3%80%81readline%E3%80%81readlines%E3%80%81with/python%E8%AF%BB%E5%8F%96txt%E6%96%87%E4%BB%B6%E3%80%81with/"/>
       <url>/2022/03/11/Python/%E6%A8%A1%E5%9D%97/read%E3%80%81readline%E3%80%81readlines%E3%80%81with/python%E8%AF%BB%E5%8F%96txt%E6%96%87%E4%BB%B6%E3%80%81with/</url>
       
@@ -2208,7 +2208,7 @@
     
     
     <entry>
-      <title>mysql+redis多条件查询接口.md</title>
+      <title>mysql+redis多条件查询接口</title>
       <link href="/2022/03/10/MySQL/mysql+redis%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/"/>
       <url>/2022/03/10/MySQL/mysql+redis%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2%E6%8E%A5%E5%8F%A3/</url>
       
@@ -2227,7 +2227,7 @@
     
     
     <entry>
-      <title>Numpy--meshgrid生成网格点坐标矩阵.md</title>
+      <title>Numpy--meshgrid生成网格点坐标矩阵</title>
       <link href="/2022/03/03/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--meshgrid%E7%94%9F%E6%88%90%E7%BD%91%E6%A0%BC%E7%82%B9%E5%9D%90%E6%A0%87%E7%9F%A9%E9%98%B5/"/>
       <url>/2022/03/03/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--meshgrid%E7%94%9F%E6%88%90%E7%BD%91%E6%A0%BC%E7%82%B9%E5%9D%90%E6%A0%87%E7%9F%A9%E9%98%B5/</url>
       
@@ -2246,7 +2246,7 @@
     
     
     <entry>
-      <title>Python导出当前环境依赖包信息.md</title>
+      <title>Python导出当前环境依赖包信息</title>
       <link href="/2022/03/01/Python/Python%E5%AF%BC%E5%87%BA%E5%BD%93%E5%89%8D%E7%8E%AF%E5%A2%83%E4%BE%9D%E8%B5%96%E5%8C%85%E4%BF%A1%E6%81%AF/"/>
       <url>/2022/03/01/Python/Python%E5%AF%BC%E5%87%BA%E5%BD%93%E5%89%8D%E7%8E%AF%E5%A2%83%E4%BE%9D%E8%B5%96%E5%8C%85%E4%BF%A1%E6%81%AF/</url>
       
@@ -2265,7 +2265,7 @@
     
     
     <entry>
-      <title>pipreqs查询并安装项目所依赖的所有包.md</title>
+      <title>pipreqs查询并安装项目所依赖的所有包</title>
       <link href="/2022/03/01/Python/pipreqs%E6%9F%A5%E8%AF%A2%E5%B9%B6%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E6%89%80%E4%BE%9D%E8%B5%96%E7%9A%84%E6%89%80%E6%9C%89%E5%8C%85/"/>
       <url>/2022/03/01/Python/pipreqs%E6%9F%A5%E8%AF%A2%E5%B9%B6%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E6%89%80%E4%BE%9D%E8%B5%96%E7%9A%84%E6%89%80%E6%9C%89%E5%8C%85/</url>
       
@@ -2284,7 +2284,7 @@
     
     
     <entry>
-      <title>python--批量解压bz2、zip.md</title>
+      <title>python--批量解压bz2、zip</title>
       <link href="/2022/03/01/Python/%E6%A8%A1%E5%9D%97/bz2/python--%E6%89%B9%E9%87%8F%E8%A7%A3%E5%8E%8Bbz2%E3%80%81zip/"/>
       <url>/2022/03/01/Python/%E6%A8%A1%E5%9D%97/bz2/python--%E6%89%B9%E9%87%8F%E8%A7%A3%E5%8E%8Bbz2%E3%80%81zip/</url>
       
@@ -2303,7 +2303,7 @@
     
     
     <entry>
-      <title>Docker相关知识点.md</title>
+      <title>Docker相关知识点</title>
       <link href="/2022/02/28/Docker/Docker%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
       <url>/2022/02/28/Docker/Docker%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
       
@@ -2322,7 +2322,7 @@
     
     
     <entry>
-      <title>sys.argv接收json格式参数问题.md</title>
+      <title>sys.argv接收json格式参数问题</title>
       <link href="/2022/02/28/Python/%E6%A8%A1%E5%9D%97/sys/sys.argv%E6%8E%A5%E6%94%B6json%E6%A0%BC%E5%BC%8F%E5%8F%82%E6%95%B0%E9%97%AE%E9%A2%98/"/>
       <url>/2022/02/28/Python/%E6%A8%A1%E5%9D%97/sys/sys.argv%E6%8E%A5%E6%94%B6json%E6%A0%BC%E5%BC%8F%E5%8F%82%E6%95%B0%E9%97%AE%E9%A2%98/</url>
       
@@ -2341,7 +2341,7 @@
     
     
     <entry>
-      <title>format--格式化函数.md</title>
+      <title>format--格式化函数</title>
       <link href="/2022/02/22/Python/%E6%A8%A1%E5%9D%97/format/format--%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%87%BD%E6%95%B0/"/>
       <url>/2022/02/22/Python/%E6%A8%A1%E5%9D%97/format/format--%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%87%BD%E6%95%B0/</url>
       
@@ -2360,7 +2360,7 @@
     
     
     <entry>
-      <title>OS模块--获取路径常用方法.md</title>
+      <title>OS模块--获取路径常用方法</title>
       <link href="/2022/02/22/Python/%E6%A8%A1%E5%9D%97/os/OS%E6%A8%A1%E5%9D%97--%E8%8E%B7%E5%8F%96%E8%B7%AF%E5%BE%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
       <url>/2022/02/22/Python/%E6%A8%A1%E5%9D%97/os/OS%E6%A8%A1%E5%9D%97--%E8%8E%B7%E5%8F%96%E8%B7%AF%E5%BE%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
       
@@ -2379,7 +2379,7 @@
     
     
     <entry>
-      <title>netCDF4--解析nc文件，分析数据结构.md</title>
+      <title>netCDF4--解析nc文件，分析数据结构</title>
       <link href="/2022/02/22/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/netCDF4/netCDF4--%E8%A7%A3%E6%9E%90nc%E6%96%87%E4%BB%B6%EF%BC%8C%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
       <url>/2022/02/22/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/netCDF4/netCDF4--%E8%A7%A3%E6%9E%90nc%E6%96%87%E4%BB%B6%EF%BC%8C%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
       
@@ -2398,7 +2398,7 @@
     
     
     <entry>
-      <title>Numpy--where条件筛选.md</title>
+      <title>Numpy--where条件筛选</title>
       <link href="/2022/02/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--where%E6%9D%A1%E4%BB%B6%E7%AD%9B%E9%80%89/"/>
       <url>/2022/02/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--where%E6%9D%A1%E4%BB%B6%E7%AD%9B%E9%80%89/</url>
       
@@ -2417,7 +2417,7 @@
     
     
     <entry>
-      <title>Numpy--二维数组转为一维数组.md</title>
+      <title>Numpy--二维数组转为一维数组</title>
       <link href="/2022/02/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%BA%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/"/>
       <url>/2022/02/21/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%BA%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
       
@@ -2436,7 +2436,7 @@
     
     
     <entry>
-      <title>PyMySQL连接数据库（增删改查）.md</title>
+      <title>PyMySQL连接数据库（增删改查）</title>
       <link href="/2022/02/15/Python/%E6%A8%A1%E5%9D%97/PyMySQL/PyMySQL%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%EF%BC%89/"/>
       <url>/2022/02/15/Python/%E6%A8%A1%E5%9D%97/PyMySQL/PyMySQL%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%EF%BC%89/</url>
       
@@ -2455,7 +2455,7 @@
     
     
     <entry>
-      <title>Numpy--最大最小值.md</title>
+      <title>Numpy--最大最小值</title>
       <link href="/2022/02/12/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC/"/>
       <url>/2022/02/12/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC/</url>
       
@@ -2474,7 +2474,7 @@
     
     
     <entry>
-      <title>Numpy--ndim、shape、dtype、astype、size用法(以及与 type 的区别).md</title>
+      <title>Numpy--ndim、shape、dtype、astype、size用法(以及与 type 的区别)</title>
       <link href="/2022/02/11/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--ndim%E3%80%81shape%E3%80%81dtype%E3%80%81astype%E3%80%81size%E7%94%A8%E6%B3%95(%E4%BB%A5%E5%8F%8A%E4%B8%8E%20type%20%E7%9A%84%E5%8C%BA%E5%88%AB)/"/>
       <url>/2022/02/11/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/numpy/Numpy--ndim%E3%80%81shape%E3%80%81dtype%E3%80%81astype%E3%80%81size%E7%94%A8%E6%B3%95(%E4%BB%A5%E5%8F%8A%E4%B8%8E%20type%20%E7%9A%84%E5%8C%BA%E5%88%AB)/</url>
       
@@ -2493,7 +2493,7 @@
     
     
     <entry>
-      <title>Matplotlib--autofmt_xdate()函数(自动旋转X轴).md</title>
+      <title>Matplotlib--autofmt_xdate()函数(自动旋转X轴)</title>
       <link href="/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--autofmt_xdate()%E5%87%BD%E6%95%B0(%E8%87%AA%E5%8A%A8%E6%97%8B%E8%BD%ACX%E8%BD%B4)/"/>
       <url>/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--autofmt_xdate()%E5%87%BD%E6%95%B0(%E8%87%AA%E5%8A%A8%E6%97%8B%E8%BD%ACX%E8%BD%B4)/</url>
       
@@ -2512,7 +2512,7 @@
     
     
     <entry>
-      <title>Matplotlib--subplots()函数.md</title>
+      <title>Matplotlib--subplots()函数</title>
       <link href="/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--subplots()%E5%87%BD%E6%95%B0/"/>
       <url>/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--subplots()%E5%87%BD%E6%95%B0/</url>
       
@@ -2531,7 +2531,7 @@
     
     
     <entry>
-      <title>Matplotlib--dates.Dateformatter(处理日期格式的x轴).md</title>
+      <title>Matplotlib--dates.Dateformatter(处理日期格式的x轴)</title>
       <link href="/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--dates.Dateformatter(%E5%A4%84%E7%90%86%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E7%9A%84x%E8%BD%B4)/"/>
       <url>/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--dates.Dateformatter(%E5%A4%84%E7%90%86%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E7%9A%84x%E8%BD%B4)/</url>
       
@@ -2550,7 +2550,7 @@
     
     
     <entry>
-      <title>Matplotlib--xticks函数(设置X轴方法--刻度、标签).md</title>
+      <title>Matplotlib--xticks函数(设置X轴方法--刻度、标签)</title>
       <link href="/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--xticks%E5%87%BD%E6%95%B0(%E8%AE%BE%E7%BD%AEX%E8%BD%B4%E6%96%B9%E6%B3%95--%E5%88%BB%E5%BA%A6%E3%80%81%E6%A0%87%E7%AD%BE)/"/>
       <url>/2021/12/30/Python/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%20%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE/matplotlib/Matplotlib--xticks%E5%87%BD%E6%95%B0(%E8%AE%BE%E7%BD%AEX%E8%BD%B4%E6%96%B9%E6%B3%95--%E5%88%BB%E5%BA%A6%E3%80%81%E6%A0%87%E7%AD%BE)/</url>
       
@@ -2569,7 +2569,7 @@
     
     
     <entry>
-      <title>Docker本地更换存储目录.md</title>
+      <title>Docker本地更换存储目录</title>
       <link href="/2021/11/09/Docker/Docker%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%8D%A2%E5%AD%98%E5%82%A8%E7%9B%AE%E5%BD%95/"/>
       <url>/2021/11/09/Docker/Docker%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%8D%A2%E5%AD%98%E5%82%A8%E7%9B%AE%E5%BD%95/</url>
       
@@ -2588,7 +2588,7 @@
     
     
     <entry>
-      <title>CentOS挂载windows共享文件夹.md</title>
+      <title>CentOS挂载windows共享文件夹</title>
       <link href="/2021/11/08/Linux/CentOS%E6%8C%82%E8%BD%BDwindows%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
       <url>/2021/11/08/Linux/CentOS%E6%8C%82%E8%BD%BDwindows%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</url>
       
@@ -2607,7 +2607,7 @@
     
     
     <entry>
-      <title>处理多条件组合查询的逻辑处理方法.md</title>
+      <title>处理多条件组合查询的逻辑处理方法</title>
       <link href="/2021/11/02/Python/%E5%A4%84%E7%90%86%E5%A4%9A%E6%9D%A1%E4%BB%B6%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2%E7%9A%84%E9%80%BB%E8%BE%91%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/"/>
       <url>/2021/11/02/Python/%E5%A4%84%E7%90%86%E5%A4%9A%E6%9D%A1%E4%BB%B6%E7%BB%84%E5%90%88%E6%9F%A5%E8%AF%A2%E7%9A%84%E9%80%BB%E8%BE%91%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/</url>
       
@@ -2626,7 +2626,7 @@
     
     
     <entry>
-      <title>清理Docker 日志 节省磁盘空间.md</title>
+      <title>清理Docker 日志 节省磁盘空间</title>
       <link href="/2021/10/08/Docker/%E6%B8%85%E7%90%86Docker%20%E6%97%A5%E5%BF%97%20%E8%8A%82%E7%9C%81%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4/"/>
       <url>/2021/10/08/Docker/%E6%B8%85%E7%90%86Docker%20%E6%97%A5%E5%BF%97%20%E8%8A%82%E7%9C%81%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4/</url>
       
@@ -2645,7 +2645,7 @@
     
     
     <entry>
-      <title>Docker export 、import和docker save、load的区别是什么？.md</title>
+      <title>Docker export 、import和docker save、load的区别是什么？</title>
       <link href="/2021/09/29/Docker/Docker%20export%20%E3%80%81import%E5%92%8Cdocker%20save%E3%80%81load%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
       <url>/2021/09/29/Docker/Docker%20export%20%E3%80%81import%E5%92%8Cdocker%20save%E3%80%81load%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
       
@@ -2664,7 +2664,7 @@
     
     
     <entry>
-      <title>python判断mysql中某张表是否存在.md</title>
+      <title>python判断mysql中某张表是否存在</title>
       <link href="/2021/09/17/MySQL/python%E5%88%A4%E6%96%ADmysql%E4%B8%AD%E6%9F%90%E5%BC%A0%E8%A1%A8%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8/"/>
       <url>/2021/09/17/MySQL/python%E5%88%A4%E6%96%ADmysql%E4%B8%AD%E6%9F%90%E5%BC%A0%E8%A1%A8%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8/</url>
       
@@ -2683,7 +2683,7 @@
     
     
     <entry>
-      <title>如何清空表中的数据.md</title>
+      <title>如何清空表中的数据</title>
       <link href="/2021/09/17/MySQL/%E5%A6%82%E4%BD%95%E6%B8%85%E7%A9%BA%E8%A1%A8%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE/"/>
       <url>/2021/09/17/MySQL/%E5%A6%82%E4%BD%95%E6%B8%85%E7%A9%BA%E8%A1%A8%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
       
@@ -2702,7 +2702,7 @@
     
     
     <entry>
-      <title>mysql索引（一）索引的原理.md</title>
+      <title>mysql索引（一）索引的原理</title>
       <link href="/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%B8%80%EF%BC%89%E7%B4%A2%E5%BC%95%E7%9A%84%E5%8E%9F%E7%90%86/"/>
       <url>/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%B8%80%EF%BC%89%E7%B4%A2%E5%BC%95%E7%9A%84%E5%8E%9F%E7%90%86/</url>
       
@@ -2721,7 +2721,7 @@
     
     
     <entry>
-      <title>mysql索引（七）唯一索引.md</title>
+      <title>mysql索引（七）唯一索引</title>
       <link href="/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%B8%83%EF%BC%89%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95/"/>
       <url>/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%B8%83%EF%BC%89%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95/</url>
       
@@ -2740,7 +2740,7 @@
     
     
     <entry>
-      <title>mysql索引（三）聚集索引与非聚集索引（辅助索引）.md</title>
+      <title>mysql索引（三）聚集索引与非聚集索引（辅助索引）</title>
       <link href="/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%B8%89%EF%BC%89%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95%E4%B8%8E%E9%9D%9E%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95%EF%BC%88%E8%BE%85%E5%8A%A9%E7%B4%A2%E5%BC%95%EF%BC%89/"/>
       <url>/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%B8%89%EF%BC%89%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95%E4%B8%8E%E9%9D%9E%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95%EF%BC%88%E8%BE%85%E5%8A%A9%E7%B4%A2%E5%BC%95%EF%BC%89/</url>
       
@@ -2759,7 +2759,7 @@
     
     
     <entry>
-      <title>mysql索引（五）联合索引.md</title>
+      <title>mysql索引（五）联合索引</title>
       <link href="/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%BA%94%EF%BC%89%E8%81%94%E5%90%88%E7%B4%A2%E5%BC%95/"/>
       <url>/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E4%BA%94%EF%BC%89%E8%81%94%E5%90%88%E7%B4%A2%E5%BC%95/</url>
       
@@ -2778,7 +2778,7 @@
     
     
     <entry>
-      <title>mysql索引（六）主键索引.md</title>
+      <title>mysql索引（六）主键索引</title>
       <link href="/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E5%85%AD%EF%BC%89%E4%B8%BB%E9%94%AE%E7%B4%A2%E5%BC%95/"/>
       <url>/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E5%85%AD%EF%BC%89%E4%B8%BB%E9%94%AE%E7%B4%A2%E5%BC%95/</url>
       
@@ -2797,7 +2797,7 @@
     
     
     <entry>
-      <title>mysql索引（四）索引的数据结构HASH.md</title>
+      <title>mysql索引（四）索引的数据结构HASH</title>
       <link href="/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E5%9B%9B%EF%BC%89%E7%B4%A2%E5%BC%95%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84HASH/"/>
       <url>/2021/09/17/MySQL/Mysql%E7%B4%A2%E5%BC%95/mysql%E7%B4%A2%E5%BC%95%EF%BC%88%E5%9B%9B%EF%BC%89%E7%B4%A2%E5%BC%95%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84HASH/</url>
       
@@ -2816,7 +2816,7 @@
     
     
     <entry>
-      <title>Mysql定时任务：按天建表.md</title>
+      <title>Mysql定时任务：按天建表</title>
       <link href="/2021/09/17/MySQL/Mysql%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%9A%E6%8C%89%E5%A4%A9%E5%BB%BA%E8%A1%A8/"/>
       <url>/2021/09/17/MySQL/Mysql%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%9A%E6%8C%89%E5%A4%A9%E5%BB%BA%E8%A1%A8/</url>
       
@@ -2835,7 +2835,7 @@
     
     
     <entry>
-      <title>python-批量插入多条数据-pymysql-executemany方法.md</title>
+      <title>python-批量插入多条数据-pymysql-executemany方法</title>
       <link href="/2021/09/17/Python/%E6%A8%A1%E5%9D%97/PyMySQL/python-%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE-pymysql-executemany%E6%96%B9%E6%B3%95/"/>
       <url>/2021/09/17/Python/%E6%A8%A1%E5%9D%97/PyMySQL/python-%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE-pymysql-executemany%E6%96%B9%E6%B3%95/</url>
       
@@ -2854,7 +2854,7 @@
     
     
     <entry>
-      <title>mysql自增主键清零方法（从1开始）.md</title>
+      <title>mysql自增主键清零方法（从1开始）</title>
       <link href="/2021/09/15/MySQL/mysql%E8%87%AA%E5%A2%9E%E4%B8%BB%E9%94%AE%E6%B8%85%E9%9B%B6%E6%96%B9%E6%B3%95%EF%BC%88%E4%BB%8E1%E5%BC%80%E5%A7%8B%EF%BC%89/"/>
       <url>/2021/09/15/MySQL/mysql%E8%87%AA%E5%A2%9E%E4%B8%BB%E9%94%AE%E6%B8%85%E9%9B%B6%E6%96%B9%E6%B3%95%EF%BC%88%E4%BB%8E1%E5%BC%80%E5%A7%8B%EF%BC%89/</url>
       
@@ -2873,7 +2873,7 @@
     
     
     <entry>
-      <title>Docker多阶构建.md</title>
+      <title>Docker多阶构建</title>
       <link href="/2021/09/08/Docker/Docker%E5%A4%9A%E9%98%B6%E6%9E%84%E5%BB%BA/"/>
       <url>/2021/09/08/Docker/Docker%E5%A4%9A%E9%98%B6%E6%9E%84%E5%BB%BA/</url>
       
@@ -2892,7 +2892,7 @@
     
     
     <entry>
-      <title>环境变量.md</title>
+      <title>环境变量</title>
       <link href="/2021/09/07/Ubuntu/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
       <url>/2021/09/07/Ubuntu/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</url>
       
@@ -2911,7 +2911,7 @@
     
     
     <entry>
-      <title>解决apt-get install xxx报错.md</title>
+      <title>解决apt-get install xxx报错</title>
       <link href="/2021/09/07/Ubuntu/%E8%A7%A3%E5%86%B3apt-get%20install%20xxx%E6%8A%A5%E9%94%99/"/>
       <url>/2021/09/07/Ubuntu/%E8%A7%A3%E5%86%B3apt-get%20install%20xxx%E6%8A%A5%E9%94%99/</url>
       
@@ -2930,7 +2930,7 @@
     
     
     <entry>
-      <title>Dockerfile文件+构建镜像.md</title>
+      <title>Dockerfile文件+构建镜像</title>
       <link href="/2021/08/31/Docker/Dockerfile%E6%96%87%E4%BB%B6+%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F/"/>
       <url>/2021/08/31/Docker/Dockerfile%E6%96%87%E4%BB%B6+%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F/</url>
       
@@ -2949,7 +2949,7 @@
     
     
     <entry>
-      <title>split、join（）方法.md</title>
+      <title>split、join（）方法</title>
       <link href="/2021/08/25/Python/%E6%A8%A1%E5%9D%97/split%E3%80%81join/split%E3%80%81join%EF%BC%88%EF%BC%89%E6%96%B9%E6%B3%95/"/>
       <url>/2021/08/25/Python/%E6%A8%A1%E5%9D%97/split%E3%80%81join/split%E3%80%81join%EF%BC%88%EF%BC%89%E6%96%B9%E6%B3%95/</url>
       
@@ -2968,7 +2968,7 @@
     
     
     <entry>
-      <title>Docker容器镜像打成tar包.md</title>
+      <title>Docker容器镜像打成tar包</title>
       <link href="/2021/08/23/Docker/Docker%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E6%89%93%E6%88%90tar%E5%8C%85/"/>
       <url>/2021/08/23/Docker/Docker%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E6%89%93%E6%88%90tar%E5%8C%85/</url>
       
@@ -2987,7 +2987,7 @@
     
     
     <entry>
-      <title>Linux安装Cartopy（避坑教程）.md</title>
+      <title>Linux安装Cartopy（避坑教程）</title>
       <link href="/2021/08/17/Ubuntu/Linux%E5%AE%89%E8%A3%85Cartopy%EF%BC%88%E9%81%BF%E5%9D%91%E6%95%99%E7%A8%8B%EF%BC%89/"/>
       <url>/2021/08/17/Ubuntu/Linux%E5%AE%89%E8%A3%85Cartopy%EF%BC%88%E9%81%BF%E5%9D%91%E6%95%99%E7%A8%8B%EF%BC%89/</url>
       
@@ -3006,7 +3006,7 @@
     
     
     <entry>
-      <title>解决软件包 xxxx 的文件名列表文件缺少最后结尾的换行符.md</title>
+      <title>解决软件包 xxxx 的文件名列表文件缺少最后结尾的换行符</title>
       <link href="/2021/08/17/Ubuntu/%E8%A7%A3%E5%86%B3%E8%BD%AF%E4%BB%B6%E5%8C%85%20xxxx%20%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D%E5%88%97%E8%A1%A8%E6%96%87%E4%BB%B6%E7%BC%BA%E5%B0%91%E6%9C%80%E5%90%8E%E7%BB%93%E5%B0%BE%E7%9A%84%E6%8D%A2%E8%A1%8C%E7%AC%A6/"/>
       <url>/2021/08/17/Ubuntu/%E8%A7%A3%E5%86%B3%E8%BD%AF%E4%BB%B6%E5%8C%85%20xxxx%20%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D%E5%88%97%E8%A1%A8%E6%96%87%E4%BB%B6%E7%BC%BA%E5%B0%91%E6%9C%80%E5%90%8E%E7%BB%93%E5%B0%BE%E7%9A%84%E6%8D%A2%E8%A1%8C%E7%AC%A6/</url>
       
@@ -3025,7 +3025,7 @@
     
     
     <entry>
-      <title>Docker上传镜像至私有仓库、docker注册中心（+拉取镜像）.md</title>
+      <title>Docker上传镜像至私有仓库、docker注册中心（+拉取镜像）</title>
       <link href="/2021/08/11/Docker/Docker%E4%B8%8A%E4%BC%A0%E9%95%9C%E5%83%8F%E8%87%B3%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E3%80%81docker%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%EF%BC%88+%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%EF%BC%89/"/>
       <url>/2021/08/11/Docker/Docker%E4%B8%8A%E4%BC%A0%E9%95%9C%E5%83%8F%E8%87%B3%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E3%80%81docker%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%EF%BC%88+%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%EF%BC%89/</url>
       
@@ -3044,7 +3044,7 @@
     
     
     <entry>
-      <title>round函数.md</title>
+      <title>round函数</title>
       <link href="/2021/08/09/Python/%E6%A8%A1%E5%9D%97/round/round%E5%87%BD%E6%95%B0/"/>
       <url>/2021/08/09/Python/%E6%A8%A1%E5%9D%97/round/round%E5%87%BD%E6%95%B0/</url>
       
@@ -3063,7 +3063,7 @@
     
     
     <entry>
-      <title>ftplib模块.md</title>
+      <title>ftplib模块</title>
       <link href="/2021/07/29/Python/%E6%A8%A1%E5%9D%97/FTP/ftplib%E6%A8%A1%E5%9D%97/"/>
       <url>/2021/07/29/Python/%E6%A8%A1%E5%9D%97/FTP/ftplib%E6%A8%A1%E5%9D%97/</url>
       
@@ -3082,7 +3082,7 @@
     
     
     <entry>
-      <title>Python定时下载FTP指定文件.md</title>
+      <title>Python定时下载FTP指定文件</title>
       <link href="/2021/07/26/Python/%E6%A8%A1%E5%9D%97/FTP/Python%E5%AE%9A%E6%97%B6%E4%B8%8B%E8%BD%BDFTP%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6/"/>
       <url>/2021/07/26/Python/%E6%A8%A1%E5%9D%97/FTP/Python%E5%AE%9A%E6%97%B6%E4%B8%8B%E8%BD%BDFTP%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6/</url>
       
@@ -3101,7 +3101,7 @@
     
     
     <entry>
-      <title>Python实现ftp文件定时自动下载.md</title>
+      <title>Python实现ftp文件定时自动下载</title>
       <link href="/2021/07/26/Python/%E6%A8%A1%E5%9D%97/FTP/Python%E5%AE%9E%E7%8E%B0ftp%E6%96%87%E4%BB%B6%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E4%B8%8B%E8%BD%BD/"/>
       <url>/2021/07/26/Python/%E6%A8%A1%E5%9D%97/FTP/Python%E5%AE%9E%E7%8E%B0ftp%E6%96%87%E4%BB%B6%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E4%B8%8B%E8%BD%BD/</url>
       
