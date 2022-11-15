@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>OS模块--获取文件创建时间（Mac）</title>
+      <link href="/2022/11/15/Python/%E6%A8%A1%E5%9D%97/os/OS%E6%A8%A1%E5%9D%97--%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E5%88%9B%E5%BB%BA%E6%97%B6%E9%97%B4%EF%BC%88Mac%EF%BC%89/"/>
+      <url>/2022/11/15/Python/%E6%A8%A1%E5%9D%97/os/OS%E6%A8%A1%E5%9D%97--%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E5%88%9B%E5%BB%BA%E6%97%B6%E9%97%B4%EF%BC%88Mac%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">modification_date</span>(<span class="params">filename</span>):</span><br><span class="line">    t = os.stat(filename).st_birthtime</span><br><span class="line">    <span class="comment"># 将整数结果转换为datetime对象datetime.datetime.fromtimestamp()</span></span><br><span class="line">    <span class="keyword">return</span> datetime.datetime.fromtimestamp(t)</span><br><span class="line"></span><br><span class="line">d = modification_date(<span class="string">&quot;/Users/wanghan/Desktop/code/blog/source/_posts/Redis/python操作redis.md&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(d)</span><br></pre></td></tr></table></figure><h4 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h4><p>2022-11-08 11:38:22.762786</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>位 (与或非) </title>
       <link href="/2022/11/15/Python/%E6%A8%A1%E5%9D%97/%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88%E4%B8%8E%E6%88%96%E9%9D%9E%EF%BC%89/%E4%BD%8D%20(%E4%B8%8E%E6%88%96%E9%9D%9E)%20/"/>
       <url>/2022/11/15/Python/%E6%A8%A1%E5%9D%97/%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88%E4%B8%8E%E6%88%96%E9%9D%9E%EF%BC%89/%E4%BD%8D%20(%E4%B8%8E%E6%88%96%E9%9D%9E)%20/</url>
