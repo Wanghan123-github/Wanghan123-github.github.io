@@ -199,7 +199,7 @@ ax1.set_title(&#39;中文&#39;,fontproperties=zhfont1)
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://www.plmm.space/',
+      envId: 'https://comment.plmm.space/',
       region: 'ap-shanghai',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -211,7 +211,7 @@ ax1.set_title(&#39;中文&#39;,fontproperties=zhfont1)
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://www.plmm.space/',
+      envId: 'https://comment.plmm.space/',
       region: 'ap-shanghai',
       urls: [window.location.pathname],
       includeReply: false

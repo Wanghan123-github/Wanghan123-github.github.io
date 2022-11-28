@@ -178,7 +178,7 @@ CON，PRN，AUX，NUL，COM1，COM2，COM3，COM4，COM5，COM6，COM7，COM8，
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://www.plmm.space/',
+      envId: 'https://comment.plmm.space/',
       region: 'ap-shanghai',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -190,7 +190,7 @@ CON，PRN，AUX，NUL，COM1，COM2，COM3，COM4，COM5，COM6，COM7，COM8，
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://www.plmm.space/',
+      envId: 'https://comment.plmm.space/',
       region: 'ap-shanghai',
       urls: [window.location.pathname],
       includeReply: false
