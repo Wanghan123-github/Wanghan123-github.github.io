@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>理解闭包 | Cherain-</title><meta name="keywords" content="Python-模块-闭包"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="概念​		通俗的讲闭包就是在一个函数中嵌套了另一个函数（外面那层函数叫外部函数，反之亦然），然后内部函数引用了外部函数的变量，（并且一般外部函数的返回值都是内部函数），那么这个内部函数就被认定为是闭包。 注意：     1. 闭包可以将外部函数的变量始终保存到内存中（下面会解释到）。     1. 闭包不能修改外部函数的局部变量。  示例1234567891011def func(x:int):">
+<meta property="og:type" content="article">
+<meta property="og:title" content="理解闭包">
+<meta property="og:url" content="http://39.106.88.46/2022/11/29/Python/%E6%A8%A1%E5%9D%97/%E9%97%AD%E5%8C%85/%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85/index.html">
+<meta property="og:site_name" content="Cherain-">
+<meta property="og:description" content="概念​		通俗的讲闭包就是在一个函数中嵌套了另一个函数（外面那层函数叫外部函数，反之亦然），然后内部函数引用了外部函数的变量，（并且一般外部函数的返回值都是内部函数），那么这个内部函数就被认定为是闭包。 注意：     1. 闭包可以将外部函数的变量始终保存到内存中（下面会解释到）。     1. 闭包不能修改外部函数的局部变量。  示例1234567891011def func(x:int):">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png">
+<meta property="article:published_time" content="2022-11-29T09:49:18.000Z">
+<meta property="article:modified_time" content="2022-11-30T13:53:47.334Z">
+<meta property="article:author" content="Cherain-">
+<meta property="article:tag" content="Python-模块-闭包">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://39.106.88.46/2022/11/29/Python/%E6%A8%A1%E5%9D%97/%E9%97%AD%E5%8C%85/%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '理解闭包',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2022-11-30 21:53:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/06/12/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">187</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">64</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s1.ax1x.com/2022/11/01/x7rTHg.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">理解闭包</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-29T09:49:18.000Z" title="发表于 2022-11-29 17:49:18">2022-11-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-30T13:53:47.334Z" title="更新于 2022-11-30 21:53:47">2022-11-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python/">Python</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span id="" data-flag-title="理解闭包"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>​		通俗的讲闭包就是在一个函数中嵌套了另一个函数（外面那层函数叫外部函数，反之亦然），然后内部函数引用了外部函数的变量，（并且一般外部函数的返回值都是内部函数），那么这个内部函数就被认定为是闭包。</p>
+<p><strong>注意：</strong></p>
+<pre><code>    1. 闭包可以将外部函数的变量始终保存到内存中（下面会解释到）。
+    1. 闭包不能修改外部函数的局部变量。
+</code></pre>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">x:<span class="built_in">int</span></span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">func2</span>(<span class="params">y:<span class="built_in">int</span></span>):</span><br><span class="line">        <span class="built_in">print</span>(y) <span class="comment"># 2</span></span><br><span class="line">        <span class="built_in">print</span>(x+y) <span class="comment"># 3</span></span><br><span class="line">    <span class="keyword">return</span> func2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f = func(<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(f) <span class="comment"># &lt;function func.&lt;locals&gt;.func2 at 0x7f8028600200&gt;</span></span><br><span class="line">f(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(f.__name__) <span class="comment"># func2</span></span><br></pre></td></tr></table></figure>
+
+<p>​		通过上面的示例可以看出，f是函数func2，而不是func，因为func返回的就是func2函数。所以当向f传值的时候，就相当于向函数func2传值。</p>
+<p>​		读到这里你一定想，为什么要用这个闭包呢？直接用下面这个就可以：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">x,y</span>)</span><br><span class="line">	<span class="keyword">return</span> x+y</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(func(<span class="number">1</span>,<span class="number">2</span>)) <span class="comment"># 3</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的程序确实可以实现，但是使用闭包可以让代码更简洁易读。假设你要用1加多个数，用上面这个就每次要多传递一个参数，而用闭包调用就是：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f(<span class="number">2</span>) <span class="comment"># 3</span></span><br><span class="line">f(<span class="number">3</span>) <span class="comment"># 4</span></span><br><span class="line">f(<span class="number">4</span>) <span class="comment"># 5</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><p>**__closure__**，可以展示出闭包储存了外部函数的几个变量，cell的内存地址是什么，cell储存类型是什么，这个int储存的内存地址是什么。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(f.__closure__) <span class="comment"># (&lt;cell at 0x7fa7d026d490: int object at 0x104e32160&gt;,)</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><h4 id="闭包可以将外部函数的变量始终保存到内存中"><a href="#闭包可以将外部函数的变量始终保存到内存中" class="headerlink" title="闭包可以将外部函数的变量始终保存到内存中"></a>闭包可以将外部函数的变量始终保存到内存中</h4><p>​		闭包可以保存当前的运行环境，以一个类似棋盘游戏的例子来说明。假设棋盘大小为50*50，左上角为坐标系原点(0,0)，我需要一个函数，接收2个参数，分别为方向(direction)，步长(step)，该函数控制棋子的运动。 这里需要说明的是，每次运动的起点都是上次运动结束的终点。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">create</span>(<span class="params">pos=[<span class="number">0</span>,<span class="number">0</span>]</span>):</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">go</span>(<span class="params">direction, step</span>):</span><br><span class="line">        new_x = pos[<span class="number">0</span>]+direction[<span class="number">0</span>]*step</span><br><span class="line">        new_y = pos[<span class="number">1</span>]+direction[<span class="number">1</span>]*step</span><br><span class="line">        </span><br><span class="line">        pos[<span class="number">0</span>] = new_x</span><br><span class="line">        pos[<span class="number">1</span>] = new_y</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> pos</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> go</span><br><span class="line"></span><br><span class="line">player = create()</span><br><span class="line"><span class="built_in">print</span>(player([<span class="number">1</span>,<span class="number">0</span>],<span class="number">10</span>))</span><br><span class="line"><span class="built_in">print</span>(player([<span class="number">0</span>,<span class="number">1</span>],<span class="number">20</span>))</span><br><span class="line"><span class="built_in">print</span>(player([-<span class="number">1</span>,<span class="number">0</span>],<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">10</span>, <span class="number">0</span>]</span><br><span class="line">[<span class="number">10</span>, <span class="number">20</span>]</span><br><span class="line">[<span class="number">0</span>, <span class="number">20</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="闭包不能修改外部函数的局部变量"><a href="#闭包不能修改外部函数的局部变量" class="headerlink" title="闭包不能修改外部函数的局部变量"></a>闭包不能修改外部函数的局部变量</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>():</span><br><span class="line">    x = <span class="number">1</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">func2</span>():</span><br><span class="line">        x = <span class="number">2</span></span><br><span class="line">        <span class="built_in">print</span>(x) <span class="comment"># 2</span></span><br><span class="line">    <span class="built_in">print</span>(x) <span class="comment"># 1</span></span><br><span class="line">    func2()</span><br><span class="line">    <span class="built_in">print</span>(x) <span class="comment"># 1</span></span><br><span class="line"></span><br><span class="line">func()</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>如果函数func2可以修改x 的值，那x的值应该为2，但实际结果并不会改变x的值。这个就是闭包不能修改外部函数的局部变量</p>
+<h4 id="python循环中不包含域的概念"><a href="#python循环中不包含域的概念" class="headerlink" title="python循环中不包含域的概念"></a>python循环中不包含域的概念</h4><p>看到这你可能在想这和闭包有什么关系？不着急慢慢往下看，会有惊喜等你的。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span> = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">x</span>):</span><br><span class="line">        <span class="built_in">print</span>(i)</span><br><span class="line">        <span class="keyword">return</span> x + i</span><br><span class="line">    <span class="built_in">list</span>.append(func)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="built_in">list</span>:</span><br><span class="line">    <span class="built_in">print</span>(f(<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+
+<p>按照大家正常的理解，第二个循环过程应该为2+0、2+1、2+2，输出的是2, 3, 4对吧？但实际过程却是2+2、2+2、2+2，输出的结果是:4, 4, 4. 原因是什么呢？</p>
+<p><strong>分析：</strong></p>
+<p>​		我们先通过debug打断点来看下这段代码，你会发现，第一个for循环的时候，i变量一直在变化直到2停下，函数func也被依次添加到变量list。因为我们并没有去执行这个函数，所以这个过程中并没有打印i的值，也就意味着此时func内部是没有记录变量i的，而是只走了添加func到list；</p>
+<p>​		在执行第二个for循环的时候，此时list里面的元素就是函数func，所以当我们向f传递参数2的时候，就是在向函数func传递参数2，这也就相当于去执行函数func，这时他会跳回func函数，去打印变量i，而这个时候的i已经是2了。所以return返回的结果应该为2+2、2+2、2+2。导致最终输出的结果为4，4，4</p>
+<p><strong>结论：</strong></p>
+<p>​		在python中是没有域的概念的。在向列表list中添加func的时候，并没有保存i的值，而是当执行f(2)的时候才去取变量i，这时候循环已经结束，i的值已经是2了</p>
+<p>如何将这段代码改为我们理解那种循环过程而又和闭包有关系呢？</p>
+<p><strong>修改：</strong></p>
+<p>在func外面嵌套一层add_func函数，那么func就形成了一个闭包。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span> = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add_func</span>(<span class="params">i</span>):</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">x</span>):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;i：&quot;</span>, i)</span><br><span class="line">            <span class="keyword">return</span> x + i</span><br><span class="line">        <span class="keyword">return</span> func</span><br><span class="line">    <span class="built_in">list</span>.append(add_func(i))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="built_in">list</span>:</span><br><span class="line">    <span class="built_in">print</span>(f(<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">i： <span class="number">0</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line">i： <span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line">i： <span class="number">2</span></span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python-%E6%A8%A1%E5%9D%97-%E9%97%AD%E5%8C%85/">Python-模块-闭包</a></div><div class="post_share"><div class="social-share" data-image="https://s1.ax1x.com/2022/11/01/x7rTHg.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s1.ax1x.com/2022/11/28/za0KAA.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/11/28/za0KAA.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-text">示例</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7"><span class="toc-text">属性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text">注意</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%AD%E5%8C%85%E5%8F%AF%E4%BB%A5%E5%B0%86%E5%A4%96%E9%83%A8%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%98%E9%87%8F%E5%A7%8B%E7%BB%88%E4%BF%9D%E5%AD%98%E5%88%B0%E5%86%85%E5%AD%98%E4%B8%AD"><span class="toc-text">闭包可以将外部函数的变量始终保存到内存中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%AD%E5%8C%85%E4%B8%8D%E8%83%BD%E4%BF%AE%E6%94%B9%E5%A4%96%E9%83%A8%E5%87%BD%E6%95%B0%E7%9A%84%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-text">闭包不能修改外部函数的局部变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python%E5%BE%AA%E7%8E%AF%E4%B8%AD%E4%B8%8D%E5%8C%85%E5%90%AB%E5%9F%9F%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">python循环中不包含域的概念</span></a></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s1.ax1x.com/2022/11/01/x7rTHg.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Cherain-</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://comment.plmm.space/',
+      region: 'ap-shanghai',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://comment.plmm.space/',
+      region: 'ap-shanghai',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.95},"log":false});</script></body></html>
