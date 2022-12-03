@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hexo升级6.2.0及以上版本报错YAMLException</title>
+      <link href="/post/d9f6f68b.html"/>
+      <url>/post/d9f6f68b.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h1><p>关于我Hexo升级6.2.0及以上版本的一个报错，后来回顾了一下这个报错，没有具体的报错信息，只有这么一个大概。</p><p>执行任何关于hexo的命令都会报以下的警告错误：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">WARN</span> <span class="title class_">YAMLException</span>: please see <span class="attr">https</span>:<span class="comment">//github.com/hexojs/hexo/issues/4917</span></span><br><span class="line"><span class="title class_">YAMLException</span>: <span class="title class_">Specified</span> list <span class="keyword">of</span> <span class="variable constant_">YAML</span> types (or a single <span class="title class_">Type</span> object) contains a non-<span class="title class_">Type</span> object.</span><br><span class="line">    at /home/noraj/<span class="title class_">Dev</span>/hackdoc/node_modules/hexo/node_modules/js-yaml/lib/schema.<span class="property">js</span>:<span class="number">104</span>:<span class="number">13</span></span><br><span class="line">    at <span class="title class_">Array</span>.<span class="property">forEach</span> (&lt;anonymous&gt;)</span><br><span class="line">    at <span class="title class_">Schema</span>.<span class="property">extend</span> (<span class="regexp">/home/</span>noraj/<span class="title class_">Dev</span>/hackdoc/node_modules/hexo/node_modules/js-yaml/lib/schema.<span class="property">js</span>:<span class="number">102</span>:<span class="number">12</span>)</span><br><span class="line">    at <span class="title class_">Object</span>.&lt;anonymous&gt; (<span class="regexp">/home/</span>noraj/<span class="title class_">Dev</span>/hackdoc/node_modules/hexo/lib/plugins/renderer/yaml.<span class="property">js</span>:<span class="number">5</span>:<span class="number">36</span>)</span><br><span class="line">    at <span class="title class_">Module</span>.<span class="property">_compile</span> (<span class="attr">node</span>:internal/modules/cjs/<span class="attr">loader</span>:<span class="number">1097</span>:<span class="number">14</span>)</span><br><span class="line">    at <span class="title class_">Object</span>.<span class="property">Module</span>.<span class="property">_extensions</span>..<span class="property">js</span> (<span class="attr">node</span>:internal/modules/cjs/<span class="attr">loader</span>:<span class="number">1151</span>:<span class="number">10</span>)</span><br><span class="line">    at <span class="title class_">Module</span>.<span class="property">load</span> (<span class="attr">node</span>:internal/modules/cjs/<span class="attr">loader</span>:<span class="number">975</span>:<span class="number">32</span>)</span><br><span class="line">    at <span class="title class_">Function</span>.<span class="property">Module</span>.<span class="property">_load</span> (<span class="attr">node</span>:internal/modules/cjs/<span class="attr">loader</span>:<span class="number">822</span>:<span class="number">12</span>)</span><br><span class="line">    at <span class="title class_">Module</span>.<span class="property">require</span> (<span class="attr">node</span>:internal/modules/cjs/<span class="attr">loader</span>:<span class="number">999</span>:<span class="number">19</span>)</span><br><span class="line">    at <span class="built_in">require</span> (<span class="attr">node</span>:internal/modules/cjs/<span class="attr">helpers</span>:<span class="number">102</span>:<span class="number">18</span>)</span><br><span class="line">    at <span class="variable language_">module</span>.<span class="property">exports</span> (<span class="regexp">/home/</span>noraj/<span class="title class_">Dev</span>/hackdoc/node_modules/hexo/lib/plugins/renderer/index.<span class="property">js</span>:<span class="number">15</span>:<span class="number">16</span>)</span><br><span class="line">...js-yaml...记得后面也都是什么js-yaml文件</span><br></pre></td></tr></table></figure><p>这里去GitHub上搜了一下，说是hexo6.2.0之后的版本应该都需要js-yaml插件才行</p><h1 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h1><p>这里你可以先查看一下自己的依赖树：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list js-yaml</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax1x.com/2022/12/03/zDzay4.png" alt="zDzay4.png"></p><p>这里你可以看到js-yaml最高的版本是4.1.0，所以你可以手动去安装这个版本，npm会优先使用它的。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install js-yaml@4.1.0</span><br></pre></td></tr></table></figure><h1 id="万能解决方法"><a href="#万能解决方法" class="headerlink" title="万能解决方法"></a>万能解决方法</h1><p>安装一个最新版本的这个插件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install js-yaml@latest</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Butterfly雪花背景</title>
       <link href="/post/76336ba9.html"/>
       <url>/post/76336ba9.html</url>
