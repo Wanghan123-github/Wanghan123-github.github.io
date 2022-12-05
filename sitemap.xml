@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.cherain-wh.cloud/post/29dc37fe.html</loc>
+    
+    <lastmod>2022-12-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.cherain-wh.cloud/post/9088ebc2.html</loc>
     
     <lastmod>2022-12-04</lastmod>
@@ -2224,6 +2233,13 @@
   
   <url>
     <loc>https://www.cherain-wh.cloud/tags/Python-%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90-%E6%B0%94%E8%B1%A1%E7%BB%98%E5%9B%BE-pandas-%E7%BB%83%E4%B9%A0-%E5%B0%86%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%B8%BA%E5%8D%81%E8%BF%9B%E5%88%B6%E5%90%8E%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%EF%BC%88%E9%99%84%E4%BB%B6%EF%BC%89/</loc>
+    <lastmod>2022-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cherain-wh.cloud/tags/Python-%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2022-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

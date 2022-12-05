@@ -14,7 +14,6 @@ Allow: /live2dw/
 
 Disallow: /js/
 Disallow: /css/
-Disallow: /libs/
 
-Sitemap: https://www.cherain-wh.cloud/sitemap.xml #sitemap规则不是必须写的，但是建议写，以便蜘蛛抓取。
+Sitemap: https://www.cherain-wh.cloud/sitemap.xml
 Sitemap: https://cherain-wh.cloud/sitemap.xml
