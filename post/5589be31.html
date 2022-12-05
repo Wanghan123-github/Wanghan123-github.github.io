@@ -4,7 +4,7 @@
 <script type="text/javascript" src="\js\snow.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>为什么会有 GIL？如何释放 GIL 实现并行？ | Cherain-</title><meta name="keywords" content="Python-模块-GIL"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="首先我们应该知道GIL是一个施加在解释器之上的互斥锁，用于防止本机多个线程同时执行字节码。那么对于线程的并行来说，全局解释器锁（GIL）是一个绕不开的话题。 换句话说 ，GIL 确保解释器在程序执行期间，同一时刻只会使用操作系统的一个线程。不管你的 CPU 是多少核，以及你开了多少个线程，但是同一时刻只会使用操作系统的一个线程、去调度一个 CPU。而且 GIL 不仅影响 Python 代码，也会影">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为什么会有 GIL？如何释放 GIL 实现并行？">
-<meta property="og:url" content="https://cherain-wh.cloud/post/5589be31.html">
+<meta property="og:url" content="https://www.cherain-wh.cloud/post/5589be31.html">
 <meta property="og:site_name" content="Cherain-">
 <meta property="og:description" content="首先我们应该知道GIL是一个施加在解释器之上的互斥锁，用于防止本机多个线程同时执行字节码。那么对于线程的并行来说，全局解释器锁（GIL）是一个绕不开的话题。 换句话说 ，GIL 确保解释器在程序执行期间，同一时刻只会使用操作系统的一个线程。不管你的 CPU 是多少核，以及你开了多少个线程，但是同一时刻只会使用操作系统的一个线程、去调度一个 CPU。而且 GIL 不仅影响 Python 代码，也会影">
 <meta property="og:locale" content="zh_CN">
@@ -14,7 +14,7 @@
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="Python-模块-GIL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://cherain-wh.cloud/post/5589be31"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.cherain-wh.cloud/post/5589be31"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},

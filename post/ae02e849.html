@@ -4,7 +4,7 @@
 <script type="text/javascript" src="\js\snow.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>mysql索引（七）唯一索引 | Cherain-</title><meta name="keywords" content="MySQL-Mysql索引"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Mysql索引大概有五种类型： 普通索引(INDEX)：最基本的索引，没有任何限制 唯一索引(UNIQUE)：与”普通索引”类似，不同的就是：索引列的值必须唯一，但允许有空值。 主键索引(PRIMARY)：它 是一种特殊的唯一索引，不允许有空值。 全文索引(FULLTEXT )：可用于 MyISAM 表，mysql5.6之后也可用于innodb表， 用于在一篇文章中，检索文本信息的, 针对较大的数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql索引（七）唯一索引">
-<meta property="og:url" content="https://cherain-wh.cloud/post/ae02e849.html">
+<meta property="og:url" content="https://www.cherain-wh.cloud/post/ae02e849.html">
 <meta property="og:site_name" content="Cherain-">
 <meta property="og:description" content="Mysql索引大概有五种类型： 普通索引(INDEX)：最基本的索引，没有任何限制 唯一索引(UNIQUE)：与”普通索引”类似，不同的就是：索引列的值必须唯一，但允许有空值。 主键索引(PRIMARY)：它 是一种特殊的唯一索引，不允许有空值。 全文索引(FULLTEXT )：可用于 MyISAM 表，mysql5.6之后也可用于innodb表， 用于在一篇文章中，检索文本信息的, 针对较大的数">
 <meta property="og:locale" content="zh_CN">
@@ -14,7 +14,7 @@
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="MySQL-Mysql索引">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7cfIg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://cherain-wh.cloud/post/ae02e849"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7cfIg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.cherain-wh.cloud/post/ae02e849"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},

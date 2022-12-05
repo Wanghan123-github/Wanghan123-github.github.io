@@ -4,7 +4,7 @@
 <script type="text/javascript" src="\js\snow.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>netCDF4--解析nc文件，分析数据结构 | Cherain-</title><meta name="keywords" content="Python-数据解析 气象绘图-netCDF4"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="nc格式的文件可谓随处可见，这种文件可以存储多维数字矩阵，同时又封装了自描述信息（例如经纬度、高度层、时间戳、单位等），因此使用起来十分方便，不用担心数据和描述信息分离而导致数据不可用。netCDF4就是网络通用数据格式，是python一个专门用来处理nc文件的库代码：12345678910111213141516171819202122232425262728293031323334353637">
 <meta property="og:type" content="article">
 <meta property="og:title" content="netCDF4--解析nc文件，分析数据结构">
-<meta property="og:url" content="https://cherain-wh.cloud/post/8dfb7b23.html">
+<meta property="og:url" content="https://www.cherain-wh.cloud/post/8dfb7b23.html">
 <meta property="og:site_name" content="Cherain-">
 <meta property="og:description" content="nc格式的文件可谓随处可见，这种文件可以存储多维数字矩阵，同时又封装了自描述信息（例如经纬度、高度层、时间戳、单位等），因此使用起来十分方便，不用担心数据和描述信息分离而导致数据不可用。netCDF4就是网络通用数据格式，是python一个专门用来处理nc文件的库代码：12345678910111213141516171819202122232425262728293031323334353637">
 <meta property="og:locale" content="zh_CN">
@@ -14,7 +14,7 @@
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="Python-数据解析 气象绘图-netCDF4">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://cherain-wh.cloud/post/8dfb7b23"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.cherain-wh.cloud/post/8dfb7b23"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},

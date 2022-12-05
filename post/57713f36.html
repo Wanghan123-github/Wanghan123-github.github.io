@@ -4,7 +4,7 @@
 <script type="text/javascript" src="\js\snow.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>mysql索引（四）索引的数据结构HASH | Cherain-</title><meta name="keywords" content="MySQL-Mysql索引"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我们常用的索引数据结构比较多的是B+TREE。 还有另一种索引数据结构是hash，但是innoDB、mysiam数据引擎不支持hash数据结构。 不同的存储引擎支持的索引类型也不一样： InnoDB 支持事务，支持行级别锁定，支持 B-tree、Full-text 等索引，不支持 Hash 索引； MyISAM 不支持事务，支持表级别锁定，支持 B-tree、Full-text 等索引，不支持 H">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql索引（四）索引的数据结构HASH">
-<meta property="og:url" content="https://cherain-wh.cloud/post/57713f36.html">
+<meta property="og:url" content="https://www.cherain-wh.cloud/post/57713f36.html">
 <meta property="og:site_name" content="Cherain-">
 <meta property="og:description" content="我们常用的索引数据结构比较多的是B+TREE。 还有另一种索引数据结构是hash，但是innoDB、mysiam数据引擎不支持hash数据结构。 不同的存储引擎支持的索引类型也不一样： InnoDB 支持事务，支持行级别锁定，支持 B-tree、Full-text 等索引，不支持 Hash 索引； MyISAM 不支持事务，支持表级别锁定，支持 B-tree、Full-text 等索引，不支持 H">
 <meta property="og:locale" content="zh_CN">
@@ -14,7 +14,7 @@
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="MySQL-Mysql索引">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7cfIg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://cherain-wh.cloud/post/57713f36"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7cfIg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.cherain-wh.cloud/post/57713f36"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},

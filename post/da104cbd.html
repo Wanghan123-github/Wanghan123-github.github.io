@@ -4,7 +4,7 @@
 <script type="text/javascript" src="\js\snow.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>使用Pycharm同步服务器的代码到本地 | Cherain-</title><meta name="keywords" content="Python"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="场景：将gitlab上的代码拉取到服务器下运行，但又想将代码拉取到本地开发，让本地更改完代码之后同步更新远程服务器上的代码（此时的服务器和本地都可以拉去代码）  思路：先git clone下来到本地，然后pycharm打开此文件夹，利用pycharm部署代码到服务器，在配置部署时先在服务器创建一个同名文件夹，然后在配置完之后，上传到此文件夹下，并配置有任何修改都会同步到服务器下  拉取指定分支的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Pycharm同步服务器的代码到本地">
-<meta property="og:url" content="https://cherain-wh.cloud/post/da104cbd.html">
+<meta property="og:url" content="https://www.cherain-wh.cloud/post/da104cbd.html">
 <meta property="og:site_name" content="Cherain-">
 <meta property="og:description" content="场景：将gitlab上的代码拉取到服务器下运行，但又想将代码拉取到本地开发，让本地更改完代码之后同步更新远程服务器上的代码（此时的服务器和本地都可以拉去代码）  思路：先git clone下来到本地，然后pycharm打开此文件夹，利用pycharm部署代码到服务器，在配置部署时先在服务器创建一个同名文件夹，然后在配置完之后，上传到此文件夹下，并配置有任何修改都会同步到服务器下  拉取指定分支的">
 <meta property="og:locale" content="zh_CN">
@@ -14,7 +14,7 @@
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://cherain-wh.cloud/post/da104cbd"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.cherain-wh.cloud/post/da104cbd"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
