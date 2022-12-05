@@ -4,7 +4,7 @@
 <script type="text/javascript" src="\js\snow.js"></script><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Pandas--loc，iloc，at，iat | Cherain-</title><meta name="keywords" content="Python-数据解析 气象绘图-pandas"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="区别范围上 loc和iloc通过指定范围不仅可以选择单个值，还可以选择多个数据。 at和iat只能选择单个值。  处理速度上 at和iat的处理速度比loc和iloc更快  索引分类上 标签型索引：loc、at  位置型索引：iloc、iat 索引不同之处： loc、at是可以通过[index,column]来获取和修改元素 iloc、iat可以通过[行号，列号]来获取和修改元素    区分：这里">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pandas--loc，iloc，at，iat">
-<meta property="og:url" content="http://39.106.88.46/post/368ff16c.html">
+<meta property="og:url" content="https://cherain-wh.cloud/post/368ff16c.html">
 <meta property="og:site_name" content="Cherain-">
 <meta property="og:description" content="区别范围上 loc和iloc通过指定范围不仅可以选择单个值，还可以选择多个数据。 at和iat只能选择单个值。  处理速度上 at和iat的处理速度比loc和iloc更快  索引分类上 标签型索引：loc、at  位置型索引：iloc、iat 索引不同之处： loc、at是可以通过[index,column]来获取和修改元素 iloc、iat可以通过[行号，列号]来获取和修改元素    区分：这里">
 <meta property="og:locale" content="zh_CN">
@@ -14,7 +14,7 @@
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="Python-数据解析 气象绘图-pandas">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://39.106.88.46/post/368ff16c"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/11/01/x7rTHg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://cherain-wh.cloud/post/368ff16c"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
