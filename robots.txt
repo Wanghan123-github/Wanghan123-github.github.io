@@ -1,19 +1,2 @@
 User-agent: *
-Allow: /
-Allow: /post/
-Allow: /archives/
-Allow: /categories/
-Allow: /about/
-Allow: /link/
-Allow: /page/
-Allow: /tags/
-Allow: /movies/
-Allow: /music/
-Allow: /img/
-Allow: /live2dw/
-
-Disallow: /js/
-Disallow: /css/
-
-Sitemap: https://www.cherain-wh.cloud/sitemap.xml
-Sitemap: https://cherain-wh.cloud/sitemap.xml
+Disallow: /
