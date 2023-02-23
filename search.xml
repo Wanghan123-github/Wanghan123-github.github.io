@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>getopt解析参数</title>
+      <link href="/post/7b7f9bde.html"/>
+      <url>/post/7b7f9bde.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h1><p>getpot模块是用来在程序运行时，解析命令行输入的参数信息。</p><blockquote><p>例如：python test.py -h test。可以看做-h是参数，test是-h参数的值。而getopt就可以轻松解析这个。</p></blockquote><h2 id="getopt函数介绍："><a href="#getopt函数介绍：" class="headerlink" title="getopt函数介绍："></a>getopt函数介绍：</h2><p>他是一个标准库模块，直接import即可。</p><p>函数：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opts,args = getopt.getopt(args, shortopts, longopts = [])</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 举例</span></span><br><span class="line">opts,args = getopt.getopt(sys.argv[<span class="number">1</span>:],<span class="string">&quot;-h-f:-v:&quot;</span>,[<span class="string">&quot;help&quot;</span>,<span class="string">&quot;filename=&quot;</span>,<span class="string">&quot;version&quot;</span>])</span><br></pre></td></tr></table></figure><p>接收参数：</p><table><thead><tr><th align="center">参数</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">args</td><td align="center">从命令行接收到的参数，通常使用sys.argv[1:]获取</td></tr><tr><td align="center">shortopts</td><td align="center">短参数：表示以<code>一个字母</code>表示的参数。如果短参数有值，要求在该短参数后接一个冒号<code>&#39;:&#39;</code></td></tr><tr><td align="center">longopts</td><td align="center">长参数：表示以<code>一个单词</code>表示的参数。如果长参数有值，要求在该长参数后接一个等号<code>&#39;=&#39;</code></td></tr></tbody></table><p>注意：短参数位置是以<font color=red>一个字母</font>表示的参数，不能写成一个单词。如果为一个单词，那么这个单词的所有字母都分别视为一个参数。</p><p>返回参数：</p><table><thead><tr><th align="center">参数</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">opts</td><td align="center">表示最终解析出来的参数对:（参数,参数值）。类型：list[元祖]</td></tr><tr><td align="center">args</td><td align="center">表示未被解析的参数值，一般不处理。类型：list</td></tr></tbody></table><p>输入参数：</p><blockquote><p>输入的参数在命令行进行，且短参数和长参数的写法不同。</p></blockquote><p>短参数：要在短参数前加<code>&#39;-&#39;</code>，与参数值中间有空格</p><p>长参数：要在长参数前加<code>&#39;--&#39;</code>。如果长参数后加了<code>&#39;=&#39;</code>，那么与参数值之间不能有空格。例如：<code>python test.py --filename=test3</code></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python test.py -h -f test1 -v test2 --<span class="built_in">help</span> --filename test3</span><br></pre></td></tr></table></figure><h1 id="举例："><a href="#举例：" class="headerlink" title="举例："></a>举例：</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> getopt</span><br><span class="line">opts,args = getopt.getopt(sys.argv[<span class="number">1</span>:],<span class="string">&quot;-h-f:-v:&quot;</span>,[<span class="string">&quot;help&quot;</span>,<span class="string">&quot;filename=&quot;</span>,<span class="string">&quot;version&quot;</span>])</span><br><span class="line"><span class="built_in">print</span>(opts,<span class="string">&quot;||&quot;</span>,args)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> option,value <span class="keyword">in</span> opts:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;option&#125;</span> is <span class="subst">&#123;value&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure><p>短参数：不跟<code>&#39;:&#39;</code>表示仅代表参数，跟了就是接收这个参数的参数值。例如：-h纯参数，不接收值。-f：参数+接收参数值</p><p>长参数：同短参数的逻辑，不过是把“: ”换成了“&#x3D;”</p><p><strong>执行：</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python test.py -h -f test1 -v test2 --<span class="built_in">help</span> --filename test3</span><br></pre></td></tr></table></figure><p><strong>输出结果：</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[(<span class="string">&#x27;-h&#x27;</span>, <span class="string">&#x27;&#x27;</span>), (<span class="string">&#x27;-f&#x27;</span>, <span class="string">&#x27;test1&#x27;</span>), (<span class="string">&#x27;-v&#x27;</span>, <span class="string">&#x27;test2&#x27;</span>), (<span class="string">&#x27;--help&#x27;</span>, <span class="string">&#x27;&#x27;</span>), (<span class="string">&#x27;--filename&#x27;</span>, <span class="string">&#x27;test3&#x27;</span>)] || []</span><br><span class="line">-h <span class="keyword">is</span> </span><br><span class="line">-f <span class="keyword">is</span> test1</span><br><span class="line">-v <span class="keyword">is</span> test2</span><br><span class="line">--<span class="built_in">help</span> <span class="keyword">is</span> </span><br><span class="line">--filename <span class="keyword">is</span> test3</span><br></pre></td></tr></table></figure><p>输出结果解析：</p><p>​短参数：-h为纯参数，没有接收到值。-f、-v都接收到了对应的参数值。</p><p>​长参数：–help为纯参数， 没有接收到值。–filename接收到了对应的参数值。</p><p>其中version没有传递，则不接收。</p><p>建议上手练习，促进理解。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python-模块-getopt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>查询某库哪张表存在某个字段</title>
+      <link href="/post/ef96745c.html"/>
+      <url>/post/ef96745c.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><p>SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, ORDINAL_POSITION, COLUMN_TYPE, DATA_TYPE, IS_NULLABLE, COLUMN_KEY FROM information_schema.columns WHERE column_name LIKE ‘%AttributeInfo%’ AND table_schema &#x3D; ‘Libra’;</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 查询“XX”库 &quot;XX&quot;张表是否存在 “XX”字段</span><br><span class="line"></span><br><span class="line">```sql</span><br><span class="line">SELECT column_name FROM information_schema.columns WHERE column_name LIKE &#x27;%搜索的字段%&#x27; AND table_schema = &#x27;你的数据库&#x27; AND table_name = &#x27;你的表&#x27;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL-SQL语句 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>conda离线安装python、pip</title>
       <link href="/post/551ead98.html"/>
       <url>/post/551ead98.html</url>
