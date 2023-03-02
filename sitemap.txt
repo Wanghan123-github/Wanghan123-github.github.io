@@ -1,4 +1,6 @@
 https://www.cherain-wh.cloud/post/470f1a05.html
+https://www.cherain-wh.cloud/post/d837ee3e.html
+https://www.cherain-wh.cloud/post/7458f8a0.html
 https://www.cherain-wh.cloud/post/cb7c93dd.html
 https://www.cherain-wh.cloud/post/ef96745c.html
 https://www.cherain-wh.cloud/post/6a1f5a48.html
@@ -272,6 +274,8 @@ https://www.cherain-wh.cloud/tags/Python-%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90-%E
 https://www.cherain-wh.cloud/tags/Python-%E6%A8%A1%E5%9D%97-gunicorn/
 https://www.cherain-wh.cloud/tags/Python-%E6%A8%A1%E5%9D%97-getopt/
 https://www.cherain-wh.cloud/tags/Python-%E6%A8%A1%E5%9D%97-XML/
+https://www.cherain-wh.cloud/tags/Python-%E6%A8%A1%E5%9D%97-any-%E5%87%BD%E6%95%B0/
+https://www.cherain-wh.cloud/tags/Python-%E6%A8%A1%E5%9D%97-arrow/
 https://www.cherain-wh.cloud/categories/Docker/
 https://www.cherain-wh.cloud/categories/Hexo/
 https://www.cherain-wh.cloud/categories/Linux/
