@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>dict中 exclude_unset和exclude_none的区别</title>
+      <link href="/post/d816426a.html"/>
+      <url>/post/d816426a.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>在 Pydantic 中，<code>exclude_unset</code> 和 <code>exclude_none</code> 都是用于在将一个 Python 对象转换为字典时排除某些属性。</p><p><strong>区别：</strong></p><ul><li><code>exclude_unset</code> 作用：排除未设置值的属性</li><li><code>exclude_none</code>   作用：排除值为 None 的属性</li></ul><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>​示例：如果一个属性没有被设置值，则该属性将被排除 （设置为None的，按None赋值）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pydantic <span class="keyword">import</span> BaseModel</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>(<span class="title class_ inherited__">BaseModel</span>):</span><br><span class="line">    <span class="built_in">id</span>: <span class="built_in">int</span></span><br><span class="line">    name: <span class="built_in">str</span> = <span class="literal">None</span></span><br><span class="line">    age: <span class="built_in">int</span> = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user = User(<span class="built_in">id</span>=<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(user.<span class="built_in">dict</span>(exclude_unset=<span class="literal">True</span>))  <span class="comment"># 输出：&#123;&#x27;id&#x27;: 1&#125;</span></span><br></pre></td></tr></table></figure><p>示例：如果一个属性的值为 None，则该属性将被排除（没有设置值的，按照默认值）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pydantic <span class="keyword">import</span> BaseModel</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>(<span class="title class_ inherited__">BaseModel</span>):</span><br><span class="line">    <span class="built_in">id</span>: <span class="built_in">int</span></span><br><span class="line">    name: <span class="built_in">str</span> = <span class="literal">None</span></span><br><span class="line">    age: <span class="built_in">int</span> = <span class="number">10</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user = User(<span class="built_in">id</span>=<span class="number">1</span>, name=<span class="literal">None</span>)</span><br><span class="line"><span class="built_in">print</span>(user.<span class="built_in">dict</span>(exclude_none=<span class="literal">True</span>))  <span class="comment"># 输出：&#123;&#x27;id&#x27;: 1, &#x27;age&#x27;: 10&#125;</span></span><br></pre></td></tr></table></figure><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>因此，<code>exclude_unset</code> 和 <code>exclude_none</code> 的区别在于它们排除属性的条件不同。</p><p><code>exclude_unset</code> 排除未设置值的属性，而 <code>exclude_none</code> 排除值为 None 的属性。在实际使用中，我们可以根据具体的需求选择使用哪一个参数。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python-模块-pydantic </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pydantic之extra参数</title>
       <link href="/post/872ecc90.html"/>
       <url>/post/872ecc90.html</url>
