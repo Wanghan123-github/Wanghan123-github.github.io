@@ -1,6 +1,11 @@
-https://www.cherain-wh.cloud/post/2f57a694.html
-https://www.cherain-wh.cloud/post/5af4e2b4.html
+https://www.cherain-wh.cloud/post/b92e954c.html
+https://www.cherain-wh.cloud/post/ae1e3ae3.html
+https://www.cherain-wh.cloud/post/33cd9bc8.html
+https://www.cherain-wh.cloud/post/a3e0b8d2.html
+https://www.cherain-wh.cloud/post/c6d5d403.html
 https://www.cherain-wh.cloud/post/9b48d52.html
+https://www.cherain-wh.cloud/post/5af4e2b4.html
+https://www.cherain-wh.cloud/post/2f57a694.html
 https://www.cherain-wh.cloud/post/2de648f3.html
 https://www.cherain-wh.cloud/post/96491a2f.html
 https://www.cherain-wh.cloud/post/f882dd5d.html
@@ -194,12 +199,7 @@ https://www.cherain-wh.cloud/post/b1109de1.html
 https://www.cherain-wh.cloud/post/e04febf8.html
 https://www.cherain-wh.cloud/post/5ce8ade9.html
 https://www.cherain-wh.cloud/post/ef7de880.html
-https://www.cherain-wh.cloud/post/b92e954c.html
-https://www.cherain-wh.cloud/post/ae1e3ae3.html
-https://www.cherain-wh.cloud/post/33cd9bc8.html
 https://www.cherain-wh.cloud/post/b5598520.html
-https://www.cherain-wh.cloud/post/c6d5d403.html
-https://www.cherain-wh.cloud/post/a3e0b8d2.html
 https://www.cherain-wh.cloud/post/62176461.html
 https://www.cherain-wh.cloud/post/3f303350.html
 https://www.cherain-wh.cloud/post/1c3ec647.html
@@ -225,7 +225,6 @@ https://www.cherain-wh.cloud/tags/conda/
 https://www.cherain-wh.cloud/tags/git/
 https://www.cherain-wh.cloud/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/
 https://www.cherain-wh.cloud/tags/App-FindShell/
-https://www.cherain-wh.cloud/tags/Docker-kubernetes%E6%90%AD%E5%BB%BA/
 https://www.cherain-wh.cloud/tags/MySQL-Mysql%E7%B4%A2%E5%BC%95/
 https://www.cherain-wh.cloud/tags/MySQL-SQL%E8%AF%AD%E5%8F%A5/
 https://www.cherain-wh.cloud/tags/Python-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/
@@ -288,6 +287,7 @@ https://www.cherain-wh.cloud/tags/Python-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0-sy
 https://www.cherain-wh.cloud/tags/Python-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0-%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/
 https://www.cherain-wh.cloud/tags/Python-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0-zip/
 https://www.cherain-wh.cloud/tags/Python-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0-any-%E5%87%BD%E6%95%B0/
+https://www.cherain-wh.cloud/tags/kubernetes/
 https://www.cherain-wh.cloud/categories/Docker/
 https://www.cherain-wh.cloud/categories/Hexo/
 https://www.cherain-wh.cloud/categories/Linux/
@@ -299,3 +299,4 @@ https://www.cherain-wh.cloud/categories/conda/
 https://www.cherain-wh.cloud/categories/git/
 https://www.cherain-wh.cloud/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/
 https://www.cherain-wh.cloud/categories/App/
+https://www.cherain-wh.cloud/categories/kubernetes/

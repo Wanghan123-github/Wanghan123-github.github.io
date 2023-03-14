@@ -2013,14 +2013,14 @@
       
       <categories>
           
-          <category> Docker </category>
+          <category> kubernetes </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Docker-kubernetes搭建 </tag>
+            <tag> kubernetes </tag>
             
         </tags>
       
@@ -2038,14 +2038,14 @@
       
       <categories>
           
-          <category> Docker </category>
+          <category> kubernetes </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Docker-kubernetes搭建 </tag>
+            <tag> kubernetes </tag>
             
         </tags>
       
@@ -2063,14 +2063,14 @@
       
       <categories>
           
-          <category> Docker </category>
+          <category> kubernetes </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Docker-kubernetes搭建 </tag>
+            <tag> kubernetes </tag>
             
         </tags>
       
@@ -2083,19 +2083,19 @@
       <link href="/post/b92e954c.html"/>
       <url>/post/b92e954c.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><p><font color=red>1. kubectl命令出现错误“The connection to the server localhost:8080 was refused”</font><br>解决方案：<a href="https://blog.csdn.net/lisongyue123/article/details/109643218">缺少文件。将主节点（master）中的“&#x2F;etc&#x2F;kubernetes&#x2F;admin.conf”文件拷贝到从节点相同目录下</a><br>参考文档：<a href="https://blog.csdn.net/lisongyue123/article/details/109643218">https://blog.csdn.net/lisongyue123/article/details/109643218</a></p><p><font color=red>2. Port 10250 is in use</font><br>解决方案：<a href="https://blog.csdn.net/weixin_42214548/article/details/109151572">端口被占用。执行以下kubeadm reset 重置配置</a><br>参考文档：<a href="https://blog.csdn.net/weixin_42214548/article/details/109151572">https://blog.csdn.net/weixin_42214548/article/details/109151572</a></p><p><font color=red>3. this Docker version is not on the list of validated versions: 20.10.17. Latest validated version: 19</font><br>解决方案：<a href="https://blog.csdn.net/amber_1/article/details/125169854">降低Docker版本为19.xx或18.xx。</a><br>参考文档：<a href="https://blog.csdn.net/amber_1/article/details/125169854">https://blog.csdn.net/amber_1/article/details/125169854</a></p><p><font color=red>4. Unable to connect to the server: x509: certificate signed by unknown authority</font><br>解决方案：<a href="https://note.youdao.com/">执行 kubeadm reset命令后，先rm -rf $HOME&#x2F;.kube</a><br>参考文档：<a href="https://blog.csdn.net/woay2008/article/details/93250137">https://blog.csdn.net/woay2008/article/details/93250137</a></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><p><font color=red>1. kubectl命令出现错误“The connection to the server localhost:8080 was refused”</font><br>解决方案：缺少文件。将主节点（master）中的“&#x2F;etc&#x2F;kubernetes&#x2F;admin.conf”文件拷贝到从节点相同目录下<br>参考文档：<a href="https://blog.csdn.net/lisongyue123/article/details/109643218">https://blog.csdn.net/lisongyue123/article/details/109643218</a></p><p><font color=red>2. Port 10250 is in use</font><br>解决方案：端口被占用。执行以下kubeadm reset 重置配置<br>参考文档：<a href="https://blog.csdn.net/weixin_42214548/article/details/109151572">https://blog.csdn.net/weixin_42214548/article/details/109151572</a></p><p><font color=red>3. this Docker version is not on the list of validated versions: 20.10.17. Latest validated version: 19</font><br>解决方案：降低Docker版本为19.xx或18.xx<br>参考文档：<a href="https://blog.csdn.net/amber_1/article/details/125169854">https://blog.csdn.net/amber_1/article/details/125169854</a></p><p><font color=red>4. Unable to connect to the server: x509: certificate signed by unknown authority</font><br>解决方案：执行 kubeadm reset命令后，先rm -rf $HOME&#x2F;.kube<br>参考文档：<a href="https://blog.csdn.net/woay2008/article/details/93250137">https://blog.csdn.net/woay2008/article/details/93250137</a></p>]]></content>
       
       
       <categories>
           
-          <category> Docker </category>
+          <category> kubernetes </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Docker-kubernetes搭建 </tag>
+            <tag> kubernetes </tag>
             
         </tags>
       
@@ -2113,14 +2113,14 @@
       
       <categories>
           
-          <category> Docker </category>
+          <category> kubernetes </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Docker-kubernetes搭建 </tag>
+            <tag> kubernetes </tag>
             
         </tags>
       
