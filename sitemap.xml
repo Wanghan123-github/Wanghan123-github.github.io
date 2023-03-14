@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.cherain-wh.cloud/post/330a6169.html</loc>
+    
+    <lastmod>2023-03-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cherain-wh.cloud/post/e1b02c3d.html</loc>
+    
+    <lastmod>2023-03-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cherain-wh.cloud/post/be10cd45.html</loc>
+    
+    <lastmod>2023-03-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cherain-wh.cloud/post/8daec9d6.html</loc>
+    
+    <lastmod>2023-03-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cherain-wh.cloud/post/2d04f816.html</loc>
+    
+    <lastmod>2023-03-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.cherain-wh.cloud/post/b92e954c.html</loc>
     
     <lastmod>2023-03-14</lastmod>
@@ -110,15 +155,6 @@
   </url>
   
   <url>
-    <loc>https://www.cherain-wh.cloud/post/330a6169.html</loc>
-    
-    <lastmod>2023-03-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.cherain-wh.cloud/post/6345e3c9.html</loc>
     
     <lastmod>2023-03-14</lastmod>
@@ -210,15 +246,6 @@
   
   <url>
     <loc>https://www.cherain-wh.cloud/post/1705e628.html</loc>
-    
-    <lastmod>2023-03-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cherain-wh.cloud/post/be10cd45.html</loc>
     
     <lastmod>2023-03-14</lastmod>
     
@@ -543,15 +570,6 @@
   
   <url>
     <loc>https://www.cherain-wh.cloud/post/32adf1ad.html</loc>
-    
-    <lastmod>2023-03-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cherain-wh.cloud/post/8daec9d6.html</loc>
     
     <lastmod>2023-03-12</lastmod>
     
@@ -1757,15 +1775,6 @@
   </url>
   
   <url>
-    <loc>https://www.cherain-wh.cloud/post/2d04f816.html</loc>
-    
-    <lastmod>2022-12-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.cherain-wh.cloud/post/f418cfc4.html</loc>
     
     <lastmod>2022-12-05</lastmod>
@@ -2458,6 +2467,13 @@
   
   <url>
     <loc>https://www.cherain-wh.cloud/tags/kubernetes/</loc>
+    <lastmod>2023-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cherain-wh.cloud/tags/Python-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0-map/</loc>
     <lastmod>2023-03-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
