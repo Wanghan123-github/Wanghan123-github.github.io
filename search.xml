@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Mysql启动报错：Cannot boot server version 80024 on data directory built by version 80026. Downgrade is not supported</title>
+      <link href="/post/32481e13.html"/>
+      <url>/post/32481e13.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><blockquote><p> 环境：centos8、mysql8.0.24</p></blockquote><p>记录一次这个坑，今天上服务器使用mysql，突然发现<code>mysql -p -uroot</code>连接不上还报错，加上<code>-h 127.0.0.1</code>才能连接。就很纳闷怎么会这样，报错是缺少一个&#x2F;tmp&#x2F;mysql.sock文件。后年看了一个日志<code>iZ2ze41qg0fuzjvz3491rjZ.err</code>，里面写的内容我直接震惊了。。。<code> Cannot boot server version 80024 on data directory built by version 80026. Downgrade is not supported mysqld: Can&#39;t open file: &#39;mysql.ibd&#39; (errno: 0 - )</code></p><p>报错信息如下：</p><p><img src="https://images.cherain-wh.cloud/image-20230319015533365.png" alt="image-20230319015533365"></p><p>我一看这不是数据目录有问题吗，而且版本还不一致。立马去看了眼数据库，然后啥都没了。。就像是刚搭建的mysql。。。无语了</p><p>然后我就开始kuchikuchi一顿查：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find / -name mysql</span><br></pre></td></tr></table></figure><p><img src="https://images.cherain-wh.cloud/image-20230319020024493.png" alt="image-20230319020024493"></p><p>终于经过我的深入探索，发现上面两个文件都是mysql的数据目录。。</p><p>通过查看mysql配置文件：<code>/etc/my.cnf</code>发现<code>/www/server/data/mysql</code>是我正在使用的数据目录。</p><img src="https://images.cherain-wh.cloud/image-20230319020436508.png" alt="image-20230319020436508" style="zoom:50%;" /><p>这家伙看了一遍啥也没有啊，再看看第一个数据目录：</p><img src="https://images.cherain-wh.cloud/image-20230319020535328.png" alt="image-20230319020535328" style="zoom:50%;" /><p>这之前建的数据库什么的都在这呢，差点以为数据不见了。虚惊一场。下面说操作（困了</p><ol><li>把数据库配置文件之前<code>/www/server/data/mysql</code>全部替换成<code>/var/lib/mysql</code></li><li><code>socker=&#39;/var/lib/mysql/mysql.sock&#39;</code>这个你保持原样也可以，但是启动的时候报错：找不到<code>/tmp/mysql.sock</code>，那就<code>find / -name mysql.sock</code>，把找到的文件路径替换到这。</li><li>启动服务<code>systemctl start mysql</code></li></ol><img src="https://images.cherain-wh.cloud/image-20230319020844623.png" alt="image-20230319020844623" style="zoom:60%;" /><ol start="4"><li>我这报错了，不知道其他的会不会成。报错：<code>Different lower_case_table_names settings for server</code></li></ol><p><img src="https://images.cherain-wh.cloud/image-20230319021735326.png" alt="image-20230319021735326"></p><ol start="5"><li>去配置文件<code>my.cnf</code>，把它注销了，重启一遍就over了。</li></ol><img src="https://images.cherain-wh.cloud/image-20230319022021365.png" alt="image-20230319022021365" style="zoom:50%;" />]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mysql8.0更好的使用uuid函数</title>
+      <link href="/post/948eead9.html"/>
+      <url>/post/948eead9.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用mysql-proxy实现mysql读写分离</title>
       <link href="/post/d7655b1a.html"/>
       <url>/post/d7655b1a.html</url>
