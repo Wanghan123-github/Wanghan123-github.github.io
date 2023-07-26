@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>HTTP、HTTPS协议</title>
+      <link href="/post/e1e1e1df.html"/>
+      <url>/post/e1e1e1df.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>HTTP和HTTPS利用TCP&#x2F;IP协议进行数据传输，TCP协议通过三次握手建立连接，提供可靠的通信</p><h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><h4 id="安全性："><a href="#安全性：" class="headerlink" title="安全性："></a>安全性：</h4><p>http是超文本传输协议，信息是明文传输，安全性差。https是SSL&#x2F;TLS加密传输协议，安全性较好，但https协议需要申请ca证书用于身份验证，因此还需要一定的费用。</p><h4 id="响应速度："><a href="#响应速度：" class="headerlink" title="响应速度："></a>响应速度：</h4><p>http响应速度快，因为http只需要tcp的三次握手连接，客户端和服务器需要交换 3 个包，而 HTTPS除了 TCP 的三个包，还要加上 ssl 握手需要的 9 个包，所以一共是 12 个包。</p><h4 id="端口："><a href="#端口：" class="headerlink" title="端口："></a>端口：</h4><p>http使用80端口，https使用443端口。</p><h4 id="握手次数："><a href="#握手次数：" class="headerlink" title="握手次数："></a>握手次数：</h4><p><strong>另外https的握手过程比http多加了一步加密的过程，也就是https需要四次握手：</strong></p><ol><li>第一次握手：客户端发起https请求申请，带有支持的协议版本，如TSL1.0，一个客户端生成的<strong>随机数</strong>，支持的加密算法，支持的压缩算法。</li><li>第二次握手：服务器收到客户端的请求后，判断版本是否一致，如果不一致会关闭对话，然后服务器生成一个<strong>随机数，</strong>CA证书，确认使用的加密算法。</li><li>第三次握手：客户端收到服务器的返回后，验证证书的合法性，以及解密证书验证等，验证通过后，发送给服务器以下信息：客户端会用CA证书解密出来的服务器公钥对一个<strong>随机数</strong>进行加密，编码改变通知标识，客户端握手结束通知（包含第一次握手时所有内容的hash值，给服务器进行校验）。</li><li>第四次握手：服务器收到后，会返回编码改变通知，服务器握手结束通知（包含第二次握手时所有内容的hash值，给客户端进行校验）。</li></ol><h1 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h1><h4 id="http"><a href="#http" class="headerlink" title="http"></a>http</h4><ol><li>客户端发起一个HTTP请求，包括请求方法（如GET、POST）、请求的URL、请求头等。</li><li>服务器接收到请求后，根据请求的URL和服务器上的资源来处理该请求，生成HTTP响应。</li><li>服务器将生成的HTTP响应发送回客户端，包括响应状态码、响应头和响应体等信息。</li><li>客户端接收到服务器的响应后，根据响应的内容进行处理，例如显示页面内容、下载文件等。</li></ol><h4 id="https"><a href="#https" class="headerlink" title="https"></a>https</h4><ol><li>客户端发起一个HTTPS请求，与服务器建立TLS&#x2F;SSL连接。</li><li>服务器将自己的数字证书发送给客户端，包含公钥、证书的颁发机构等信息。</li><li>客户端验证服务器证书的合法性，包括检查数字签名、证书是否过期、域名是否匹配等。</li><li>如果证书验证通过，客户端生成一个用服务器公钥加密的随机对称密钥，发送给服务器。</li><li>服务器使用私钥解密客户端发送的随机对称密钥。</li><li>客户端和服务器之间使用对称密钥加密和解密数据进行通信，保证数据传输的安全性。</li><li>当通信结束时，客户端和服务器可以协商关闭TLS&#x2F;SSL连接。</li></ol><h1 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h1><h4 id="http-1"><a href="#http-1" class="headerlink" title="http"></a>http</h4><p>适用于一般的数据传输场景，包括文本、图片等不敏感信息的传输。</p><h4 id="https-1"><a href="#https-1" class="headerlink" title="https"></a>https</h4><p>适用于对数据安全性要求较高的场景，例如网上支付、银行网站、电子邮件等敏感信息的传输。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>三次握手四次挥手（1.HTTP连接）</title>
+      <link href="/post/a71832ab.html"/>
+      <url>/post/a71832ab.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>三次握手和四次挥手过程是为了确保双方都能正确建立和终止连接，并保证数据的可靠传输。每一步都有特定的目的和顺序，确保数据的可靠性和连接的完整性。</p><h1 id="三次握手："><a href="#三次握手：" class="headerlink" title="三次握手："></a>三次握手：</h1><img src="https://images.cherain-wh.cloud/v2-53ebcfae6a8f1a4735373efe1085b002_r.jpg" alt="img" style="zoom:67%;" /><ol><li>第一次握手：<strong>客户端向服务器发送一个同步(SYN)标志的请求报文段，里面包含SYN&#x3D;1,seq&#x3D;x(随机数)，请求建立连接。</strong>客户端进入 SYN-SENT（同步已发送）状态。</li><li>第二次握手：<strong>服务器收到客户端的请求报文段后，向客户端发送一个带有同步-应答(SYN-ACK)标志的报文段，包含SYN&#x3D;1,ACK&#x3D;1,ack&#x3D;x+1(客户端发来的seq+1),seq&#x3D;y(随机数)。</strong>服务器进入 SYN-RECEIVED（同步收到）状态。</li><li>第三次握手：<strong>客户端收到服务器的应答报文段后，向服务器发送一个确认(ACK)标志的报文段，里面包含ACK&#x3D;1,ack&#x3D;y+1。双方都进入已建立连接的状态</strong>，可以进行数据传输。</li></ol><h2 id="为什么一定要三次握手呢？"><a href="#为什么一定要三次握手呢？" class="headerlink" title="为什么一定要三次握手呢？"></a>为什么一定要三次握手呢？</h2><p>这里就需要搞清楚客户端和服务器端通信必须要在双方的发送功能和接收功能都正常的情况下进行通信的，那么三次握手就是为了要确保双方的发送功能和接收功能都正常的握手次数。</p><h2 id="如何判断发送和接收正常呢"><a href="#如何判断发送和接收正常呢" class="headerlink" title="如何判断发送和接收正常呢"></a>如何判断发送和接收正常呢</h2><p>就是靠ACK包里的seq进行+1来进行验证的。所以三次握手是最少的安全握手次数。</p><h1 id="四次挥手："><a href="#四次挥手：" class="headerlink" title="四次挥手："></a>四次挥手：</h1><img src="https://images.cherain-wh.cloud/v2-a7290448863a352b4b591e538754f545_r.jpg" alt="img" style="zoom:67%;" /><ol><li>第一次挥手：当客户端想要关闭连接时，向服务器发送一个带有终止控制(FIN)标志的报文段。客户端进入 FIN-WAIT-1（终止等待1）状态。</li><li>第二次挥手：服务器收到客户端的关闭请求后，发送一个确认(ACK)报文段作为回应。服务器进入 CLOSE-WAIT（关闭等待）状态，客户端进入 FIN-WAIT-2（终止等待2）状态。</li><li>第三次挥手：服务器准备好关闭连接时，向客户端发送一个带有终止控制(FIN)标志的报文段。服务器进入 LAST-ACK（最后确认）状态。</li><li>第四次挥手：客户端收到服务器的关闭请求后，发送一个确认(ACK)报文段作为回应。客户端进入 TIME-WAIT（时间等待）状态。服务器收到客户端的确认后，进入 CLOSED（关闭）状态，连接终止。</li></ol><h2 id="为什么一定要四次挥手呢？"><a href="#为什么一定要四次挥手呢？" class="headerlink" title="为什么一定要四次挥手呢？"></a>为什么一定要四次挥手呢？</h2><p>因为当客户端发送FIN包给服务器端的时候，服务器可能这个时候还有数据传输中，所以并不能像三次握手一样，将FIN包和ACK包信息一起发送给客户端，只能先告诉客户端，我收到你的FIN包。服务器将最后的数据发送完毕后，这时才会发送一个FIN包给客户端，客户端收到服务器的FIN包后才会真正进入关闭。同样，服务器收到客户端的ACK包后才会关闭。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>可变类型、不可变类型</title>
+      <link href="/post/72aaa247.html"/>
+      <url>/post/72aaa247.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>了解可变类型和不可变类型的区别对于理解Python的数据传递和内存管理是很重要的。在编写代码时要特别注意不可变类型的特性，避免因不可变对象频繁创建新对象而影响性能</p><h1 id="可变类型："><a href="#可变类型：" class="headerlink" title="可变类型："></a>可变类型：</h1><ol><li>定义：可变类型指的是在创建后可以改变其内容的数据类型。</li><li>示例：list（列表）、dict（字典）、set（集合）</li><li>特点：</li></ol><p>​• 可变类型的值可以被修改、添加或删除。</p><p>​• 对可变类型的修改不会改变其内存地址，只是修改了其中的内容。</p><h1 id="不可变类型："><a href="#不可变类型：" class="headerlink" title="不可变类型："></a>不可变类型：</h1><ol><li>定义：不可变类型指的是在创建之后不能被修改的数据类型。</li><li>示例：int（整型）、float（浮点型）、str（字符串）、tuple（元组）</li><li>特点：</li></ol><p>​• 不可变类型的值无法被修改，任何对其值的修改都会返回一个新的对象。</p><p>​• 对不可变类型的操作会返回一个新的对象，原对象保持不变。</p><h1 id="主要区别："><a href="#主要区别：" class="headerlink" title="主要区别："></a>主要区别：</h1><ol><li>可变类型的值可以被修改，而不可变类型的值是不可改变的。</li><li>可变类型在进行操作时可能会改变其内存地址，而不可变类型在进行操作时会生成一个新的对象。</li></ol><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>服务器Docker搭建redis集群</title>
       <link href="/post/c339599a.html"/>
       <url>/post/c339599a.html</url>
@@ -3329,23 +3404,23 @@
     
     
     <entry>
-      <title>TCP-IP和UDP的区别以及应用场景</title>
+      <title>TCP-IP和UDP的区别以及应用场景（2.HTTP数据传输）</title>
       <link href="/post/fbea8d0e.html"/>
       <url>/post/fbea8d0e.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><p>来看看传输层位于OSI七层协议和TCP&#x2F;IP四层协议的位置：<br><img src="https://images.cherain-wh.cloud/agNYOP-20230707235504439.png" alt="四层协议"><br>那么TCP和UDP的区别和使用场景分别是怎样的？</p><p>我们用一个图来对比一下UDP和TCP：<br><img src="https://images.cherain-wh.cloud/agNNef.png" alt="UDP和TCP"></p><h1 id="一、TCP-UDP"><a href="#一、TCP-UDP" class="headerlink" title="一、TCP UDP"></a>一、TCP UDP</h1><p>TCP与UDP基本区别<br>  1.基于连接与无连接<br>  2.TCP要求系统资源较多，UDP较少；<br>  3.UDP程序结构较简单<br>  4.流模式（TCP）与数据报模式(UDP);<br>  5.TCP保证数据正确性，UDP可能丢包<br>  6.TCP保证数据顺序，UDP不保证 　　</p><h1 id="二、UDP应用场景："><a href="#二、UDP应用场景：" class="headerlink" title="二、UDP应用场景："></a>二、UDP应用场景：</h1><p>  1.面向数据报方式<br>  2.网络数据大多为短消息<br>  3.拥有大量Client<br>  4.对数据安全性无特殊要求<br>  5.网络负担非常重，但对响应速度要求高</p><h1 id="三、具体编程时的区别"><a href="#三、具体编程时的区别" class="headerlink" title="三、具体编程时的区别"></a>三、具体编程时的区别</h1><p>   1.socket()的参数不同<br>　　 2.UDP Server不需要调用listen和accept<br>　　 3.UDP收发数据用sendto&#x2F;recvfrom函数<br>　　 4.TCP：地址信息在connect&#x2F;accept时确定<br>　　 5.UDP：在sendto&#x2F;recvfrom函数中每次均 需指定地址信息<br>　　 6.UDP：shutdown函数无效</p><h1 id="四、编程区别"><a href="#四、编程区别" class="headerlink" title="四、编程区别"></a>四、编程区别</h1><p>   通常我们在说到网络编程时默认是指TCP编程，即用前面提到的socket函数创建一个socket用于TCP通讯，函数参数我们通常填为SOCK_STREAM。即socket(PF_INET, SOCK_STREAM, 0)，这表示建立一个socket用于流式网络通讯。<br>　  SOCK_STREAM这种的特点是面向连接的，即每次收发数据之前必须通过connect建立连接，也是双向的，即任何一方都可以收发数据，协议本身提供了一些保障机制保证它是可靠的、有序的，即每个包按照发送的顺序到达接收方。 </p><p>　　而SOCK_DGRAM这种是User Datagram Protocol协议的网络通讯，它是无连接的，不可靠的，因为通讯双方发送数据后不知道对方是否已经收到数据，是否正常收到数据。任何一方建立一个socket以后就可以用sendto发送数据，也可以用recvfrom接收数据。根本不关心对方是否存在，是否发送了数据。它的特点是通讯速度比较快。大家都知道TCP是要经过三次握手的，而UDP没有。 </p><p>基于上述不同，UDP和TCP编程步骤也有些不同，如下：</p><h1 id="TCP"><a href="#TCP" class="headerlink" title="TCP:"></a>TCP:</h1><p>TCP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt(); * 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、开启监听，用函数listen()；<br>　　5、接收客户端上来的连接，用函数accept()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；<br>　　8、关闭监听； </p><h2 id="TCP编程的客户端一般步骤是："><a href="#TCP编程的客户端一般步骤是：" class="headerlink" title="TCP编程的客户端一般步骤是："></a>TCP编程的客户端一般步骤是：</h2><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置要连接的对方的IP地址和端口等属性；<br>　　5、连接服务器，用函数connect()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；</p><h1 id="UDP"><a href="#UDP" class="headerlink" title="UDP:"></a>UDP:</h1><p>与之对应的UDP编程步骤要简单许多，分别如下：<br>　　UDP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、循环接收数据，用函数recvfrom();<br>　　5、关闭网络连接； </p><h2 id="UDP编程的客户端一般步骤是："><a href="#UDP编程的客户端一般步骤是：" class="headerlink" title="UDP编程的客户端一般步骤是："></a>UDP编程的客户端一般步骤是：</h2><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置对方的IP地址和端口等属性;<br>　　5、发送数据，用函数sendto();<br>　　6、关闭网络连接；</p><p>TCP和UDP是OSI模型中的运输层中的协议。TCP提供可靠的通信传输，而UDP则常被用于让广播和细节控制交给应用的通信传输。</p><h2 id="UDP补充："><a href="#UDP补充：" class="headerlink" title="UDP补充："></a>UDP补充：</h2><p>   UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。并且它是将应用程序发来的数据在收到的那一刻，立刻按照原样发送到网络上的一种机制。即使是出现网络拥堵的情况下，UDP也无法进行流量控制等避免网络拥塞的行为。此外，传输途中如果出现了丢包，UDO也不负责重发。甚至当出现包的到达顺序乱掉时也没有纠正的功能。如果需要这些细节控制，那么不得不交给由采用UDO的应用程序去处理。换句话说，UDP将部分控制转移到应用程序去处理，自己却只提供作为传输层协议的最基本功能。UDP有点类似于用户说什么听什么的机制，但是需要用户充分考虑好上层协议类型并制作相应的应用程序。</p><h2 id="TCP补充："><a href="#TCP补充：" class="headerlink" title="TCP补充："></a>TCP补充：</h2><p>  TCP充分实现了数据传输时各种控制功能，可以进行丢包的重发控制，还可以对次序乱掉的分包进行顺序控制。而这些在UDP中都没有。此外，TCP作为一种面向有连接的协议，只有在确认通信对端存在时才会发送数据，从而可以控制通信流量的浪费。TCP通过检验和、序列号、确认应答、重发控制、连接管理以及窗口控制等机制实现可靠性传输。</p><h1 id="TCP与UDP区别总结："><a href="#TCP与UDP区别总结：" class="headerlink" title="TCP与UDP区别总结："></a>TCP与UDP区别总结：</h1><p>1、TCP面向连接（如打电话要先拨号建立连接）;UDP是无连接的，即发送数据之前不需要建立连接<br>2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保   证可靠交付<br>3、TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流;UDP是面向报文的<br>  UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）<br>4、每一条TCP连接只能是点到点的;UDP支持一对一，一对多，多对一和多对多的交互通信<br>5、TCP首部开销20字节;UDP的首部开销小，只有8个字节<br>6、TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道</p><h1 id="TCP应用场景："><a href="#TCP应用场景：" class="headerlink" title="TCP应用场景："></a>TCP应用场景：</h1><p>效率要求相对低，但对准确性要求相对高的场景。因为传输中需要对数据确认、重发、排序等操作，相比之下效率没有UDP高。举几个例子：文件传输（准确高要求高、但是速度可以相对慢）、接受邮件、远程登录。</p><h1 id="UDP应用场景："><a href="#UDP应用场景：" class="headerlink" title="UDP应用场景："></a>UDP应用场景：</h1><p>效率要求相对高，对准确性要求相对低的场景。举几个例子：QQ聊天、在线视频、网络语音电话（即时通讯，速度要求高，但是出现偶尔断续不是太大问题，并且此处完全不可以使用重发机制）、广播通信（广播、多播）。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="OSI七层协议和TCP-x2F-IP四层："><a href="#OSI七层协议和TCP-x2F-IP四层：" class="headerlink" title="OSI七层协议和TCP&#x2F;IP四层："></a>OSI七层协议和TCP&#x2F;IP四层：</h1><p><img src="https://images.cherain-wh.cloud/agNYOP-20230707235504439.png" alt="四层协议"></p><h1 id="TCP和UDP的区别和使用场景"><a href="#TCP和UDP的区别和使用场景" class="headerlink" title="TCP和UDP的区别和使用场景"></a>TCP和UDP的区别和使用场景</h1><p><img src="https://images.cherain-wh.cloud/agNNef.png" alt="UDP和TCP"></p><h1 id="编程区别"><a href="#编程区别" class="headerlink" title="编程区别"></a>编程区别</h1><p>   通常我们在说到网络编程时默认是指TCP编程，即用前面提到的socket函数创建一个socket用于TCP通讯，函数参数我们通常填为SOCK_STREAM。即socket(PF_INET, SOCK_STREAM, 0)，这表示建立一个socket用于流式网络通讯。<br>　  SOCK_STREAM这种的特点是面向连接的，即每次收发数据之前必须通过connect建立连接，也是双向的，即任何一方都可以收发数据，协议本身提供了一些保障机制保证它是可靠的、有序的，即每个包按照发送的顺序到达接收方。 </p><p>　　而SOCK_DGRAM这种是User Datagram Protocol协议的网络通讯，它是无连接的，不可靠的，因为通讯双方发送数据后不知道对方是否已经收到数据，是否正常收到数据。任何一方建立一个socket以后就可以用sendto发送数据，也可以用recvfrom接收数据。根本不关心对方是否存在，是否发送了数据。它的特点是通讯速度比较快。大家都知道TCP是要经过三次握手的，而UDP没有。 </p><p>基于上述不同，UDP和TCP编程步骤也有些不同，如下：</p><h2 id="TCP服务端"><a href="#TCP服务端" class="headerlink" title="TCP服务端:"></a>TCP服务端:</h2><p>TCP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt(); * 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、开启监听，用函数listen()；<br>　　5、接收客户端上来的连接，用函数accept()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；<br>　　8、关闭监听； </p><h2 id="TCP客户端："><a href="#TCP客户端：" class="headerlink" title="TCP客户端："></a>TCP客户端：</h2><p>TCP编程的客户端一般步骤是：</p><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置要连接的对方的IP地址和端口等属性；<br>　　5、连接服务器，用函数connect()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；</p><h2 id="UDP服务端"><a href="#UDP服务端" class="headerlink" title="UDP服务端:"></a>UDP服务端:</h2><p>与之对应的UDP编程服务端步骤要简单许多，分别如下：<br>　　UDP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、循环接收数据，用函数recvfrom();<br>　　5、关闭网络连接； </p><h2 id="UDP客户端："><a href="#UDP客户端：" class="headerlink" title="UDP客户端："></a>UDP客户端：</h2><p>UDP编程的客户端一般步骤是：</p><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置对方的IP地址和端口等属性;<br>　　5、发送数据，用函数sendto();<br>　　6、关闭网络连接；</p><p>TCP和UDP是OSI模型中的运输层中的协议。TCP提供可靠的通信传输，而UDP则常被用于让广播和细节控制交给应用的通信传输。</p><h1 id="TCP补充："><a href="#TCP补充：" class="headerlink" title="TCP补充："></a>TCP补充：</h1><p>  TCP充分实现了数据传输时各种控制功能，可以进行丢包的重发控制，还可以对次序乱掉的分包进行顺序控制。而这些在UDP中都没有。此外，TCP作为一种面向有连接的协议，只有在确认通信对端存在时才会发送数据，从而可以控制通信流量的浪费。TCP通过检验和、序列号、确认应答、重发控制、连接管理以及窗口控制等机制实现可靠性传输。</p><h1 id="UDP补充："><a href="#UDP补充：" class="headerlink" title="UDP补充："></a>UDP补充：</h1><p>   UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。并且它是将应用程序发来的数据在收到的那一刻，立刻按照原样发送到网络上的一种机制。即使是出现网络拥堵的情况下，UDP也无法进行流量控制等避免网络拥塞的行为。此外，传输途中如果出现了丢包，UDO也不负责重发。甚至当出现包的到达顺序乱掉时也没有纠正的功能。如果需要这些细节控制，那么不得不交给由采用UDO的应用程序去处理。换句话说，UDP将部分控制转移到应用程序去处理，自己却只提供作为传输层协议的最基本功能。UDP有点类似于用户说什么听什么的机制，但是需要用户充分考虑好上层协议类型并制作相应的应用程序。</p><h1 id="TCP与UDP区别总结："><a href="#TCP与UDP区别总结：" class="headerlink" title="TCP与UDP区别总结："></a>TCP与UDP区别总结：</h1><p>1、TCP面向连接（如打电话要先拨号建立连接）;UDP是无连接的，即发送数据之前不需要建立连接<br>2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保   证可靠交付<br>3、TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流;UDP是面向报文的<br>  UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）<br>4、每一条TCP连接只能是点到点的;UDP支持一对一，一对多，多对一和多对多的交互通信<br>5、TCP首部开销20字节;UDP的首部开销小，只有8个字节<br>6、TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道</p><h1 id="TCP应用场景："><a href="#TCP应用场景：" class="headerlink" title="TCP应用场景："></a>TCP应用场景：</h1><p>效率要求相对低，但对准确性要求相对高的场景。因为传输中需要对数据确认、重发、排序等操作，相比之下效率没有UDP高。举几个例子：文件传输（准确高要求高、但是速度可以相对慢）、接受邮件、远程登录。</p><h1 id="UDP应用场景："><a href="#UDP应用场景：" class="headerlink" title="UDP应用场景："></a>UDP应用场景：</h1><p>效率要求相对高，对准确性要求相对低的场景。举几个例子：QQ聊天、在线视频、网络语音电话（即时通讯，速度要求高，但是出现偶尔断续不是太大问题，并且此处完全不可以使用重发机制）、广播通信（广播、多播）。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       
       
       <categories>
           
-          <category> Python </category>
+          <category> Web </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Python-算法 </tag>
+            <tag> Web </tag>
             
         </tags>
       
