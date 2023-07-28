@@ -33,7 +33,7 @@
       <link href="/post/37a0a08e.html"/>
       <url>/post/37a0a08e.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><ol><li>get参数url可见，post不可见</li><li>get通过拼接url进行传递参数，post通过body传递参数</li><li>get请求可以缓存，post不可以缓存</li><li>get请求页面后退时，不产生影响，post请求页面后退时，会重新提交请求</li><li>get传输数据大小不超过2K-4K，post根据php.ini配置文件设定</li><li>post安全性比get安全性好</li></ol><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       
       
       <categories>
@@ -54,11 +54,11 @@
     
     
     <entry>
-      <title>Cookie、Session</title>
+      <title>Cookie、Session、Token、JWT</title>
       <link href="/post/fd34bdad.html"/>
       <url>/post/fd34bdad.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="来源"><a href="#来源" class="headerlink" title="来源"></a>来源</h1><p>​先来聊一聊最开始保持登陆时，也就是cookie，它是浏览器每次发送http请求，然后由服务端给设置一个set-cookie，这个cookie里面就是我们的用户信息，然后由浏览器保存这个cookie，这样浏览器后续发送的每一个请求都会带上这个cookie，来验证当前的用户身份并保持登陆状态的，但是这样一旦被劫持了cookie的信息，就容易泄露用户的个人信息。</p><p>​为了解决cookie的这个问题，Session会话诞生了，Session是由浏览器发送过来的用户信息（此时就是会话的开始），经过服务器验证以后，由服务器创建一个sessionid和有效期等，返回给浏览器，用于存储在cookie和设置cookie的有效期。只有当浏览器页面关闭或者session失效了（此时会话结束），那么用户就需要重新登陆认证。这个时候就算sessionid泄漏了，也无法去推断出用户信息。或者sessionid被修改了，那么服务器进行对sessionid验证时也是识别不了的，因为这个sessionid是经由服务器签名过的。但是随着用户越来越多，服务器就需要存储大量的sessionid，这个时候就算是采用分布式系统， 他也要去为了防止服务器的过载，而分享sessionid给其他服务器。但是光分享是解决不了问题的，随后sessionid被放在了数据库存储，但是如果数据库崩溃了，就会影响服务器获取sessionid。</p><p>​为了解决session的问题，出现了Token，Token是一种用户身份验证和授权的令牌。他是通过服务器将用户的身份信息编码为令牌，然后将令牌发送给客户端，客户端在后续请求中携带该令牌进行身份验证。这种方式使得服务器端不再需要存储会话信息，而只需验证和解析令牌即可完成身份验证。而token中常见的令牌类型就是JWT。</p><p>​JTW（Json Web Token）就是一种常见的令牌类型，它是在用户登陆时，服务器就会生成一个JWT，服务器不需要保存这个JWT，只需要保存JWT签名的密文，接着把JWT发送给浏览器，可以让浏览器以Cookie或者localstorage的形式存储，这样每次发送请求的时候就会吧这个JWT发送给服务器，由服务器解析JWT，并校验签名、有效期等，来验证用户的身份和权限。</p><p>​JWT是由三部分构成，header.payload.signature（头部、载荷、签名），header声明是用什么算法生成签名的，payload存储有关用户身份的信息和有效期，这两部分都会通过Base64的编码，然后签名就是对这两个编码使用头部声明的算法进行计算得到的。</p><h1 id="Cookie、Session的区别"><a href="#Cookie、Session的区别" class="headerlink" title="Cookie、Session的区别"></a>Cookie、Session的区别</h1><p>安全：session比cookie更安全，session是存在服务端的，cookie是存在客户端的</p><p>存储类型：cookie只支持字符串数据，存其他的数据类型需要转字符串，session可以存储任意数据类型</p><p>有效期：cookie可以通过设置过期时间来控制存储时间，可以设置长时间保持，即使客户端关闭，也会保存。而session一般默认为客户端关闭或超时，即当客户端关闭时，session数据会被销毁</p><p>存储大小：cookie保存的数据不超过4KB，session存储高于cookie，但是访问量越多，占用服务器资源越多</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       
       
       <categories>
@@ -108,7 +108,7 @@
       <link href="/post/e1e1e1df.html"/>
       <url>/post/e1e1e1df.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>HTTP和HTTPS利用TCP&#x2F;IP协议进行数据传输，TCP协议通过三次握手建立连接，提供可靠的通信</p><h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><h3 id="安全性："><a href="#安全性：" class="headerlink" title="安全性："></a>安全性：</h3><p>http是超文本传输协议，信息是明文传输，安全性差。https是SSL&#x2F;TLS加密传输协议，安全性较好，但https协议需要申请ca证书用于身份验证，因此还需要一定的费用。</p><h3 id="响应速度："><a href="#响应速度：" class="headerlink" title="响应速度："></a>响应速度：</h3><p>http响应速度快，因为http只需要tcp的三次握手连接，客户端和服务器需要交换 3 个包，而 HTTPS除了 TCP 的三个包，还要加上 ssl 握手需要的 9 个包，所以一共是 12 个包。</p><h3 id="端口："><a href="#端口：" class="headerlink" title="端口："></a>端口：</h3><p>http使用80端口，https使用443端口。</p><h3 id="握手次数："><a href="#握手次数：" class="headerlink" title="握手次数："></a>握手次数：</h3><p><strong>另外https的握手过程比http多加了一步加密的过程，也就是https需要四次握手：</strong></p><ol><li>第一次握手：客户端发起https请求申请，带有支持的协议版本，如TSL1.0，一个客户端生成的<strong>随机数</strong>，支持的加密算法，支持的压缩算法。</li><li>第二次握手：服务器收到客户端的请求后，判断版本是否一致，如果不一致会关闭对话，然后服务器生成一个<strong>随机数，</strong>CA证书，确认使用的加密算法。</li><li>第三次握手：客户端收到服务器的返回后，验证证书的合法性，以及解密证书验证等，验证通过后，发送给服务器以下信息：客户端会用CA证书解密出来的服务器公钥对一个<strong>随机数</strong>进行加密，编码改变通知标识，客户端握手结束通知（包含第一次握手时所有内容的hash值，给服务器进行校验）。</li><li>第四次握手：服务器收到后，会返回编码改变通知，服务器握手结束通知（包含第二次握手时所有内容的hash值，给客户端进行校验）。</li></ol><h1 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h1><h3 id="http"><a href="#http" class="headerlink" title="http"></a>http</h3><ol><li>客户端发起一个HTTP请求，包括请求方法（如GET、POST）、请求的URL、请求头等。</li><li>服务器接收到请求后，根据请求的URL和服务器上的资源来处理该请求，生成HTTP响应。</li><li>服务器将生成的HTTP响应发送回客户端，包括响应状态码、响应头和响应体等信息。</li><li>客户端接收到服务器的响应后，根据响应的内容进行处理，例如显示页面内容、下载文件等。</li></ol><h3 id="https"><a href="#https" class="headerlink" title="https"></a>https</h3><ol><li>客户端发起一个HTTPS请求，与服务器建立TLS&#x2F;SSL连接。</li><li>服务器将自己的数字证书发送给客户端，包含公钥、证书的颁发机构等信息。</li><li>客户端验证服务器证书的合法性，包括检查数字签名、证书是否过期、域名是否匹配等。</li><li>如果证书验证通过，客户端生成一个用服务器公钥加密的随机对称密钥，发送给服务器。</li><li>服务器使用私钥解密客户端发送的随机对称密钥。</li><li>客户端和服务器之间使用对称密钥加密和解密数据进行通信，保证数据传输的安全性。</li><li>当通信结束时，客户端和服务器可以协商关闭TLS&#x2F;SSL连接。</li></ol><h1 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h1><h3 id="http-1"><a href="#http-1" class="headerlink" title="http"></a>http</h3><p>适用于一般的数据传输场景，包括文本、图片等不敏感信息的传输。</p><h3 id="https-1"><a href="#https-1" class="headerlink" title="https"></a>https</h3><p>适用于对数据安全性要求较高的场景，例如网上支付、银行网站、电子邮件等敏感信息的传输。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>HTTP和HTTPS利用TCP&#x2F;IP协议进行数据传输，TCP协议通过三次握手建立连接，提供可靠的通信</p><h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><h3 id="安全性："><a href="#安全性：" class="headerlink" title="安全性："></a>安全性：</h3><p>http是超文本传输协议，信息是明文传输，安全性差。</p><p>https是SSL&#x2F;TLS加密传输协议，安全性较好，但https协议需要申请ca证书用于身份验证，因此还需要一定的费用。</p><h3 id="响应速度："><a href="#响应速度：" class="headerlink" title="响应速度："></a>响应速度：</h3><p>http响应速度快，因为http只需要tcp的三次握手连接，客户端和服务器需要交换 3 个包。</p><p>而 https除了 TCP 的三个包，还要加上 ssl 握手需要的 9 个包，所以一共是 12 个包。</p><h3 id="端口："><a href="#端口：" class="headerlink" title="端口："></a>端口：</h3><p>http使用80端口。</p><p>https使用443端口。</p><h3 id="握手次数："><a href="#握手次数：" class="headerlink" title="握手次数："></a>握手次数：</h3><p>http<a href="https://www.cherain-wh.cloud/post/a71832ab.html">三次握手</a>，https四次握手（多了一步加密）：</p><ol><li>第一次握手：客户端发起https请求申请，带有支持的协议版本，如TSL1.0，一个客户端生成的<strong>随机数</strong>，支持的加密算法，支持的压缩算法。</li><li>第二次握手：服务器收到客户端的请求后，判断版本是否一致，如果不一致会关闭对话，然后服务器生成一个<strong>随机数，</strong>CA证书，确认使用的加密算法。</li><li>第三次握手：客户端收到服务器的返回后，验证证书的合法性，以及解密证书验证等，验证通过后，发送给服务器以下信息：客户端会用CA证书解密出来的服务器公钥对一个<strong>随机数</strong>进行加密，编码改变通知标识，客户端握手结束通知（包含第一次握手时所有内容的hash值，给服务器进行校验）。</li><li>第四次握手：服务器收到后，会返回编码改变通知，服务器握手结束通知（包含第二次握手时所有内容的hash值，给客户端进行校验）。</li></ol><h1 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h1><h3 id="http"><a href="#http" class="headerlink" title="http"></a>http</h3><ol><li>客户端发起一个HTTP请求，包括请求方法（如GET、POST）、请求的URL、请求头等。</li><li>服务器接收到请求后，根据请求的URL和服务器上的资源来处理该请求，生成HTTP响应。</li><li>服务器将生成的HTTP响应发送回客户端，包括响应状态码、响应头和响应体等信息。</li><li>客户端接收到服务器的响应后，根据响应的内容进行处理，例如显示页面内容、下载文件等。</li></ol><h3 id="https"><a href="#https" class="headerlink" title="https"></a>https</h3><ol><li>客户端发起一个HTTPS请求，与服务器建立TLS&#x2F;SSL连接。</li><li>服务器将自己的数字证书发送给客户端，包含公钥、证书的颁发机构等信息。</li><li>客户端验证服务器证书的合法性，包括检查数字签名、证书是否过期、域名是否匹配等。</li><li>如果证书验证通过，客户端生成一个用服务器公钥加密的随机对称密钥，发送给服务器。</li><li>服务器使用私钥解密客户端发送的随机对称密钥。</li><li>客户端和服务器之间使用对称密钥加密和解密数据进行通信，保证数据传输的安全性。</li><li>当通信结束时，客户端和服务器可以协商关闭TLS&#x2F;SSL连接。</li></ol><h1 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h1><h3 id="http-1"><a href="#http-1" class="headerlink" title="http"></a>http</h3><p>适用于一般的数据传输场景，包括文本、图片等不敏感信息的传输。</p><h3 id="https-1"><a href="#https-1" class="headerlink" title="https"></a>https</h3><p>适用于对数据安全性要求较高的场景，例如网上支付、银行网站、电子邮件等敏感信息的传输。</p><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p><strong>http是一个无状态协议</strong>，也就是说它本身不会保存客户端和服务器之间的通信状态。每次请求都是相互独立的，服务器不会保存客户端的任何信息，也不会记住之前的请求。因此服务端无法确认当前访问者的身份信息，无法分辨上一次的请求发送者和这一次的发送者是不是同一个人。所以服务器与浏览器为了进行会话跟踪（知道是谁在访问我），就必须主动的去维护一个状态，这个状态用于告知服务端前后两个请求是否来自同一浏览器。而这个状态需要通过 cookie 或者 session 去实现。<a href="https://www.cherain-wh.cloud/post/fd34bdad.html">Cookie、Session</a></p><p>HTTPS（HTTP Secure）则是在HTTP的基础上增加了安全性，通过在HTTP和TCP之间使用安全套接层（SSL&#x2F;TLS协议）来加密通信内容。HTTPS使用了公钥和私钥来建立安全的连接，并对数据进行加密和解密，以确保通信的机密性和完整性。</p><p>虽然HTTPS提供了通信的加密保护，但它并没有改变HTTP本身是无状态的特性。HTTPS仅仅是在HTTP的基础上增加了安全加密措施。</p><p>因此，无论是HTTP还是HTTPS，都是无状态的协议，服务器处理每个请求时都是相互独立的，不会保持任何状态信息。如果需要在HTTP或HTTPS中保持状态，需要使用一些机制，如使用session或token来验证和管理用户状态。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       
       
       <categories>
@@ -495,7 +495,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-报错（解决方案） </tag>
             
         </tags>
       
@@ -520,7 +520,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-函数 </tag>
             
         </tags>
       
@@ -1095,7 +1095,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-SQL语句 </tag>
             
         </tags>
       
@@ -1220,7 +1220,7 @@
       
         <tags>
             
-            <tag> Hexo </tag>
+            <tag> Hexo-报错（解决方案） </tag>
             
         </tags>
       
@@ -1345,7 +1345,7 @@
       
         <tags>
             
-            <tag> Hexo </tag>
+            <tag> Hexo-报错（解决方案） </tag>
             
         </tags>
       
@@ -2570,7 +2570,7 @@
       
         <tags>
             
-            <tag> Python-模块-设计模式 </tag>
+            <tag> Python-设计模式 </tag>
             
         </tags>
       
@@ -3508,7 +3508,7 @@
       <link href="/post/fbea8d0e.html"/>
       <url>/post/fbea8d0e.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="OSI七层协议和TCP-x2F-IP四层："><a href="#OSI七层协议和TCP-x2F-IP四层：" class="headerlink" title="OSI七层协议和TCP&#x2F;IP四层："></a>OSI七层协议和TCP&#x2F;IP四层：</h1><p><img src="https://images.cherain-wh.cloud/agNYOP-20230707235504439.png" alt="四层协议"></p><h1 id="TCP和UDP的区别和使用场景"><a href="#TCP和UDP的区别和使用场景" class="headerlink" title="TCP和UDP的区别和使用场景"></a>TCP和UDP的区别和使用场景</h1><p><img src="https://images.cherain-wh.cloud/agNNef.png" alt="UDP和TCP"></p><h1 id="编程区别"><a href="#编程区别" class="headerlink" title="编程区别"></a>编程区别</h1><p>   通常我们在说到网络编程时默认是指TCP编程，即用前面提到的socket函数创建一个socket用于TCP通讯，函数参数我们通常填为SOCK_STREAM。即socket(PF_INET, SOCK_STREAM, 0)，这表示建立一个socket用于流式网络通讯。<br>　  SOCK_STREAM这种的特点是面向连接的，即每次收发数据之前必须通过connect建立连接，也是双向的，即任何一方都可以收发数据，协议本身提供了一些保障机制保证它是可靠的、有序的，即每个包按照发送的顺序到达接收方。 </p><p>　　而SOCK_DGRAM这种是User Datagram Protocol协议的网络通讯，它是无连接的，不可靠的，因为通讯双方发送数据后不知道对方是否已经收到数据，是否正常收到数据。任何一方建立一个socket以后就可以用sendto发送数据，也可以用recvfrom接收数据。根本不关心对方是否存在，是否发送了数据。它的特点是通讯速度比较快。大家都知道TCP是要经过三次握手的，而UDP没有。 </p><p>基于上述不同，UDP和TCP编程步骤也有些不同，如下：</p><h2 id="TCP服务端"><a href="#TCP服务端" class="headerlink" title="TCP服务端:"></a>TCP服务端:</h2><p>TCP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt(); * 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、开启监听，用函数listen()；<br>　　5、接收客户端上来的连接，用函数accept()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；<br>　　8、关闭监听； </p><h2 id="TCP客户端："><a href="#TCP客户端：" class="headerlink" title="TCP客户端："></a>TCP客户端：</h2><p>TCP编程的客户端一般步骤是：</p><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置要连接的对方的IP地址和端口等属性；<br>　　5、连接服务器，用函数connect()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；</p><h2 id="UDP服务端"><a href="#UDP服务端" class="headerlink" title="UDP服务端:"></a>UDP服务端:</h2><p>与之对应的UDP编程服务端步骤要简单许多，分别如下：<br>　　UDP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、循环接收数据，用函数recvfrom();<br>　　5、关闭网络连接； </p><h2 id="UDP客户端："><a href="#UDP客户端：" class="headerlink" title="UDP客户端："></a>UDP客户端：</h2><p>UDP编程的客户端一般步骤是：</p><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置对方的IP地址和端口等属性;<br>　　5、发送数据，用函数sendto();<br>　　6、关闭网络连接；</p><p>TCP和UDP是OSI模型中的运输层中的协议。TCP提供可靠的通信传输，而UDP则常被用于让广播和细节控制交给应用的通信传输。</p><h1 id="TCP补充："><a href="#TCP补充：" class="headerlink" title="TCP补充："></a>TCP补充：</h1><p>  TCP充分实现了数据传输时各种控制功能，可以进行丢包的重发控制，还可以对次序乱掉的分包进行顺序控制。而这些在UDP中都没有。此外，TCP作为一种面向有连接的协议，只有在确认通信对端存在时才会发送数据，从而可以控制通信流量的浪费。TCP通过检验和、序列号、确认应答、重发控制、连接管理以及窗口控制等机制实现可靠性传输。</p><h1 id="UDP补充："><a href="#UDP补充：" class="headerlink" title="UDP补充："></a>UDP补充：</h1><p>   UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。并且它是将应用程序发来的数据在收到的那一刻，立刻按照原样发送到网络上的一种机制。即使是出现网络拥堵的情况下，UDP也无法进行流量控制等避免网络拥塞的行为。此外，传输途中如果出现了丢包，UDO也不负责重发。甚至当出现包的到达顺序乱掉时也没有纠正的功能。如果需要这些细节控制，那么不得不交给由采用UDO的应用程序去处理。换句话说，UDP将部分控制转移到应用程序去处理，自己却只提供作为传输层协议的最基本功能。UDP有点类似于用户说什么听什么的机制，但是需要用户充分考虑好上层协议类型并制作相应的应用程序。</p><h1 id="TCP与UDP区别总结："><a href="#TCP与UDP区别总结：" class="headerlink" title="TCP与UDP区别总结："></a>TCP与UDP区别总结：</h1><p>1、TCP面向连接（如打电话要先拨号建立连接）;UDP是无连接的，即发送数据之前不需要建立连接<br>2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保   证可靠交付<br>3、TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流;UDP是面向报文的<br>  UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）<br>4、每一条TCP连接只能是点到点的;UDP支持一对一，一对多，多对一和多对多的交互通信<br>5、TCP首部开销20字节;UDP的首部开销小，只有8个字节<br>6、TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道</p><h1 id="TCP应用场景："><a href="#TCP应用场景：" class="headerlink" title="TCP应用场景："></a>TCP应用场景：</h1><p>效率要求相对低，但对准确性要求相对高的场景。因为传输中需要对数据确认、重发、排序等操作，相比之下效率没有UDP高。举几个例子：文件传输（准确高要求高、但是速度可以相对慢）、接受邮件、远程登录。</p><h1 id="UDP应用场景："><a href="#UDP应用场景：" class="headerlink" title="UDP应用场景："></a>UDP应用场景：</h1><p>效率要求相对高，对准确性要求相对低的场景。举几个例子：QQ聊天、在线视频、网络语音电话（即时通讯，速度要求高，但是出现偶尔断续不是太大问题，并且此处完全不可以使用重发机制）、广播通信（广播、多播）。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/css/APlayer.min.css"><script src="/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/js/Meting.min.js"></script><h1 id="OSI七层模型、TCP-x2F-IP区别："><a href="#OSI七层模型、TCP-x2F-IP区别：" class="headerlink" title="OSI七层模型、TCP&#x2F;IP区别："></a>OSI七层模型、TCP&#x2F;IP区别：</h1><p><img src="https://images.cherain-wh.cloud/agNYOP-20230707235504439.png" alt="四层协议"></p><h1 id="TCP和UDP的区别和使用场景"><a href="#TCP和UDP的区别和使用场景" class="headerlink" title="TCP和UDP的区别和使用场景"></a>TCP和UDP的区别和使用场景</h1><p><img src="https://images.cherain-wh.cloud/agNNef.png" alt="UDP和TCP"></p><h1 id="编程区别"><a href="#编程区别" class="headerlink" title="编程区别"></a>编程区别</h1><p>   通常我们在说到网络编程时默认是指TCP编程，即用前面提到的socket函数创建一个socket用于TCP通讯，函数参数我们通常填为SOCK_STREAM。即socket(PF_INET, SOCK_STREAM, 0)，这表示建立一个socket用于流式网络通讯。<br>　  SOCK_STREAM这种的特点是面向连接的，即每次收发数据之前必须通过connect建立连接，也是双向的，即任何一方都可以收发数据，协议本身提供了一些保障机制保证它是可靠的、有序的，即每个包按照发送的顺序到达接收方。 </p><p>　　而SOCK_DGRAM这种是User Datagram Protocol协议的网络通讯，它是无连接的，不可靠的，因为通讯双方发送数据后不知道对方是否已经收到数据，是否正常收到数据。任何一方建立一个socket以后就可以用sendto发送数据，也可以用recvfrom接收数据。根本不关心对方是否存在，是否发送了数据。它的特点是通讯速度比较快。大家都知道TCP是要经过三次握手的，而UDP没有。 </p><p>基于上述不同，UDP和TCP编程步骤也有些不同，如下：</p><h2 id="TCP服务端"><a href="#TCP服务端" class="headerlink" title="TCP服务端:"></a>TCP服务端:</h2><p>TCP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt(); * 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、开启监听，用函数listen()；<br>　　5、接收客户端上来的连接，用函数accept()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；<br>　　8、关闭监听； </p><h2 id="TCP客户端："><a href="#TCP客户端：" class="headerlink" title="TCP客户端："></a>TCP客户端：</h2><p>TCP编程的客户端一般步骤是：</p><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置要连接的对方的IP地址和端口等属性；<br>　　5、连接服务器，用函数connect()；<br>　　6、收发数据，用函数send()和recv()，或者read()和write();<br>　　7、关闭网络连接；</p><h2 id="UDP服务端"><a href="#UDP服务端" class="headerlink" title="UDP服务端:"></a>UDP服务端:</h2><p>与之对应的UDP编程服务端步骤要简单许多，分别如下：<br>　　UDP编程的服务器端一般步骤是：<br>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();<br>　　4、循环接收数据，用函数recvfrom();<br>　　5、关闭网络连接； </p><h2 id="UDP客户端："><a href="#UDP客户端：" class="headerlink" title="UDP客户端："></a>UDP客户端：</h2><p>UDP编程的客户端一般步骤是：</p><p>　　1、创建一个socket，用函数socket()；<br>　　2、设置socket属性，用函数setsockopt();* 可选<br>　　3、绑定IP地址、端口等信息到socket上，用函数bind();* 可选<br>　　4、设置对方的IP地址和端口等属性;<br>　　5、发送数据，用函数sendto();<br>　　6、关闭网络连接；</p><p>TCP和UDP是OSI模型中的运输层中的协议。TCP提供可靠的通信传输，而UDP则常被用于让广播和细节控制交给应用的通信传输。</p><h1 id="TCP补充："><a href="#TCP补充：" class="headerlink" title="TCP补充："></a>TCP补充：</h1><p>  TCP充分实现了数据传输时各种控制功能，可以进行丢包的重发控制，还可以对次序乱掉的分包进行顺序控制。而这些在UDP中都没有。此外，TCP作为一种面向有连接的协议，只有在确认通信对端存在时才会发送数据，从而可以控制通信流量的浪费。TCP通过检验和、序列号、确认应答、重发控制、连接管理以及窗口控制等机制实现可靠性传输。</p><h1 id="UDP补充："><a href="#UDP补充：" class="headerlink" title="UDP补充："></a>UDP补充：</h1><p>   UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。并且它是将应用程序发来的数据在收到的那一刻，立刻按照原样发送到网络上的一种机制。即使是出现网络拥堵的情况下，UDP也无法进行流量控制等避免网络拥塞的行为。此外，传输途中如果出现了丢包，UDO也不负责重发。甚至当出现包的到达顺序乱掉时也没有纠正的功能。如果需要这些细节控制，那么不得不交给由采用UDO的应用程序去处理。换句话说，UDP将部分控制转移到应用程序去处理，自己却只提供作为传输层协议的最基本功能。UDP有点类似于用户说什么听什么的机制，但是需要用户充分考虑好上层协议类型并制作相应的应用程序。</p><h1 id="TCP与UDP区别总结："><a href="#TCP与UDP区别总结：" class="headerlink" title="TCP与UDP区别总结："></a>TCP与UDP区别总结：</h1><p>1、TCP面向连接（如打电话要先拨号建立连接）;UDP是无连接的，即发送数据之前不需要建立连接<br>2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保   证可靠交付<br>3、TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流;UDP是面向报文的<br>  UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）<br>4、每一条TCP连接只能是点到点的;UDP支持一对一，一对多，多对一和多对多的交互通信<br>5、TCP首部开销20字节;UDP的首部开销小，只有8个字节<br>6、TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道</p><h1 id="TCP应用场景："><a href="#TCP应用场景：" class="headerlink" title="TCP应用场景："></a>TCP应用场景：</h1><p>效率要求相对低，但对准确性要求相对高的场景。因为传输中需要对数据确认、重发、排序等操作，相比之下效率没有UDP高。举几个例子：文件传输（准确高要求高、但是速度可以相对慢）、接受邮件、远程登录。</p><h1 id="UDP应用场景："><a href="#UDP应用场景：" class="headerlink" title="UDP应用场景："></a>UDP应用场景：</h1><p>效率要求相对高，对准确性要求相对低的场景。举几个例子：QQ聊天、在线视频、网络语音电话（即时通讯，速度要求高，但是出现偶尔断续不是太大问题，并且此处完全不可以使用重发机制）、广播通信（广播、多播）。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       
       
       <categories>
@@ -4220,7 +4220,7 @@
       
         <tags>
             
-            <tag> Docker </tag>
+            <tag> Docker-报错（解决方案） </tag>
             
         </tags>
       
@@ -4245,7 +4245,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-报错（解决方案） </tag>
             
         </tags>
       
@@ -4270,7 +4270,7 @@
       
         <tags>
             
-            <tag> Docker </tag>
+            <tag> Docker-报错（解决方案） </tag>
             
         </tags>
       
@@ -4920,7 +4920,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-应用 </tag>
             
         </tags>
       
@@ -5045,7 +5045,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-SQL语句 </tag>
             
         </tags>
       
@@ -5070,7 +5070,7 @@
       
         <tags>
             
-            <tag> MySQL-Mysql索引 </tag>
+            <tag> MySQL-索引 </tag>
             
         </tags>
       
@@ -5095,7 +5095,7 @@
       
         <tags>
             
-            <tag> MySQL-Mysql索引 </tag>
+            <tag> MySQL-索引 </tag>
             
         </tags>
       
@@ -5120,7 +5120,7 @@
       
         <tags>
             
-            <tag> MySQL-Mysql索引 </tag>
+            <tag> MySQL-索引 </tag>
             
         </tags>
       
@@ -5145,7 +5145,7 @@
       
         <tags>
             
-            <tag> MySQL-Mysql索引 </tag>
+            <tag> MySQL-索引 </tag>
             
         </tags>
       
@@ -5170,7 +5170,7 @@
       
         <tags>
             
-            <tag> MySQL-Mysql索引 </tag>
+            <tag> MySQL-索引 </tag>
             
         </tags>
       
@@ -5195,7 +5195,7 @@
       
         <tags>
             
-            <tag> MySQL-Mysql索引 </tag>
+            <tag> MySQL-索引 </tag>
             
         </tags>
       
@@ -5220,7 +5220,7 @@
       
         <tags>
             
-            <tag> MySQL-Mysql索引 </tag>
+            <tag> MySQL-索引 </tag>
             
         </tags>
       
@@ -5245,7 +5245,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-SQL语句 </tag>
             
         </tags>
       
@@ -5645,7 +5645,7 @@
       
         <tags>
             
-            <tag> Docker </tag>
+            <tag> Docker-报错（解决方案） </tag>
             
         </tags>
       
@@ -5795,7 +5795,7 @@
       
         <tags>
             
-            <tag> MySQL </tag>
+            <tag> MySQL-SQL语句 </tag>
             
         </tags>
       
