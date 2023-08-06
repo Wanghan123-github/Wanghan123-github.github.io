@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://images.cherain-wh.cloud/kubernetes.png">
 <meta property="article:published_time" content="2022-07-22T07:54:00.000Z">
-<meta property="article:modified_time" content="2023-07-22T16:33:42.812Z">
+<meta property="article:modified_time" content="2023-08-06T23:09:59.349Z">
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="kubernetes">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@
   isHome: false,
   isHighlightShrink: undefined,
   isToc: true,
-  postUpdate: '2023-07-23 00:33:42'
+  postUpdate: '2023-08-07 07:09:59'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -161,11 +161,11 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/06/12/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">240</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">93</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.cherain-wh.cloud/kubernetes.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">搭建Harbor私有仓库</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-22T07:54:00.000Z" title="发表于 2022-07-22 15:54:00">2022-07-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-22T16:33:42.812Z" title="更新于 2023-07-23 00:33:42">2023-07-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/kubernetes/">kubernetes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="搭建Harbor私有仓库"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/06/12/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">241</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">94</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.cherain-wh.cloud/kubernetes.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">搭建Harbor私有仓库</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-22T07:54:00.000Z" title="发表于 2022-07-22 15:54:00">2022-07-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-06T23:09:59.349Z" title="更新于 2023-08-07 07:09:59">2023-08-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/kubernetes/">kubernetes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="搭建Harbor私有仓库"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
 <p>注意：搭建前要有docker环境的</p>
 </blockquote>
 <h1 id="下载Harbor"><a href="#下载Harbor" class="headerlink" title="下载Harbor"></a>下载Harbor</h1><p>去github下载Harbor包到本地：<a target="_blank" rel="noopener" href="https://github.com/goharbor/harbor/releases">https://github.com/goharbor/harbor/releases</a></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOMgED.png" alt="jOMgED.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOMgED.png" alt="jOMgED.png"></p>
 <h1 id="安装docker-compose服务"><a href="#安装docker-compose服务" class="headerlink" title="安装docker-compose服务"></a>安装docker-compose服务</h1><blockquote>
 <p>安装Harbor是需要依赖docker-compose的</p>
 </blockquote>
@@ -232,7 +232,7 @@ data_volume: /home/harbor/data
 <p>上述，出现✔ —-Harbor has been installed and started successfully.—-就表示安装Harbor成功了。</p>
 <h1 id="验证启动情况"><a href="#验证启动情况" class="headerlink" title="验证启动情况"></a>验证启动情况</h1><pre><code>docker-compose ps
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jO8Bmq.png" alt="jO8Bmq.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jO8Bmq.png" alt="jO8Bmq.png"></p>
 <h1 id="登录Harbor-WebUI"><a href="#登录Harbor-WebUI" class="headerlink" title="登录Harbor WebUI"></a>登录Harbor WebUI</h1><table>
 <thead>
 <tr>
@@ -245,7 +245,7 @@ data_volume: /home/harbor/data
 <td>Harbor12345</td>
 </tr>
 </tbody></table>
-<h3 id="http访问：http-1-117-142-4"><a href="#http访问：http-1-117-142-4" class="headerlink" title="http访问：http://1.117.142.4"></a>http访问：<a target="_blank" rel="noopener" href="http://1.117.142.4/">http://1.117.142.4</a></h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jO82p4.png" alt="jO82p4.png"></p>
+<h3 id="http访问：http-1-117-142-4"><a href="#http访问：http-1-117-142-4" class="headerlink" title="http访问：http://1.117.142.4"></a>http访问：<a target="_blank" rel="noopener" href="http://1.117.142.4/">http://1.117.142.4</a></h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jO82p4.png" alt="jO82p4.png"></p>
 <h3 id="https访问：https-harbor-hwang-com"><a href="#https访问：https-harbor-hwang-com" class="headerlink" title="https访问：https://harbor.hwang.com"></a>https访问：<a target="_blank" rel="noopener" href="https://harbor.hwang.com/">https://harbor.hwang.com</a></h3><pre><code>vim /etc/hosts
 </code></pre>
 <p>添加内容：</p>
@@ -254,15 +254,15 @@ data_volume: /home/harbor/data
 <p>访问页面</p>
 <pre><code>https://harbor.wangzy.com
 </code></pre>
-<p>如果出现如下无法访问的情况：盲敲：thisisunsafe<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOGDvd.jpg" alt="jOGDvd.jpg"></p>
-<h1 id="创建Harbor仓库的项目"><a href="#创建Harbor仓库的项目" class="headerlink" title="创建Harbor仓库的项目"></a>创建Harbor仓库的项目</h1><p><font size="4">项目》新建项目》输入：test，选择：是否公开</font><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOt9N6.png" alt="jOt9N6.png"></p>
+<p>如果出现如下无法访问的情况：盲敲：thisisunsafe<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOGDvd.jpg" alt="jOGDvd.jpg"></p>
+<h1 id="创建Harbor仓库的项目"><a href="#创建Harbor仓库的项目" class="headerlink" title="创建Harbor仓库的项目"></a>创建Harbor仓库的项目</h1><p><font size="4">项目》新建项目》输入：test，选择：是否公开</font><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOt9N6.png" alt="jOt9N6.png"></p>
 <h1 id="docker-登录Harbor"><a href="#docker-登录Harbor" class="headerlink" title="docker 登录Harbor"></a>docker 登录Harbor</h1><p>如果是http：</p>
 <pre><code>docker login -u admin -p Harbor12345 http://1.117.142.4
 </code></pre>
 <p>如果是https：</p>
 <pre><code>docker login -u admin -p Harbor12345 https://harbor.hwang.com
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/10/31/xozW3n.png" alt="xozW3n.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/xozW3n.png" alt="xozW3n.png"></p>
 <h1 id="解决访问过程中的问题（无，则跳过）："><a href="#解决访问过程中的问题（无，则跳过）：" class="headerlink" title="解决访问过程中的问题（无，则跳过）："></a>解决访问过程中的问题（无，则跳过）：</h1><h4 id="问题1：出现拒绝访问的问题："><a href="#问题1：出现拒绝访问的问题：" class="headerlink" title="问题1：出现拒绝访问的问题："></a>问题1：出现拒绝访问的问题：</h4><pre><code>[root@nb1 harbor]# docker login -u admin -p Harbor12345 http://192.168.1.127
 WARNING! Using --password via the CLI is insecure. Use --password-stdin.
 Error response from daemon: Get &quot;https://192.168.1.127/v2/&quot;: dial tcp 192.168.1.127:443: connect: connection refused
@@ -290,9 +290,9 @@ Error response from daemon: Get &quot;https://192.168.1.127/v2/&quot;: dial tcp 
 <p>“insecure-registries”: [“<a href="https://harbor.hwang.com&quot;]">https://harbor.hwang.com&quot;]</a></p>
 </li>
 </ol>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOtoKH.png" alt="jOtoKH.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOtoKH.png" alt="jOtoKH.png"></p>
 <ol>
-<li>如果是mac的docker-desktop：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOJHQH.png" alt="jOJHQH.png"></li>
+<li>如果是mac的docker-desktop：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOJHQH.png" alt="jOJHQH.png"></li>
 </ol>
 <p>最后都需要重新加载配置文件并重启docker：</p>
 <pre><code>systemctl daemon-reload 
@@ -305,13 +305,13 @@ systemctl restart docker
 <h3 id="将本地镜像打上私有仓库"><a href="#将本地镜像打上私有仓库" class="headerlink" title="将本地镜像打上私有仓库"></a>将本地镜像打上私有仓库</h3><p>格式：docker tag 本地镜像名:版本 Harbor服务器访问ip+端口&#x2F;Harbor仓库项目名&#x2F;仓库镜像名:版本</p>
 <pre><code>docker tag nginx:1.7.9 1.117.142.4/test/nginx:test
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOtNEq.png" alt="jOtNEq.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOtNEq.png" alt="jOtNEq.png"></p>
 <h3 id="上传镜像"><a href="#上传镜像" class="headerlink" title="上传镜像"></a>上传镜像</h3><pre><code>docker push 1.117.142.4/test/nginx:test
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOtGuj.png" alt="jOtGuj.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOtGuj.png" alt="jOtGuj.png"></p>
 <h3 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h3><pre><code>docker pull 1.117.142.4/test/nginx:test
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/22/jOta5V.png" alt="jOta5V.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jOta5V.png" alt="jOta5V.png"></p>
 <h1 id="卸载Harbor"><a href="#卸载Harbor" class="headerlink" title="卸载Harbor"></a>卸载Harbor</h1><h3 id="1-删除harbor相关的目录及文件："><a href="#1-删除harbor相关的目录及文件：" class="headerlink" title="1. 删除harbor相关的目录及文件："></a>1. 删除harbor相关的目录及文件：</h3><pre><code>rm -rf `find / -name harbor`
 </code></pre>
 <h3 id="2-批量停止并删除docker中有关harbor的镜像及容器"><a href="#2-批量停止并删除docker中有关harbor的镜像及容器" class="headerlink" title="2. 批量停止并删除docker中有关harbor的镜像及容器"></a>2. 批量停止并删除docker中有关harbor的镜像及容器</h3><pre><code>docker stop `sudo docker ps | grep &#39;harbor&#39; | awk &#39;&#123;print $1&#125;&#39;`

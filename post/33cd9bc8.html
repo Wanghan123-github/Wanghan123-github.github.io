@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://images.cherain-wh.cloud/kubernetes.png">
 <meta property="article:published_time" content="2022-07-18T08:52:25.000Z">
-<meta property="article:modified_time" content="2023-07-22T16:33:42.813Z">
+<meta property="article:modified_time" content="2023-08-06T23:09:59.350Z">
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="kubernetes">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@
   isHome: false,
   isHighlightShrink: undefined,
   isToc: true,
-  postUpdate: '2023-07-23 00:33:42'
+  postUpdate: '2023-08-07 07:09:59'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -161,7 +161,7 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/06/12/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">240</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">93</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.cherain-wh.cloud/kubernetes.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">异地云服务器（公网）搭建k8s集群</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-18T08:52:25.000Z" title="发表于 2022-07-18 16:52:25">2022-07-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-22T16:33:42.813Z" title="更新于 2023-07-23 00:33:42">2023-07-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/kubernetes/">kubernetes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="异地云服务器（公网）搭建k8s集群"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/06/12/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">241</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">94</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.cherain-wh.cloud/kubernetes.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">异地云服务器（公网）搭建k8s集群</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-18T08:52:25.000Z" title="发表于 2022-07-18 16:52:25">2022-07-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-06T23:09:59.350Z" title="更新于 2023-08-07 07:09:59">2023-08-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/kubernetes/">kubernetes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="异地云服务器（公网）搭建k8s集群"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
 <p>本文适用于自己没有足够的局域网服务器，想利用多个异地云服务器搭建k8s！！！</p>
 </blockquote>
 <hr>
@@ -186,7 +186,7 @@
 </li>
 </ul>
 <h1 id="修改-x2F-etc-x2F-hosts文件"><a href="#修改-x2F-etc-x2F-hosts文件" class="headerlink" title="修改&#x2F;etc&#x2F;hosts文件"></a>修改&#x2F;etc&#x2F;hosts文件</h1><h3 id="所有节点都需要！！！"><a href="#所有节点都需要！！！" class="headerlink" title="所有节点都需要！！！"></a><strong>所有节点都需要！！！</strong></h3><p><strong>将127.0.0.1 和hostname绑定</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/18/jo31Og.png" alt="jo31Og.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jo31Og.png" alt="jo31Og.png"></p>
 <h1 id="配置节点间ssh互信"><a href="#配置节点间ssh互信" class="headerlink" title="配置节点间ssh互信"></a>配置节点间ssh互信</h1><h3 id="所有节点都需要！！！-1"><a href="#所有节点都需要！！！-1" class="headerlink" title="所有节点都需要！！！"></a><strong>所有节点都需要！！！</strong></h3><p><strong>配置ssh互信，那么节点之间就能无密访问，方便日后执行自动化部署</strong></p>
 <pre><code>ssh-keygen     # 一路回车即可
 </code></pre>
@@ -261,7 +261,7 @@ nmcli n off &amp;&amp; nmcli n on        #重启所有网络
 </code></pre>
 <h3 id="3-查看新建的IP是否进去"><a href="#3-查看新建的IP是否进去" class="headerlink" title="3. 查看新建的IP是否进去"></a>3. 查看新建的IP是否进去</h3><pre><code>ifconfig
 </code></pre>
-<p>成功示例：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/18/joN4jP.png" alt="joN4jP.png"></p>
+<p>成功示例：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/joN4jP.png" alt="joN4jP.png"></p>
 <h1 id="主机端口设置"><a href="#主机端口设置" class="headerlink" title="主机端口设置"></a>主机端口设置</h1><h3 id="所有节点都需要！！！-4"><a href="#所有节点都需要！！！-4" class="headerlink" title="所有节点都需要！！！"></a><strong>所有节点都需要！！！</strong></h3><h3 id="1-开放服务器端口"><a href="#1-开放服务器端口" class="headerlink" title="1. 开放服务器端口"></a>1. 开放服务器端口</h3><blockquote>
 <p>阿里云ECS和腾讯云EVM所有入网方向端口都需要自己手动开启。</p>
 </blockquote>
@@ -335,7 +335,7 @@ nmcli n off &amp;&amp; nmcli n on        #重启所有网络
 <td>k8s NodePort ServicesI</td>
 </tr>
 </tbody></table>
-<p>去阿里云和腾讯云把上面这几个端口按对应节点开放出来就可以了，操作类似：<a target="_blank" rel="noopener" href="https://developer.aliyun.com/article/793961">阿里云服务器开放端口教程</a><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/19/jTArfH.png" alt="jTArfH.png"></p>
+<p>去阿里云和腾讯云把上面这几个端口按对应节点开放出来就可以了，操作类似：<a target="_blank" rel="noopener" href="https://developer.aliyun.com/article/793961">阿里云服务器开放端口教程</a><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jTArfH.png" alt="jTArfH.png"></p>
 <h1 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h1><h3 id="所有节点都需要！！！-5"><a href="#所有节点都需要！！！-5" class="headerlink" title="所有节点都需要！！！"></a><strong>所有节点都需要！！！</strong></h3><p><font color="red">注意：在安装docker和kubernetes前一定要确定好各自的版本</font></p>
 <h3 id="1-首先查询是否存在docker服务"><a href="#1-首先查询是否存在docker服务" class="headerlink" title="1. 首先查询是否存在docker服务"></a>1. 首先查询是否存在docker服务</h3><pre><code>docker version
 </code></pre>
@@ -347,7 +347,7 @@ rm -rf /var/lib/containerd
 </code></pre>
 <h3 id="1-查看当前可用版本"><a href="#1-查看当前可用版本" class="headerlink" title="1. 查看当前可用版本"></a>1. 查看当前可用版本</h3><pre><code>yum list docker-ce --showduplicates | sort -r
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/19/jTnT9U.png" alt="jTnT9U.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jTnT9U.png" alt="jTnT9U.png"></p>
 <h3 id="2-安装指定版本的docker（二选一）"><a href="#2-安装指定版本的docker（二选一）" class="headerlink" title="2. 安装指定版本的docker（二选一）"></a>2. 安装指定版本的docker（二选一）</h3><p>将红框部分的版本号替换到下面的命令中即可—-<strong>这里我安装的是19.03的版本</strong></p>
 <pre><code>yum install docker-ce-3:19.03.13 docker-ce-cli-1:19.03.13 containerd.io 
 </code></pre>
@@ -374,7 +374,7 @@ cat &gt; /etc/docker/daemon.json &lt;&lt;EOF
 &#125;
 EOF
 </code></pre>
-<p>登录进入阿里云镜像服务中心，获取镜像地址：”registry-mirrors”:<br><a target="_blank" rel="noopener" href="https://cr.console.aliyun.com/cn-beijing/instances/mirrors">阿里云镜像服务中心地址</a><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/19/jTuhKH.png" alt="jTuhKH.png"></p>
+<p>登录进入阿里云镜像服务中心，获取镜像地址：”registry-mirrors”:<br><a target="_blank" rel="noopener" href="https://cr.console.aliyun.com/cn-beijing/instances/mirrors">阿里云镜像服务中心地址</a><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jTuhKH.png" alt="jTuhKH.png"></p>
 <pre><code>mkdir -p /etc/systemd/system/docker.service.d
 </code></pre>
 <h3 id="6-重启Docker服务"><a href="#6-重启Docker服务" class="headerlink" title="6. 重启Docker服务"></a>6. 重启Docker服务</h3><pre><code>systemctl daemon-reload
@@ -394,7 +394,7 @@ gpgcheck=0
 </code></pre>
 <h3 id="3-查看安装后的k8s版本"><a href="#3-查看安装后的k8s版本" class="headerlink" title="3. 查看安装后的k8s版本"></a>3. 查看安装后的k8s版本</h3><pre><code>kubeadm config images list
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/19/jT5SgI.png" alt="jT5SgI.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jT5SgI.png" alt="jT5SgI.png"></p>
 <h3 id="4-重启kubelet"><a href="#4-重启kubelet" class="headerlink" title="4. 重启kubelet"></a>4. 重启kubelet</h3><pre><code>     systemctl daemon-reload
      systemctl enable kubelet
 </code></pre>
@@ -441,7 +441,7 @@ done
 </code></pre>
 <h4 id="所有组件pull成功后。查看"><a href="#所有组件pull成功后。查看" class="headerlink" title="所有组件pull成功后。查看"></a>所有组件pull成功后。查看</h4><pre><code>docker images
 </code></pre>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/19/jTIuJH.png" alt="jTIuJH.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/jTIuJH.png" alt="jTIuJH.png"></p>
 <h1 id="初始化主节点"><a href="#初始化主节点" class="headerlink" title="初始化主节点"></a>初始化主节点</h1><h3 id="只操作master！！！"><a href="#只操作master！！！" class="headerlink" title="只操作master！！！"></a><strong>只操作master！！！</strong></h3><h3 id="1-配置"><a href="#1-配置" class="headerlink" title="1. 配置"></a>1. 配置</h3><p>把下面内容中需要替换的，改为自己master节点的信息，然后整个复制执行</p>
 <pre><code>cat &gt; kubeadm-config.yml &lt;&lt;EOF
 apiVersion: kubeadm.k8s.io/v1beta2
@@ -530,7 +530,7 @@ abcdef.0123456789abcdef   23h         xxxxx  authentication,signing   The defaul
 <p>如果执行完，报错目录不为空，或者文件已存在，或者端口占用这些情况，可以执行下面的命令（视情况而定）</p>
 <pre><code>kubeadm join --token abcdef.0123456789abcdef --discovery-token-ca-cert-hash sha256:a255ee4b0eefa44a6b23580bbbfbcd7234903d6d33c4efb5d85d7c8f57311f18 47.100.238.0:6443 --ignore-preflight-errors=all
 </code></pre>
-<p><strong>至此，master节点部署完毕，现在来查看下pod运行情况</strong><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2022/07/19/j79yxP.png" alt="j79yxP.png"> <font color="red">注意：由于此时k8s的cni组件还没部署，此时的dns日志里面应该会报错，等待cni组件中，所以 coredns 暂时还无法正常启动。</font>放到下面解决了。</p>
+<p><strong>至此，master节点部署完毕，现在来查看下pod运行情况</strong><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/j79yxP.png" alt="j79yxP.png"> <font color="red">注意：由于此时k8s的cni组件还没部署，此时的dns日志里面应该会报错，等待cni组件中，所以 coredns 暂时还无法正常启动。</font>放到下面解决了。</p>
 <h1 id="kube-proxy代理方案由iptables改为ipvs"><a href="#kube-proxy代理方案由iptables改为ipvs" class="headerlink" title="kube-proxy代理方案由iptables改为ipvs"></a>kube-proxy代理方案由iptables改为ipvs</h1><blockquote>
 <p>部署node1、node2节点前的准备工作</p>
 </blockquote>
