@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Redis基础命令 | Cherain-</title><meta name="keywords" content="Redis"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Redis基础操作命令： 启动redis服务：方法一： 1brew services start redis  方法二： 1redis-server    查看redis服务进程：1ps axu | grep redis  连接redis服务:1redis-cli    关闭redis服务：方法一：  由于brew启动的redis 手动无法杀死进程，所以需要brew关闭redis。brew ser">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Redis基础命令 | Cherain-</title><meta name="keywords" content="Redis"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Redis服务 brew services start redis：启动服务  redis-server ：启动服务  ps axu | grep redis ：查看服务进程  redis-cli：连接redis服务  brew services stop redis：关闭服务  redis-cli shutdown：关闭服务  kill -9 ***：关闭服务       字符串操作命令 set">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Redis基础命令">
 <meta property="og:url" content="https://www.cherain-wh.cloud/post/77167cb1.html">
 <meta property="og:site_name" content="Cherain-">
-<meta property="og:description" content="Redis基础操作命令： 启动redis服务：方法一： 1brew services start redis  方法二： 1redis-server    查看redis服务进程：1ps axu | grep redis  连接redis服务:1redis-cli    关闭redis服务：方法一：  由于brew启动的redis 手动无法杀死进程，所以需要brew关闭redis。brew ser">
+<meta property="og:description" content="Redis服务 brew services start redis：启动服务  redis-server ：启动服务  ps axu | grep redis ：查看服务进程  redis-cli：连接redis服务  brew services stop redis：关闭服务  redis-cli shutdown：关闭服务  kill -9 ***：关闭服务       字符串操作命令 set">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://images.cherain-wh.cloud/Redis.png">
 <meta property="article:published_time" content="2022-11-07T10:37:17.000Z">
-<meta property="article:modified_time" content="2023-08-06T23:09:58.952Z">
+<meta property="article:modified_time" content="2023-08-13T16:04:54.921Z">
 <meta property="article:author" content="Cherain-">
 <meta property="article:tag" content="Redis">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@
   isHome: false,
   isHighlightShrink: undefined,
   isToc: true,
-  postUpdate: '2023-08-07 07:09:58'
+  postUpdate: '2023-08-14 00:04:54'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -161,33 +161,135 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">241</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">94</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.cherain-wh.cloud/Redis.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Redis基础命令</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-07T10:37:17.000Z" title="发表于 2022-11-07 18:37:17">2022-11-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-06T23:09:58.952Z" title="更新于 2023-08-07 07:09:58">2023-08-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Redis/">Redis</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Redis基础命令"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>Redis基础操作命令：</p>
-<h1 id="启动redis服务："><a href="#启动redis服务：" class="headerlink" title="启动redis服务："></a>启动redis服务：</h1><p>方法一：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services start redis</span><br></pre></td></tr></table></figure>
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">241</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">94</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.cherain-wh.cloud/Redis.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Redis基础命令</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-07T10:37:17.000Z" title="发表于 2022-11-07 18:37:17">2022-11-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-13T16:04:54.921Z" title="更新于 2023-08-14 00:04:54">2023-08-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Redis/">Redis</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Redis基础命令"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Redis服务"><a href="#Redis服务" class="headerlink" title="Redis服务"></a>Redis服务</h1><ul>
+<li><p><code>brew services start redis</code>：启动服务</p>
+</li>
+<li><p><code>redis-server </code>：启动服务</p>
+</li>
+<li><p><code>ps axu | grep redis</code> ：查看服务进程</p>
+</li>
+<li><p><code>redis-cli</code>：连接redis服务</p>
+</li>
+<li><p><code>brew services stop redis</code>：关闭服务</p>
+</li>
+<li><p><code>redis-cli shutdown</code>：关闭服务</p>
+</li>
+<li><p><code>kill -9 ***</code>：关闭服务</p>
+</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/xv0gKA.png" alt="xv0gKA.png" style="zoom:50%;" />
 
-<p>方法二：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-server </span><br></pre></td></tr></table></figure>
-
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/xv0gKA.png" alt="xv0gKA.png"></p>
-<h1 id="查看redis服务进程："><a href="#查看redis服务进程：" class="headerlink" title="查看redis服务进程："></a>查看redis服务进程：</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps axu | grep redis</span><br></pre></td></tr></table></figure>
-
-<h1 id="连接redis服务"><a href="#连接redis服务" class="headerlink" title="连接redis服务:"></a>连接redis服务:</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br></pre></td></tr></table></figure>
 
 
-
-<h1 id="关闭redis服务："><a href="#关闭redis服务：" class="headerlink" title="关闭redis服务："></a>关闭redis服务：</h1><p>方法一：</p>
-<blockquote>
-<p>由于brew启动的redis 手动无法杀死进程，所以需要brew关闭redis。brew services list查看brew启动的服务列表</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services stop redis</span><br></pre></td></tr></table></figure>
-
-<p>方法二：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli shutdown</span><br></pre></td></tr></table></figure>
-
-<p>方法三：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 ***</span><br></pre></td></tr></table></figure>
-
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Redis/">Redis</a></div><div class="post_share"><div class="social-share" data-image="https://images.cherain-wh.cloud/Redis.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://images.cherain-wh.cloud/za0KAA.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/za0KAA.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8redis%E6%9C%8D%E5%8A%A1%EF%BC%9A"><span class="toc-text">启动redis服务：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bredis%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B%EF%BC%9A"><span class="toc-text">查看redis服务进程：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5redis%E6%9C%8D%E5%8A%A1"><span class="toc-text">连接redis服务:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E9%97%ADredis%E6%9C%8D%E5%8A%A1%EF%BC%9A"><span class="toc-text">关闭redis服务：</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.cherain-wh.cloud/Redis.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Cherain-</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src='https://images.cherain-wh.cloud/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png'> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402013496" style="color:#f72b07" target="_blank">京公网安备 11011402013496号</a> <a href="https://beian.miit.gov.cn/" style="color:#f72b07" target="_blank">京ICP备2022034151号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+<h1 id="字符串操作命令"><a href="#字符串操作命令" class="headerlink" title="字符串操作命令"></a>字符串操作命令</h1><ul>
+<li><code>set key value</code>：设置键的值。</li>
+<li><code>get key</code>：获取键的值。</li>
+<li><code>del key</code>：删除指定的键。</li>
+<li><code>incr key</code>：将键存储的整数值增加 1。</li>
+<li><code>incrby key increment</code>：将键存储的值分别增加指定的数量（increment）</li>
+<li><code>decr key</code>：将键存储的整数值减少 1。</li>
+<li><code>decrby key decrement</code>：将键存储的值分别减少指定的数量（decrement）</li>
+<li><code>append key value</code>：将值追加到键的值后面。</li>
+<li><code>strlen key</code>：获取键存储的值的长度。</li>
+<li><code>getrange key start end</code>：获取键对应的值，并截取start到end的长度</li>
+<li><code>setrange key offset value</code>：将键对应存储的值中offset的位置，替换为value</li>
+<li><code>mget key1 key2...</code>：获取多个键的值</li>
+<li><code>mset key1 value1 key2 value2 ...]</code>：设置多个键的值</li>
+<li><code>msetnx key1 value1 key2 value2 ...</code>：设置多个键的值，仅在所有键都不存在时才设置。</li>
+<li><code>getset key value</code>：设置键的新值并返回旧值。</li>
+<li><code>setnx key value</code>：仅在键不存在时设置键的值。</li>
+<li><code>strcmp key1 key2</code>：比较两个键存储的值。</li>
+<li><code>setbit key offset value</code>：设置键的指定位偏移位置的值。</li>
+<li><code>getbit key offset</code>：获取键的指定位偏移位置的值。</li>
+</ul>
+<h1 id="哈希"><a href="#哈希" class="headerlink" title="哈希"></a>哈希</h1><ul>
+<li><code>hset key field value</code>：在哈希数据类型中设置字段的值。</li>
+<li><code>hget key field</code>：获取哈希数据类型中指定字段的值。</li>
+<li><code>hdel key field1 field2 ...</code> ：删除一个或多个哈希数据类型中指定字段。</li>
+<li><code>hgetall key</code>：获取哈希中所有字段和值的列表。</li>
+<li><code>hkeys key</code>：获取哈希中所有字段的列表。</li>
+<li><code>hvals key</code>：获取哈希中所有值的列表。</li>
+<li><code>hincrby key field increment</code>：将哈希中指定字段的值增加指定的增量。</li>
+<li><code>hexists key field</code>：检查哈希中是否存在指定字段。</li>
+<li><code>hlen key</code>：获取哈希中字段的数量。</li>
+<li><code>hmget key field1 field2 ...</code>：获取哈希中多个字段的值。</li>
+<li><code>hmset key field1 value1 field2 value2 ...</code>：设置哈希中多个字段的值。</li>
+<li><code>hsetnx key field value</code>：仅在哈希中指定字段不存在时设置值。</li>
+<li><code>hstrlen key field</code>：获取哈希中指定字段值的长度。</li>
+</ul>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul>
+<li><code>lpush key value1 value2 ...</code>：将一个或多个值插入到列表的头部。</li>
+<li><code>rpush key value1 value2 ...</code>：将一个或多个值插入到列表的尾部。</li>
+<li><code>lpush key</code>：移除并返回列表的第一个元素。</li>
+<li><code>lpop key</code>：移除并返回列表的头部元素。</li>
+<li><code>rpop key</code>：移除并返回列表的最后一个元素。</li>
+<li><code>llen key</code>：获取列表的长度（即包含的元素个数）。</li>
+<li><code>lrange key start stop</code>：获取列表中指定范围的元素。</li>
+<li><code>lindex key index</code>：获取列表中指定索引位置的元素。</li>
+<li><code>lset key index value</code>：将列表中指定索引位置的元素设置为新值。</li>
+<li><code>lrem key count value</code>：从列表中删除指定数量的指定值。</li>
+<li><code>ltrim key start stop</code>：截取列表，只保留指定范围的元素。</li>
+<li><code>rpoplpush source destination</code>：将一个元素从源列表尾部移除并添加到目标列表头部。</li>
+<li><code>blpop key1 [key2 ...] timeout</code>：阻塞式弹出，等待并返回列表中的元素。（从左边的列表头部弹出元素，如果列表为空，则阻塞等待，直到超时为止）</li>
+<li><code>brpop key1 [key2 ...] timeout</code>：从右边的列表尾部弹出元素，如果列表为空，则阻塞等待，直到超时为止。</li>
+<li><code>linsert key before pivot value</code>：在列表中某个元素前插入一个值。</li>
+<li><code>linsert key after pivot value</code>：在列表中某个元素后插入一个值。</li>
+</ul>
+<h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><ul>
+<li><code>sadd key member1 member2 ...</code>：将一个或多个成员添加到集合中。</li>
+<li><code>srem key member1 member2 ...</code>：从集合中移除一个或多个成员。</li>
+<li><code>smembers key</code>：获取集合中的所有成员。</li>
+<li>**<code>sismember key member</code>**：检查成员是否存在于集合中。</li>
+<li>**<code>scard key</code>**：获取集合中的成员数量。</li>
+<li>**<code>spop key [count]</code>**：随机移除并返回集合中的一个或多个成员。</li>
+<li>**<code>srandmember key [count]</code>**：随机获取集合中的一个或多个成员。</li>
+<li>**<code>sdiff key [key ...]</code>**：计算多个集合的差集。</li>
+<li>**<code>sinter key [key ...]</code>**：计算多个集合的交集。</li>
+<li>**<code>sunion key [key ...]</code>**：计算多个集合的并集。</li>
+<li>**<code>sdiffstore destination key [key ...]</code>**：将多个集合的差集存储到新的集合。</li>
+<li>**<code>sinterstore destination key [key ...]</code>**：将多个集合的交集存储到新的集合。</li>
+<li>**<code>sunionstore destination key [key ...]</code>**：将多个集合的并集存储到新的集合。</li>
+</ul>
+<h1 id="有序集合"><a href="#有序集合" class="headerlink" title="有序集合"></a>有序集合</h1><ul>
+<li>**<code>zadd key [nx|xx] [ch] [incr] score member [score member ...]</code>**：将一个或多个成员及其分数添加到有序集合中。<ul>
+<li><code>nx</code>：仅在成员不存在时才添加。</li>
+<li><code>xx</code>：仅在成员已经存在时才更新。</li>
+<li><code>ch</code>：返回修改的成员数量，不包括新增的成员。</li>
+<li><code>incr</code>：对于每个成员，都会将其现有的分数与新的分数相加。</li>
+</ul>
+</li>
+<li>**<code>zrem key member [member ...]</code>**：从有序集合中移除一个或多个成员。</li>
+<li>**<code>zcard key</code>**：获取有序集合中的成员数量。</li>
+<li>**<code>zscore key member</code>**：获取有序集合中指定成员的分数。</li>
+<li>**<code>zrank key member</code>**：获取有序集合中指定成员的排名（从小到大排序）。</li>
+<li>**<code>zrevrank key member</code>**：获取有序集合中指定成员的排名（从大到小排序）。</li>
+<li>**<code>zrange key start stop [withscores]</code>**：获取有序集合中指定排名范围的成员。<ul>
+<li><code>withscores</code>：同时返回成员的分数。</li>
+</ul>
+</li>
+<li>**<code>zrevrange key start stop [withscores]</code>**：获取有序集合中指定排名范围的成员（倒序）。</li>
+<li>**<code>zincrby key increment member</code>**：将有序集合中指定成员的分数增加指定的增量。</li>
+<li>**<code>zcount key min max</code>**：获取有序集合中分数在指定范围内的成员数量。</li>
+<li>**<code>zrangebyscore key min max [withscores] [limit offset count]</code>**：获取有序集合中分数在指定范围内的成员。</li>
+<li>**<code>zrevrangebyscore key max min [withscores] [limit offset count]</code>**：获取有序集合中分数在指定范围内的成员（倒序）。</li>
+<li>**<code>zremrangebyrank key start stop</code>**：移除有序集合中指定排名范围内的成员。</li>
+<li>**<code>zremrangebyscore key min max</code>**：移除有序集合中分数在指定范围内的成员。</li>
+</ul>
+<h1 id="键操作命令"><a href="#键操作命令" class="headerlink" title="键操作命令"></a>键操作命令</h1><ul>
+<li><p><code>exists key</code>：检查键是否存在。</p>
+</li>
+<li><p><code>del key</code>：删除指定的键。</p>
+</li>
+<li><p><code>ttl key</code>：获取键的生存时间（剩余时间）。</p>
+</li>
+<li><p><code>type key</code>：获取键存储的值的数据类型。</p>
+</li>
+<li><p><code>keys w*</code>：获取以“w”开头的键名</p>
+</li>
+<li><p><code>flushall</code>：清空所有数据库中的数据。</p>
+</li>
+</ul>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Redis/">Redis</a></div><div class="post_share"><div class="social-share" data-image="https://images.cherain-wh.cloud/Redis.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://images.cherain-wh.cloud/za0KAA.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/za0KAA.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E6%9C%8D%E5%8A%A1"><span class="toc-text">Redis服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-text">字符串操作命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%88%E5%B8%8C"><span class="toc-text">哈希</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-text">列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9B%86%E5%90%88"><span class="toc-text">集合</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">有序集合</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%94%AE%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-text">键操作命令</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.cherain-wh.cloud/Redis.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Cherain-</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src='https://images.cherain-wh.cloud/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png'> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402013496" style="color:#f72b07" target="_blank">京公网安备 11011402013496号</a> <a href="https://beian.miit.gov.cn/" style="color:#f72b07" target="_blank">京ICP备2022034151号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
