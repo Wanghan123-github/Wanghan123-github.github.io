@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>数据结构介绍 | Cherain-</title><meta name="keywords" content="Python-数据结构"><meta name="author" content="Cherain-"><meta name="copyright" content="Cherain-"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="​		数据结构是一种组织和存储数据的方式，以便于访问和操作。它可以基于一个或多个数据类型来构建。例如：数组、链表、栈、队列、树等，这些都可以用来存储和操作不同的数据类型。 ​		我们通常理解为数据结构包含数据类型，因为它不仅涉及数据类型（用于描述数据的性质和操作）还包括数据结构（用于数据的组织和存储）。例如：列表list、元祖tuple、字典dict、栈stack、队列Queue、数组Array、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构介绍">
+<meta property="og:url" content="https://www.cherain-wh.cloud/post/aa22783f.html">
+<meta property="og:site_name" content="Cherain-">
+<meta property="og:description" content="​		数据结构是一种组织和存储数据的方式，以便于访问和操作。它可以基于一个或多个数据类型来构建。例如：数组、链表、栈、队列、树等，这些都可以用来存储和操作不同的数据类型。 ​		我们通常理解为数据结构包含数据类型，因为它不仅涉及数据类型（用于描述数据的性质和操作）还包括数据结构（用于数据的组织和存储）。例如：列表list、元祖tuple、字典dict、栈stack、队列Queue、数组Array、">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.cherain-wh.cloud/Python.png">
+<meta property="article:published_time" content="2023-08-19T11:10:24.000Z">
+<meta property="article:modified_time" content="2023-08-20T20:28:16.010Z">
+<meta property="article:author" content="Cherain-">
+<meta property="article:tag" content="Python-数据结构">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.cherain-wh.cloud/Python.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.cherain-wh.cloud/post/aa22783f"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数据结构介绍',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: false,
+  postUpdate: '2023-08-21 04:28:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/XgDaAe.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">245</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">95</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 休闲区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.cherain-wh.cloud/Python.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cherain-</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 休闲区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据结构介绍</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-19T11:10:24.000Z" title="发表于 2023-08-19 19:10:24">2023-08-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-20T20:28:16.010Z" title="更新于 2023-08-21 04:28:16">2023-08-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python/">Python</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据结构介绍"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>​		数据结构是一种组织和存储数据的方式，以便于访问和操作。它可以基于一个或多个数据类型来构建。例如：<code>数组</code>、<code>链表</code>、<code>栈</code>、<code>队列</code>、<code>树</code>等，这些都可以用来存储和操作不同的数据类型。</p>
+<p>​		我们通常理解为数据结构包含数据类型，因为它不仅涉及数据类型（用于描述数据的性质和操作）还包括数据结构（用于数据的组织和存储）。例如：<code>列表list</code>、<code>元祖tuple</code>、<code>字典dict</code>、<code>栈stack</code>、<code>队列Queue</code>、<code>数组Array</code>、<code>链表Linked List</code>。</p>
+<p>​		这里我们拿<code>列表list</code>来举例：当它作为<code>数据结构</code>时，列表是一个有序的、可变的序列，可以包含不同类型的元素。同时它允许对它进行任意位置的插入，删除和修改操作，同时又会保持它的元素的顺序。当它作为<code>数据类型</code>时，列表是一种内置的数据类型，用于表示一个序列，通常使用<code>[]</code>来创建列表，并在其中包含自身的元素。</p>
+<p>​		而实际上数据结构和数据类型也是相互关联的。例如：常用的数据类型<code>列表</code>可以通过数据结构<code>栈</code>实现，而数据结构常用的<code>栈</code>也可以通过数据类型的<code>列表</code>来实现。实现方法如下：</p>
+<ol>
+<li><strong>数据类型<code>列表</code>通过数据结构<code>栈</code>实现</strong></li>
+</ol>
+<p>​		在这个例子中，我们使用列表来存储栈中的元素，并通过封装来限制只能使用 <code>push</code> 和 <code>pop</code> 操作在列表末尾进行插入和删除。这样，我们可以将列表用作栈来实现栈的行为。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">StackUsingList</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.items = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">push</span>(<span class="params">self, item</span>):</span><br><span class="line">        self.items.append(item)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">pop</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.is_empty():</span><br><span class="line">            <span class="keyword">return</span> self.items.pop()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">peek</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.is_empty():</span><br><span class="line">            <span class="keyword">return</span> self.items[-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">is_empty</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">len</span>(self.items) == <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">size</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">len</span>(self.items)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li><strong>数据结构<code>栈</code>通过<code>列表</code>来实现</strong></li>
+</ol>
+<blockquote>
+<p>实际情况下，不要用栈实现列表，因为直接使用列表作为栈并调用 <code>append</code> 和 <code>pop</code> 方法会更为简单和有效。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">stack_list = []  <span class="comment"># 使用列表实现栈</span></span><br><span class="line">stack_list.append(<span class="number">1</span>)  <span class="comment"># 入栈</span></span><br><span class="line">stack_list.append(<span class="number">2</span>)</span><br><span class="line">top_element = stack_list.pop()  <span class="comment"># 出栈</span></span><br><span class="line"><span class="built_in">print</span>(popped_item)  <span class="comment"># 输出: 2</span></span><br></pre></td></tr></table></figure>
+
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">Python-数据结构</a></div><div class="post_share"><div class="social-share" data-image="https://images.cherain-wh.cloud/Python.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://images.cherain-wh.cloud/za0KAA.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/za0KAA.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/XgDaAe.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Cherain-</div><div class="author-info__description">多努努力总归是没错</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">245</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">95</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://cherain-wh.cloud"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">作者邮箱：cherain_wh@163.com</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/2e8a16f1.html" title="字典实现原理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/Python.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="字典实现原理"/></a><div class="content"><a class="title" href="/post/2e8a16f1.html" title="字典实现原理">字典实现原理</a><time datetime="2023-08-19T22:14:51.000Z" title="发表于 2023-08-20 06:14:51">2023-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/6846eb92.html" title="列表实现原理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/Python.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="列表实现原理"/></a><div class="content"><a class="title" href="/post/6846eb92.html" title="列表实现原理">列表实现原理</a><time datetime="2023-08-19T22:14:45.000Z" title="发表于 2023-08-20 06:14:45">2023-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/aa22783f.html" title="数据结构介绍"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/Python.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构介绍"/></a><div class="content"><a class="title" href="/post/aa22783f.html" title="数据结构介绍">数据结构介绍</a><time datetime="2023-08-19T11:10:24.000Z" title="发表于 2023-08-19 19:10:24">2023-08-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/dbc22fb3.html" title="数据类型介绍"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/Python.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据类型介绍"/></a><div class="content"><a class="title" href="/post/dbc22fb3.html" title="数据类型介绍">数据类型介绍</a><time datetime="2023-08-19T09:34:43.000Z" title="发表于 2023-08-19 17:34:43">2023-08-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/1336737e.html" title="alist+rclone实现本地挂载阿里云网盘"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.cherain-wh.cloud/Mac.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="alist+rclone实现本地挂载阿里云网盘"/></a><div class="content"><a class="title" href="/post/1336737e.html" title="alist+rclone实现本地挂载阿里云网盘">alist+rclone实现本地挂载阿里云网盘</a><time datetime="2023-08-11T00:03:19.000Z" title="发表于 2023-08-11 08:03:19">2023-08-11</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.cherain-wh.cloud/Python.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Cherain-</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src='https://images.cherain-wh.cloud/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png'> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402013496" style="color:#f72b07" target="_blank">京公网安备 11011402013496号</a> <a href="https://beian.miit.gov.cn/" style="color:#f72b07" target="_blank">京ICP备2022034151号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://comment.plmm.space/',
+      region: 'ap-shanghai',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://comment.plmm.space/',
+      region: 'ap-shanghai',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.staticfile.org/twikoo/1.6.17/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.95},"log":false});</script></body></html>
